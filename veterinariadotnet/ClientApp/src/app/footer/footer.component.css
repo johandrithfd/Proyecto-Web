@@ -1,0 +1,28 @@
+footer {
+    height:240px;
+    width:100%;
+    background: rgb(1,124,104);
+}
+footer a{
+    color: rgb(231, 231, 232);
+    text-decoration: none;
+}
+
+.style-font h1{
+    color: rgb(218, 221, 225);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: x-large;
+    padding-top: 15px;
+}
+.style-font li,p{
+    color: rgb(203, 207, 211);
+}
+.center{
+    text-align: center;
+}
+
+.icon img{
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+}  
