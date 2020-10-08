@@ -1,14 +1,23 @@
-<header class="header">
-    <div class="container">
-        <nav class="navbar navbar-expand-md">
-            <a [routerLink]='[""]' class="Icon">
-                <img src="../../assets/Imagenes/logo.png" alt="Logo">   
-            </a>
-            <ul class="navbar-nav ">
-                <a [routerLink]='[""]' class="nav-link"> <li class="nav-item nav-space"> Home </li> </a> 
-                <a [routerLink]='["registro"]' class="nav-link"> <li class="nav-item nav-space"> Registro </li> </a> 
-                <a [routerLink]='["consulta"]' class="nav-link"> <li class="nav-item nav-space"> Consulta </li> </a> 
-            </ul>
-        </nav>
-    </div>
+<header class="header"> 
 </header>
+
+<input type="checkbox" id="check">
+<label for="check">
+  <i class="fas fa-bars" id="btn"></i>
+  <i class="fas fa-times" id="cancel"></i>
+</label>
+<div class="sidebar">
+  <ul>
+    <header> </header>
+    <li><a [routerLink]='[""]'><i class="fas fa-home"></i> Inicio</a></li>
+    <li><a [routerLink]='[""]'><i class="fas fa-home"></i> Item 1</a></li>
+    <li><a [routerLink]='[""]'><i class="fas fa-home"></i> Item 2</a></li>
+    <li><a [routerLink]='[""]'><i class="fas fa-home"></i> Item 3</a></li>
+    <li><a [routerLink]='[""]'><i class="fas fa-home"></i> Item 4</a></li>
+    <li><a [routerLink]='[""]'><i class="fas fa-home"></i> Item 5</a></li>
+  </ul>
+</div>
+<section>
+    <router-outlet></router-outlet>
+    <app-footer></app-footer>
+</section>
