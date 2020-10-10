@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Q17SB+C3GbGZoFvw5B+pAI7BRAuN+o95FwnyyRph9ID5wbGzBQNYjzrlep1emHEkttRM422w8Yf7lw+lFLqbUA==",
+  "dgSpecHash": "zBWiSfIQ1HcyD7mMhj2JXajIWjkLk0+z/Q77UN65jVi+coLJDX9j6H7h7JaRWOfYg+ZpFg9txzK9xxPE1xQ8xw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Johandrith\\Downloads\\trabajos Bajo Web\\Proyecto\\Veterinaria\\Datos\\Datos.csproj",
+  "projectFilePath": "c:\\Users\\Rochety\\Downloads\\Proyecto\\Proyecto-Web\\Datos\\Datos.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Johandrith\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\Johandrith\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\Rochety\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Rochety\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }

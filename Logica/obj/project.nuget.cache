@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "FOI60ulfxOmI56S/b17Gt37voWPbB7plJntMhNjr4meAUXcfYwTUvgpEWXoNAgyQY07R4W4u3yVmjkVEgRJWkg==",
+  "dgSpecHash": "lwoxUSXGb5+9mLW5jI1XRmKTfKVwC3+BMX4LwPJfNNN6U8Ei/pbQeD6Yjfd6D0Ytkwe6qUaFn/VUswJh5EDsHQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Johandrith\\Downloads\\trabajos Bajo Web\\Proyecto\\Veterinaria\\Logica\\Logica.csproj",
+  "projectFilePath": "c:\\Users\\Rochety\\Downloads\\Proyecto\\Proyecto-Web\\Logica\\Logica.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Johandrith\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\Johandrith\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\Rochety\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Rochety\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }
