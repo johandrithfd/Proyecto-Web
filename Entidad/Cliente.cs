@@ -8,14 +8,18 @@ namespace Entidad {
         public string Correo { get; set; }
         public string Direccion { get; set; }
 
-        public Cliente (string identificacion, string nombres, string primerApellido, string segundoApellido,string telefono,string correo,string direccion, string celular) : base (identificacion, nombres, primerApellido, segundoApellido ) { 
+        public Cliente (string identificacion, string nombres, string primerApellido, string segundoApellido,string telefono,string celular,string direccion, string correo) 
+        : base (identificacion, nombres, primerApellido, segundoApellido ) { 
 
             Telefono = telefono;
-            Correo = correo;
-            Direccion= direccion;
             Celular= celular;
-            
+            Direccion= direccion;
+            Correo = correo;
+   
+        }
 
+        public Cliente()
+        {
         }
     }
 }

@@ -247,6 +247,16 @@
             "rid": "win"
           }
         }
+      },
+      "Entidad/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Entidad.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Entidad.dll": {}
+        }
       }
     }
   },
@@ -1052,41 +1062,49 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Entidad/1.0.0": {
+      "type": "project",
+      "path": "../Entidad/Entidad.csproj",
+      "msbuildProject": "../Entidad/Entidad.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "Entidad >= 1.0.0",
       "NETStandard.Library >= 2.0.3",
       "System.Collections >= 4.3.0",
       "System.Data.SqlClient >= 4.8.2"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Johandrith\\.nuget\\packages\\": {}
+    "C:\\Users\\Rochety\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Johandrith\\Downloads\\trabajos Bajo Web\\Proyecto\\Veterinaria\\Datos\\Datos.csproj",
+      "projectUniqueName": "C:\\Users\\Rochety\\Downloads\\Proyecto\\Proyecto-Web\\Datos\\Datos.csproj",
       "projectName": "Datos",
-      "projectPath": "C:\\Users\\Johandrith\\Downloads\\trabajos Bajo Web\\Proyecto\\Veterinaria\\Datos\\Datos.csproj",
-      "packagesPath": "C:\\Users\\Johandrith\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Johandrith\\Downloads\\trabajos Bajo Web\\Proyecto\\Veterinaria\\Datos\\obj\\",
+      "projectPath": "C:\\Users\\Rochety\\Downloads\\Proyecto\\Proyecto-Web\\Datos\\Datos.csproj",
+      "packagesPath": "C:\\Users\\Rochety\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Rochety\\Downloads\\Proyecto\\Proyecto-Web\\Datos\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Johandrith\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Rochety\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Rochety\\Downloads\\Proyecto\\Proyecto-Web\\Entidad\\Entidad.csproj": {
+              "projectPath": "C:\\Users\\Rochety\\Downloads\\Proyecto\\Proyecto-Web\\Entidad\\Entidad.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -1123,7 +1141,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
       }
     }
   }
