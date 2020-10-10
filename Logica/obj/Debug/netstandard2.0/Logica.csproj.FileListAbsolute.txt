@@ -1,0 +1,14 @@
+C:\Users\Johandrith\Downloads\trabajos Bajo Web\Proyecto\Veterinaria\Logica\bin\Debug\netstandard2.0\Logica.deps.json
+C:\Users\Johandrith\Downloads\trabajos Bajo Web\Proyecto\Veterinaria\Logica\bin\Debug\netstandard2.0\Logica.dll
+C:\Users\Johandrith\Downloads\trabajos Bajo Web\Proyecto\Veterinaria\Logica\bin\Debug\netstandard2.0\Logica.pdb
+C:\Users\Johandrith\Downloads\trabajos Bajo Web\Proyecto\Veterinaria\Logica\bin\Debug\netstandard2.0\Datos.dll
+C:\Users\Johandrith\Downloads\trabajos Bajo Web\Proyecto\Veterinaria\Logica\bin\Debug\netstandard2.0\Entidad.dll
+C:\Users\Johandrith\Downloads\trabajos Bajo Web\Proyecto\Veterinaria\Logica\bin\Debug\netstandard2.0\Datos.pdb
+C:\Users\Johandrith\Downloads\trabajos Bajo Web\Proyecto\Veterinaria\Logica\bin\Debug\netstandard2.0\Entidad.pdb
+C:\Users\Johandrith\Downloads\trabajos Bajo Web\Proyecto\Veterinaria\Logica\obj\Debug\netstandard2.0\Logica.csprojAssemblyReference.cache
+C:\Users\Johandrith\Downloads\trabajos Bajo Web\Proyecto\Veterinaria\Logica\obj\Debug\netstandard2.0\Logica.csproj.CoreCompileInputs.cache
+C:\Users\Johandrith\Downloads\trabajos Bajo Web\Proyecto\Veterinaria\Logica\obj\Debug\netstandard2.0\Logica.AssemblyInfoInputs.cache
+C:\Users\Johandrith\Downloads\trabajos Bajo Web\Proyecto\Veterinaria\Logica\obj\Debug\netstandard2.0\Logica.AssemblyInfo.cs
+C:\Users\Johandrith\Downloads\trabajos Bajo Web\Proyecto\Veterinaria\Logica\obj\Debug\netstandard2.0\Logica.csproj.CopyComplete
+C:\Users\Johandrith\Downloads\trabajos Bajo Web\Proyecto\Veterinaria\Logica\obj\Debug\netstandard2.0\Logica.dll
+C:\Users\Johandrith\Downloads\trabajos Bajo Web\Proyecto\Veterinaria\Logica\obj\Debug\netstandard2.0\Logica.pdb

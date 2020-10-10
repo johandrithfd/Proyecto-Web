@@ -1,0 +1,9 @@
+C:\Users\Johandrith\Downloads\trabajos Bajo Web\Proyecto\Veterinaria\Entidad\bin\Debug\netstandard2.0\Entidad.deps.json
+C:\Users\Johandrith\Downloads\trabajos Bajo Web\Proyecto\Veterinaria\Entidad\bin\Debug\netstandard2.0\Entidad.dll
+C:\Users\Johandrith\Downloads\trabajos Bajo Web\Proyecto\Veterinaria\Entidad\bin\Debug\netstandard2.0\Entidad.pdb
+C:\Users\Johandrith\Downloads\trabajos Bajo Web\Proyecto\Veterinaria\Entidad\obj\Debug\netstandard2.0\Entidad.csprojAssemblyReference.cache
+C:\Users\Johandrith\Downloads\trabajos Bajo Web\Proyecto\Veterinaria\Entidad\obj\Debug\netstandard2.0\Entidad.csproj.CoreCompileInputs.cache
+C:\Users\Johandrith\Downloads\trabajos Bajo Web\Proyecto\Veterinaria\Entidad\obj\Debug\netstandard2.0\Entidad.AssemblyInfoInputs.cache
+C:\Users\Johandrith\Downloads\trabajos Bajo Web\Proyecto\Veterinaria\Entidad\obj\Debug\netstandard2.0\Entidad.AssemblyInfo.cs
+C:\Users\Johandrith\Downloads\trabajos Bajo Web\Proyecto\Veterinaria\Entidad\obj\Debug\netstandard2.0\Entidad.dll
+C:\Users\Johandrith\Downloads\trabajos Bajo Web\Proyecto\Veterinaria\Entidad\obj\Debug\netstandard2.0\Entidad.pdb
