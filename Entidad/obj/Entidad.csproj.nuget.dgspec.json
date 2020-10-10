@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Rochety\\Downloads\\Proyecto\\Proyecto-Web\\Entidad\\Entidad.csproj": {}
+    "C:\\Users\\Rochety\\Downloads\\Proyecto\\Proyecto-Web\\Entidad\\Entidad.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Rochety\\Downloads\\Proyecto\\Proyecto-Web\\Entidad\\Entidad.csproj": {
+    "C:\\Users\\Rochety\\Downloads\\Proyecto\\Proyecto-Web\\Entidad\\Entidad.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Rochety\\Downloads\\Proyecto\\Proyecto-Web\\Entidad\\Entidad.csproj",
+        "projectUniqueName": "C:\\Users\\Rochety\\Downloads\\Proyecto\\Proyecto-Web\\Entidad\\Entidad.csproj",
         "projectName": "Entidad",
-        "projectPath": "c:\\Users\\Rochety\\Downloads\\Proyecto\\Proyecto-Web\\Entidad\\Entidad.csproj",
+        "projectPath": "C:\\Users\\Rochety\\Downloads\\Proyecto\\Proyecto-Web\\Entidad\\Entidad.csproj",
         "packagesPath": "C:\\Users\\Rochety\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Rochety\\Downloads\\Proyecto\\Proyecto-Web\\Entidad\\obj\\",
+        "outputPath": "C:\\Users\\Rochety\\Downloads\\Proyecto\\Proyecto-Web\\Entidad\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Rochety\\AppData\\Roaming\\NuGet\\NuGet.Config"
