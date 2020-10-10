@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XT11jxRDm/dySILksYEwD9Iv9fsXbc+QEuK5hs0ZkCyHcvn84ezlmtj43VAxGDaw9aUh4Qxs4OsmJ4cdwK3Kzw==",
+  "dgSpecHash": "72HvsV+ifgXazJOGmcoEyZzV19+OwoQ6c8q/NMAbtIyyANinyBPLm2FP0aSSv9wJwg6jKWKTkvTWC7jKdYcvPg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Johandrith\\Downloads\\trabajos Bajo Web\\Proyecto\\Veterinaria\\Datos\\Datos.csproj",
+  "projectFilePath": "c:\\Users\\Johandrith\\Downloads\\trabajos Bajo Web\\Proyecto\\Veterinaria\\Datos\\Datos.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Johandrith\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Johandrith\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
