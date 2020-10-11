@@ -10,7 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { RegistroMascotaComponent } from '../app/veterinaria/Componentes/registro-mascota/registro-mascota.component';
-import { RegistroPersonaComponent } from './veterinaria/Componentes/registro-persona/registro-persona.component';
+import { RegistroClienteComponent } from './veterinaria/Componentes/registro-cliente/registro-cliente.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +19,7 @@ import { RegistroPersonaComponent } from './veterinaria/Componentes/registro-per
     HomeComponent,
     FooterComponent,
     RegistroMascotaComponent,
-    RegistroPersonaComponent
+    RegistroClienteComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
