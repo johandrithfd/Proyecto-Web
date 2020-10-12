@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/Vuo8Sohq2ZrozYraSof5UPeraU2L80z0qn3MrpKI7oP1fRcPJ5cTLKDGZk1llHHjyH09Atz1TE1gkYmjMbBXw==",
+  "dgSpecHash": "6LRiBpjDpaG2G8l9sPzs5idW03H9s9FpHFvklNPlw402ATMyxG58KJ0uTV/TLZM/CBFXEFDxXi3hsZQzFFu9Hg==",
   "success": true,
-  "projectFilePath": "c:\\Users\\Johandrith\\Downloads\\trabajos Bajo Web\\Proyecto\\Veterinaria\\Entidad\\Entidad.csproj",
+  "projectFilePath": "C:\\Users\\Johandrith\\Downloads\\trabajos Bajo Web\\Proyecto\\Veterinaria\\Entidad\\Entidad.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Johandrith\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Johandrith\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"

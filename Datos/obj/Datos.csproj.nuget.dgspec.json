@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Johandrith\\Downloads\\trabajos Bajo Web\\Proyecto\\Veterinaria\\Datos\\Datos.csproj": {}
+    "C:\\Users\\Johandrith\\Downloads\\trabajos Bajo Web\\Proyecto\\Veterinaria\\Datos\\Datos.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Johandrith\\Downloads\\trabajos Bajo Web\\Proyecto\\Veterinaria\\Datos\\Datos.csproj": {
+    "C:\\Users\\Johandrith\\Downloads\\trabajos Bajo Web\\Proyecto\\Veterinaria\\Datos\\Datos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Johandrith\\Downloads\\trabajos Bajo Web\\Proyecto\\Veterinaria\\Datos\\Datos.csproj",
+        "projectUniqueName": "C:\\Users\\Johandrith\\Downloads\\trabajos Bajo Web\\Proyecto\\Veterinaria\\Datos\\Datos.csproj",
         "projectName": "Datos",
-        "projectPath": "c:\\Users\\Johandrith\\Downloads\\trabajos Bajo Web\\Proyecto\\Veterinaria\\Datos\\Datos.csproj",
+        "projectPath": "C:\\Users\\Johandrith\\Downloads\\trabajos Bajo Web\\Proyecto\\Veterinaria\\Datos\\Datos.csproj",
         "packagesPath": "C:\\Users\\Johandrith\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Johandrith\\Downloads\\trabajos Bajo Web\\Proyecto\\Veterinaria\\Datos\\obj\\",
+        "outputPath": "C:\\Users\\Johandrith\\Downloads\\trabajos Bajo Web\\Proyecto\\Veterinaria\\Datos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Johandrith\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,8 +27,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "c:\\Users\\Johandrith\\Downloads\\trabajos Bajo Web\\Proyecto\\Veterinaria\\Entidad\\Entidad.csproj": {
-                "projectPath": "c:\\Users\\Johandrith\\Downloads\\trabajos Bajo Web\\Proyecto\\Veterinaria\\Entidad\\Entidad.csproj"
+              "C:\\Users\\Johandrith\\Downloads\\trabajos Bajo Web\\Proyecto\\Veterinaria\\Entidad\\Entidad.csproj": {
+                "projectPath": "C:\\Users\\Johandrith\\Downloads\\trabajos Bajo Web\\Proyecto\\Veterinaria\\Entidad\\Entidad.csproj"
               }
             }
           }
@@ -71,14 +71,14 @@
         }
       }
     },
-    "c:\\Users\\Johandrith\\Downloads\\trabajos Bajo Web\\Proyecto\\Veterinaria\\Entidad\\Entidad.csproj": {
+    "C:\\Users\\Johandrith\\Downloads\\trabajos Bajo Web\\Proyecto\\Veterinaria\\Entidad\\Entidad.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Johandrith\\Downloads\\trabajos Bajo Web\\Proyecto\\Veterinaria\\Entidad\\Entidad.csproj",
+        "projectUniqueName": "C:\\Users\\Johandrith\\Downloads\\trabajos Bajo Web\\Proyecto\\Veterinaria\\Entidad\\Entidad.csproj",
         "projectName": "Entidad",
-        "projectPath": "c:\\Users\\Johandrith\\Downloads\\trabajos Bajo Web\\Proyecto\\Veterinaria\\Entidad\\Entidad.csproj",
+        "projectPath": "C:\\Users\\Johandrith\\Downloads\\trabajos Bajo Web\\Proyecto\\Veterinaria\\Entidad\\Entidad.csproj",
         "packagesPath": "C:\\Users\\Johandrith\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Johandrith\\Downloads\\trabajos Bajo Web\\Proyecto\\Veterinaria\\Entidad\\obj\\",
+        "outputPath": "C:\\Users\\Johandrith\\Downloads\\trabajos Bajo Web\\Proyecto\\Veterinaria\\Entidad\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Johandrith\\AppData\\Roaming\\NuGet\\NuGet.Config",

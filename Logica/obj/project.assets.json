@@ -1102,11 +1102,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Johandrith\\Downloads\\trabajos Bajo Web\\Proyecto\\Veterinaria\\Logica\\Logica.csproj",
+      "projectUniqueName": "C:\\Users\\Johandrith\\Downloads\\trabajos Bajo Web\\Proyecto\\Veterinaria\\Logica\\Logica.csproj",
       "projectName": "Logica",
-      "projectPath": "c:\\Users\\Johandrith\\Downloads\\trabajos Bajo Web\\Proyecto\\Veterinaria\\Logica\\Logica.csproj",
+      "projectPath": "C:\\Users\\Johandrith\\Downloads\\trabajos Bajo Web\\Proyecto\\Veterinaria\\Logica\\Logica.csproj",
       "packagesPath": "C:\\Users\\Johandrith\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Johandrith\\Downloads\\trabajos Bajo Web\\Proyecto\\Veterinaria\\Logica\\obj\\",
+      "outputPath": "C:\\Users\\Johandrith\\Downloads\\trabajos Bajo Web\\Proyecto\\Veterinaria\\Logica\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Johandrith\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1122,11 +1122,11 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "c:\\Users\\Johandrith\\Downloads\\trabajos Bajo Web\\Proyecto\\Veterinaria\\Datos\\Datos.csproj": {
-              "projectPath": "c:\\Users\\Johandrith\\Downloads\\trabajos Bajo Web\\Proyecto\\Veterinaria\\Datos\\Datos.csproj"
+            "C:\\Users\\Johandrith\\Downloads\\trabajos Bajo Web\\Proyecto\\Veterinaria\\Datos\\Datos.csproj": {
+              "projectPath": "C:\\Users\\Johandrith\\Downloads\\trabajos Bajo Web\\Proyecto\\Veterinaria\\Datos\\Datos.csproj"
             },
-            "c:\\Users\\Johandrith\\Downloads\\trabajos Bajo Web\\Proyecto\\Veterinaria\\Entidad\\Entidad.csproj": {
-              "projectPath": "c:\\Users\\Johandrith\\Downloads\\trabajos Bajo Web\\Proyecto\\Veterinaria\\Entidad\\Entidad.csproj"
+            "C:\\Users\\Johandrith\\Downloads\\trabajos Bajo Web\\Proyecto\\Veterinaria\\Entidad\\Entidad.csproj": {
+              "projectPath": "C:\\Users\\Johandrith\\Downloads\\trabajos Bajo Web\\Proyecto\\Veterinaria\\Entidad\\Entidad.csproj"
             }
           }
         }
