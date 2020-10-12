@@ -4,8 +4,11 @@ using System.Collections.Generic;
 using System.Data;
 using Datos;
 using Entidad;
+using Datos;
 
-namespace Logica {
+
+namespace Logica
+{
     public class ClienteServicio {
         private readonly AdministradorDeConexion _conexion;
         private readonly ClienteRepositorio _repositorio;
@@ -24,9 +27,14 @@ namespace Logica {
                 return new GuardarClienteResponse ($"Error de la Aplicacion: {e.Message}");
             } finally { _conexion.Close (); }
         }
+        
         public List<Cliente> ConsultarClientes () {
             _conexion.Open ();
+<<<<<<< HEAD
             List<Cliente> clientes = _repositorio.ConsultarClientes ();
+=======
+            List<Cliente> clientes = _repositorio.ConsultarClientes();
+>>>>>>> 78056d2862ba16d11dfc6e1f16de05a7632c71d5
             _conexion.Close ();
             return clientes;
         }
@@ -35,7 +43,7 @@ namespace Logica {
     public class GuardarClienteResponse {
         public GuardarClienteResponse (Cliente cliente) {
             Error = false;
-            Cliente = cliente;
+            Cliente  = cliente;
         }
         public GuardarClienteResponse (string mensaje) {
             Error = true;
