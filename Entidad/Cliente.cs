@@ -15,7 +15,6 @@ namespace Entidad {
             Celular= celular;
             Direccion= direccion;
             Correo = correo;
-   
         }
 
         public Cliente()
