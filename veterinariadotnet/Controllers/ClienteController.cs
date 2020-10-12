@@ -25,8 +25,8 @@ namespace veterinariadotnet.Controllers
         [HttpGet]
         public IEnumerable<ClienteViewModel>GetAll()
         {
-            var personas = _clienteService.ConsultarClientes().Select(c=> new ClienteViewModel(c));
-            return personas;
+            var clientes = _clienteService.ConsultarClientes().Select(c=> new ClienteViewModel(c));
+            return clientes;
         }
 
         [HttpPost]

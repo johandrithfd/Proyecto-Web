@@ -26,15 +26,15 @@ namespace Datos {
             }
         }
 
-        public List<Cliente> ConsultarClientes () {
+        public List<Cliente> ConsultarClientes() {
             SqlDataReader dataReader;
-            List<Cliente> clientes = new List<Cliente> ();
+            List<Cliente> clientes = new List<Cliente>();
             using (var command = _connection.CreateCommand ()) {
-                command.CommandText = "Select * from Cliente ";
+                command.CommandText = "Select * from Cliente";
                 dataReader = command.ExecuteReader ();
                 if (dataReader.HasRows) {
                     while (dataReader.Read ()) {
-                        Cliente cliente = DataReaderMapToCliente (dataReader);
+                        Cliente cliente = DataReaderMapToCliente(dataReader);
                         clientes.Add (cliente);
                     }
                 }
@@ -43,17 +43,17 @@ namespace Datos {
         }
 
         private Cliente DataReaderMapToCliente (SqlDataReader dataReader) {
-              if (!dataReader.HasRows) return null;
-            Cliente cliente = new Cliente();
+            if (!dataReader.HasRows) { return null;}
+            Cliente cliente = new Cliente ();
             cliente.Identificacion = (string) dataReader["Identificacion"];
             cliente.Nombres = (string) dataReader["Nombres"];
-            cliente.PrimerApellido = (string) dataReader["PrimerApellido "];
+            cliente.PrimerApellido = (string) dataReader["PrimerApellido"];
             cliente.SegundoApellido = (string) dataReader["SegundoApellido"];
             cliente.Telefono = (string) dataReader["Telefono"];
             cliente.Celular = (string) dataReader["Celular"];
             cliente.Direccion = (string) dataReader["Direccion"];
             cliente.Correo = (string) dataReader["Correo"];
             return cliente;
+        }
     }
-}
 }
