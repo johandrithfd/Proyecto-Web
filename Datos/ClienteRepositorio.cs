@@ -13,7 +13,7 @@ namespace Datos {
         public void Guardar (Cliente cliente) {
             using (var command = _connection.CreateCommand ()) {
                 command.CommandText = @"Insert Into Cliente (Identificacion,Nombres,PrimerApellido,SegundoApellido,Telefono,Celular,Direccion,Correo) 
-                                        values (@Identificacion,@Nombres,@PrimerApellido,@SegundoApellido,@Telefono,Celular,Direccion,Correo)";
+                                        values (@Identificacion,@Nombres,@PrimerApellido,@SegundoApellido,@Telefono,@Celular,@Direccion,@Correo)";
                 command.Parameters.AddWithValue ("@Identificacion", cliente.Identificacion);
                 command.Parameters.AddWithValue ("@Nombres", cliente.Nombres);
                 command.Parameters.AddWithValue ("@PrimerApellido", cliente.PrimerApellido);

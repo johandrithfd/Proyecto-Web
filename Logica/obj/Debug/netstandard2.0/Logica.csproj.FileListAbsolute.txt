@@ -12,3 +12,17 @@ C:\Users\Johandrith\Downloads\trabajos Bajo Web\Proyecto\Veterinaria\Logica\obj\
 C:\Users\Johandrith\Downloads\trabajos Bajo Web\Proyecto\Veterinaria\Logica\obj\Debug\netstandard2.0\Logica.csproj.CopyComplete
 C:\Users\Johandrith\Downloads\trabajos Bajo Web\Proyecto\Veterinaria\Logica\obj\Debug\netstandard2.0\Logica.dll
 C:\Users\Johandrith\Downloads\trabajos Bajo Web\Proyecto\Veterinaria\Logica\obj\Debug\netstandard2.0\Logica.pdb
+C:\Users\Rochety\Downloads\Proyecto\Proyecto-Web\Logica\bin\Debug\netstandard2.0\Logica.deps.json
+C:\Users\Rochety\Downloads\Proyecto\Proyecto-Web\Logica\bin\Debug\netstandard2.0\Logica.dll
+C:\Users\Rochety\Downloads\Proyecto\Proyecto-Web\Logica\bin\Debug\netstandard2.0\Logica.pdb
+C:\Users\Rochety\Downloads\Proyecto\Proyecto-Web\Logica\bin\Debug\netstandard2.0\Datos.dll
+C:\Users\Rochety\Downloads\Proyecto\Proyecto-Web\Logica\bin\Debug\netstandard2.0\Entidad.dll
+C:\Users\Rochety\Downloads\Proyecto\Proyecto-Web\Logica\bin\Debug\netstandard2.0\Datos.pdb
+C:\Users\Rochety\Downloads\Proyecto\Proyecto-Web\Logica\bin\Debug\netstandard2.0\Entidad.pdb
+C:\Users\Rochety\Downloads\Proyecto\Proyecto-Web\Logica\obj\Debug\netstandard2.0\Logica.csprojAssemblyReference.cache
+C:\Users\Rochety\Downloads\Proyecto\Proyecto-Web\Logica\obj\Debug\netstandard2.0\Logica.AssemblyInfoInputs.cache
+C:\Users\Rochety\Downloads\Proyecto\Proyecto-Web\Logica\obj\Debug\netstandard2.0\Logica.AssemblyInfo.cs
+C:\Users\Rochety\Downloads\Proyecto\Proyecto-Web\Logica\obj\Debug\netstandard2.0\Logica.csproj.CoreCompileInputs.cache
+C:\Users\Rochety\Downloads\Proyecto\Proyecto-Web\Logica\obj\Debug\netstandard2.0\Logica.csproj.CopyComplete
+C:\Users\Rochety\Downloads\Proyecto\Proyecto-Web\Logica\obj\Debug\netstandard2.0\Logica.dll
+C:\Users\Rochety\Downloads\Proyecto\Proyecto-Web\Logica\obj\Debug\netstandard2.0\Logica.pdb

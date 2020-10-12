@@ -11,26 +11,38 @@
                         <form name="registro" onsubmit="">
                             <div class="form-group">
                                 <label for="">Escriba su cedula : </label>
-                                <input name="identificacion" class="form-control"  type="text" placeholder="1065775558" id="cedula">
+                                <input name="identificacion" [(ngModel)]="cliente.identificacion" class="form-control"  type="text" placeholder="1065775558" >
                             </div>
                             <div class="form-group">
-                                <label for="">Escriba su nombre : </label>
-                                <input name="nombre" class="form-control"  type="text" placeholder="Juan manuel" id="nombre">
+                                <label for="">Escriba sus nombres : </label>
+                                <input name="nombres" [(ngModel)]="cliente.nombres"  class="form-control"  type="text" placeholder="Juan manuel" >
                             </div>
                             <div class="form-group">
-                                <label for="">Escriba la direccion: </label>
-                                <input name="nombre" class="form-control"  type="text" placeholder="mz 9 cs 15 los granados " id="nombre">
+                                <label for="">Escriba su primer Apellido: </label>
+                                <input name="primerApellido" [(ngModel)]="cliente.primerApellido"   class="form-control"  type="text" placeholder="martinez" >
+                            </div>
+                            <div class="form-group">
+                                <label for="">Escriba su segundo Apellido: </label>
+                                <input name="segundoApellido" [(ngModel)]="cliente.segundoApellido" class="form-control"  type="text" placeholder="rocha" >
                             </div>
                             <div class="form-group">
                                 <label for="">Escriba su telefono : </label>
-                                <input name="nombre" class="form-control"  type="text" placeholder="3013700121" id="nombre">
+                                <input name="telefono" class="form-control"  type="text" placeholder="9837903" >
+                            </div>
+                            <div class="form-group">
+                                <label for="">Escriba su celular: </label>
+                                <input name="celular" [(ngModel)]="cliente.celular" class="form-control"  type="text" placeholder="320 9873 3211" >
+                            </div>
+                            <div class="form-group">
+                                <label for="">Escriba su direccion : </label>
+                                <input name="direccion" [(ngModel)]="cliente.direccion"  class="form-control"  type="text" placeholder="calle 30 sabanas " >
                             </div>
                             <div class="form-group">
                                 <label for="">Escriba su correo electronico : </label>
-                                <input name="nombre" class="form-control"  type="text" placeholder="ejemplo@hotmail.com" id="nombre">
+                                <input name="correo"[(ngModel)]="cliente.correo" class="form-control"  type="text" placeholder="lu@gmail.com" >
                             </div>
-                            <input class="btn btn-outline-secondary" type="reset" value= "Limpiar Form">
-                            <button type="button" class="btn btn-success" > Registrar Cliente </button>
+                            <input class=".btn-cancelar" type="reset" value= "Limpiar Form">
+                            <button  class="btn-guardar" (click)="add()" > Registrar Cliente </button>
                         </form>
                     </div>
                 </div>

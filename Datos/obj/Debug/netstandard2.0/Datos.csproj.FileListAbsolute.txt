@@ -10,3 +10,15 @@ C:\Users\Johandrith\Downloads\trabajos Bajo Web\Proyecto\Veterinaria\Datos\obj\D
 C:\Users\Johandrith\Downloads\trabajos Bajo Web\Proyecto\Veterinaria\Datos\obj\Debug\netstandard2.0\Datos.csproj.CopyComplete
 C:\Users\Johandrith\Downloads\trabajos Bajo Web\Proyecto\Veterinaria\Datos\obj\Debug\netstandard2.0\Datos.dll
 C:\Users\Johandrith\Downloads\trabajos Bajo Web\Proyecto\Veterinaria\Datos\obj\Debug\netstandard2.0\Datos.pdb
+C:\Users\Rochety\Downloads\Proyecto\Proyecto-Web\Datos\bin\Debug\netstandard2.0\Datos.deps.json
+C:\Users\Rochety\Downloads\Proyecto\Proyecto-Web\Datos\bin\Debug\netstandard2.0\Datos.dll
+C:\Users\Rochety\Downloads\Proyecto\Proyecto-Web\Datos\bin\Debug\netstandard2.0\Datos.pdb
+C:\Users\Rochety\Downloads\Proyecto\Proyecto-Web\Datos\bin\Debug\netstandard2.0\Entidad.dll
+C:\Users\Rochety\Downloads\Proyecto\Proyecto-Web\Datos\bin\Debug\netstandard2.0\Entidad.pdb
+C:\Users\Rochety\Downloads\Proyecto\Proyecto-Web\Datos\obj\Debug\netstandard2.0\Datos.csprojAssemblyReference.cache
+C:\Users\Rochety\Downloads\Proyecto\Proyecto-Web\Datos\obj\Debug\netstandard2.0\Datos.AssemblyInfoInputs.cache
+C:\Users\Rochety\Downloads\Proyecto\Proyecto-Web\Datos\obj\Debug\netstandard2.0\Datos.AssemblyInfo.cs
+C:\Users\Rochety\Downloads\Proyecto\Proyecto-Web\Datos\obj\Debug\netstandard2.0\Datos.csproj.CoreCompileInputs.cache
+C:\Users\Rochety\Downloads\Proyecto\Proyecto-Web\Datos\obj\Debug\netstandard2.0\Datos.csproj.CopyComplete
+C:\Users\Rochety\Downloads\Proyecto\Proyecto-Web\Datos\obj\Debug\netstandard2.0\Datos.dll
+C:\Users\Rochety\Downloads\Proyecto\Proyecto-Web\Datos\obj\Debug\netstandard2.0\Datos.pdb

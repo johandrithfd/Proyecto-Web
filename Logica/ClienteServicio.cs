@@ -1,14 +1,16 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.Data;
 using Datos;
 using Entidad;
 
 namespace Logica {
     public class ClienteServicio {
-        private readonly AdministradorConexion _conexion;
+        private readonly AdministradorDeConexion _conexion;
         private readonly ClienteRepositorio _repositorio;
         public ClienteServicio (string connectionString) {
-            _conexion = new AdministradorConexion (connectionString);
+            _conexion = new AdministradorDeConexion (connectionString);
             _repositorio = new ClienteRepositorio (_conexion);
         }
         public GuardarClienteResponse Guardar (Cliente cliente) {
@@ -24,7 +26,7 @@ namespace Logica {
         }
         public List<Cliente> ConsultarClientes () {
             _conexion.Open ();
-            List<Cliente> clientes = _repositorio.ConsultarTodos();
+            List<Cliente> clientes = _repositorio.ConsultarClientes ();
             _conexion.Close ();
             return clientes;
         }
@@ -41,7 +43,7 @@ namespace Logica {
         }
         public bool Error { get; set; }
         public string Mensaje { get; set; }
-        public Cliente cliente { get; set; }
+        public Cliente Cliente { get; set; }
     }
 
 }

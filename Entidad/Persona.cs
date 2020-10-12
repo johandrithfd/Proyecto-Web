@@ -15,6 +15,6 @@ namespace Entidad {
          PrimerApellido = primerApellido;
          SegundoApellido = segundoApellido;
       }
-      public Persona(){}
+      public Persona () { }
    }
 }

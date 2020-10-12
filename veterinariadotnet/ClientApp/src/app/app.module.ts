@@ -11,6 +11,8 @@ import { FooterComponent } from './footer/footer.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { RegistroMascotaComponent } from '../app/veterinaria/Componentes/registro-mascota/registro-mascota.component';
 import { RegistroClienteComponent } from './veterinaria/Componentes/registro-cliente/registro-cliente.component';
+import { ConsultaClienteComponent } from './veterinaria/Componentes/consulta-cliente/consulta-cliente.component';
+import { ClienteService } from './services/serviciosRocha/cliente.service';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,8 @@ import { RegistroClienteComponent } from './veterinaria/Componentes/registro-cli
     HomeComponent,
     FooterComponent,
     RegistroMascotaComponent,
-    RegistroClienteComponent
+    RegistroClienteComponent,
+    ConsultaClienteComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -27,7 +30,7 @@ import { RegistroClienteComponent } from './veterinaria/Componentes/registro-cli
     FormsModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ClienteService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
