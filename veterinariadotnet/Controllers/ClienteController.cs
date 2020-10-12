@@ -9,8 +9,8 @@ using veterinariadotnet.Models;
 
 namespace veterinariadotnet.Controllers
 {  
-   [Route("api/[controller]")]
-   [ApiController]
+    [Route("api/[controller]")]
+    [ApiController]
     public class ClienteController: ControllerBase
     {
         private readonly ClienteServicio _clienteService;
@@ -45,7 +45,7 @@ namespace veterinariadotnet.Controllers
         {
             var cliente = new Cliente
             {
-                Identificacion = clienteimputModel.Identificacion,
+                Identificacion= clienteimputModel.Identificacion,
                 Nombres = clienteimputModel.Nombres,
                 PrimerApellido= clienteimputModel.PrimerApellido,
                 SegundoApellido = clienteimputModel.SegundoApellido,

@@ -22,9 +22,8 @@ import { ClienteService } from './services/serviciosRocha/cliente.service';
     HomeComponent,
     FooterComponent,
     RegistroClienteComponent,
-    ConsultaClienteComponent
+    ConsultaClienteComponent,
     RegistroServicioComponent,
-    RegistroClienteComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),

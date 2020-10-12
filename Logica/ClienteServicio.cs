@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Data;
 using Datos;
 using Entidad;
-using Datos;
+
 
 
 namespace Logica
@@ -30,11 +30,7 @@ namespace Logica
         
         public List<Cliente> ConsultarClientes () {
             _conexion.Open ();
-<<<<<<< HEAD
             List<Cliente> clientes = _repositorio.ConsultarClientes ();
-=======
-            List<Cliente> clientes = _repositorio.ConsultarClientes();
->>>>>>> 78056d2862ba16d11dfc6e1f16de05a7632c71d5
             _conexion.Close ();
             return clientes;
         }

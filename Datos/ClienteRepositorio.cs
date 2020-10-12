@@ -43,8 +43,8 @@ namespace Datos {
         }
 
         private Cliente DataReaderMapToCliente (SqlDataReader dataReader) {
-            if (!dataReader.HasRows) return null;
-            Cliente cliente = new Cliente ();
+              if (!dataReader.HasRows) return null;
+            Cliente cliente = new Cliente();
             cliente.Identificacion = (string) dataReader["Identificacion"];
             cliente.Nombres = (string) dataReader["Nombres"];
             cliente.PrimerApellido = (string) dataReader["PrimerApellido "];
@@ -54,6 +54,6 @@ namespace Datos {
             cliente.Direccion = (string) dataReader["Direccion"];
             cliente.Correo = (string) dataReader["Correo"];
             return cliente;
-        }
     }
+}
 }
