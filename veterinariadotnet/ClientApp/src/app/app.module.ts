@@ -11,6 +11,8 @@ import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { RegistroServicioComponent } from './veterinaria/Componentes/registro-servicio/registro-servicio.component';
+import { RegistroClienteComponent } from './veterinaria/Componentes/registro-cliente/registro-cliente.component';
+import { from } from 'rxjs';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,7 @@ import { RegistroServicioComponent } from './veterinaria/Componentes/registro-se
     NavMenuComponent,
     HomeComponent,
     FooterComponent,
-    RegistroServicioComponent
+    RegistroServicioComponent,
     RegistroClienteComponent
   ],
   imports: [

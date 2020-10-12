@@ -11,6 +11,7 @@ import { RegistroClienteComponent} from '../../app/veterinaria/Componentes/regis
   imports: [RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'registro-servicio', component: RegistroServicioComponent},
+      { path: 'registro-cliente', component: RegistroClienteComponent},
     ]),
     CommonModule
   ],
