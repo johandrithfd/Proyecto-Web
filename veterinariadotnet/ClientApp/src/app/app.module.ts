@@ -10,7 +10,6 @@ import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
-import { RegistroPersonaComponent } from './veterinaria/Componentes/registro-persona/registro-persona.component';
 import { RegistroServicioComponent } from './veterinaria/Componentes/registro-servicio/registro-servicio.component';
 
 @NgModule({
@@ -19,8 +18,8 @@ import { RegistroServicioComponent } from './veterinaria/Componentes/registro-se
     NavMenuComponent,
     HomeComponent,
     FooterComponent,
-    RegistroPersonaComponent,
     RegistroServicioComponent
+    RegistroClienteComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
