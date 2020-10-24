@@ -933,7 +933,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\spayd\\.nuget\\packages\\": {}
+    "C:\\Users\\Johandrith\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -941,11 +941,11 @@
       "projectUniqueName": "D:\\Descargas\\trabajos Bajo Web\\Veterinaria\\Datos\\Datos.csproj",
       "projectName": "Datos",
       "projectPath": "D:\\Descargas\\trabajos Bajo Web\\Veterinaria\\Datos\\Datos.csproj",
-      "packagesPath": "C:\\Users\\spayd\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\Johandrith\\.nuget\\packages\\",
       "outputPath": "D:\\Descargas\\trabajos Bajo Web\\Veterinaria\\Datos\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\spayd\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Johandrith\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
