@@ -1083,11 +1083,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Rochety\\Downloads\\Proyecto\\Proyecto-Web\\Datos\\Datos.csproj",
+      "projectUniqueName": "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Datos\\Datos.csproj",
       "projectName": "Datos",
-      "projectPath": "C:\\Users\\Rochety\\Downloads\\Proyecto\\Proyecto-Web\\Datos\\Datos.csproj",
+      "projectPath": "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Datos\\Datos.csproj",
       "packagesPath": "C:\\Users\\Rochety\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Rochety\\Downloads\\Proyecto\\Proyecto-Web\\Datos\\obj\\",
+      "outputPath": "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Datos\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Rochety\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -1101,8 +1101,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\Rochety\\Downloads\\Proyecto\\Proyecto-Web\\Entidad\\Entidad.csproj": {
-              "projectPath": "C:\\Users\\Rochety\\Downloads\\Proyecto\\Proyecto-Web\\Entidad\\Entidad.csproj"
+            "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Entidad\\Entidad.csproj": {
+              "projectPath": "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Entidad\\Entidad.csproj"
             }
           }
         }

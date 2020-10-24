@@ -3,9 +3,8 @@ export class Cliente {
   nombres : string;
   primerApellido:string;
   segundoApellido :string;
-  telefono :string;
+  telefono :number;
   celular :string;
   direccion: string;
   correo: string;
-  
-}
+  }

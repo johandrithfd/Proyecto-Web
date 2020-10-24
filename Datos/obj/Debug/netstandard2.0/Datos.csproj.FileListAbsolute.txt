@@ -22,3 +22,15 @@ C:\Users\Rochety\Downloads\Proyecto\Proyecto-Web\Datos\obj\Debug\netstandard2.0\
 C:\Users\Rochety\Downloads\Proyecto\Proyecto-Web\Datos\obj\Debug\netstandard2.0\Datos.csproj.CopyComplete
 C:\Users\Rochety\Downloads\Proyecto\Proyecto-Web\Datos\obj\Debug\netstandard2.0\Datos.dll
 C:\Users\Rochety\Downloads\Proyecto\Proyecto-Web\Datos\obj\Debug\netstandard2.0\Datos.pdb
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Datos\bin\Debug\netstandard2.0\Datos.deps.json
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Datos\bin\Debug\netstandard2.0\Datos.dll
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Datos\bin\Debug\netstandard2.0\Datos.pdb
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Datos\bin\Debug\netstandard2.0\Entidad.dll
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Datos\bin\Debug\netstandard2.0\Entidad.pdb
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Datos\obj\Debug\netstandard2.0\Datos.csprojAssemblyReference.cache
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Datos\obj\Debug\netstandard2.0\Datos.AssemblyInfoInputs.cache
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Datos\obj\Debug\netstandard2.0\Datos.AssemblyInfo.cs
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Datos\obj\Debug\netstandard2.0\Datos.csproj.CoreCompileInputs.cache
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Datos\obj\Debug\netstandard2.0\Datos.csproj.CopyComplete
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Datos\obj\Debug\netstandard2.0\Datos.dll
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Datos\obj\Debug\netstandard2.0\Datos.pdb

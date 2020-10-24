@@ -185,11 +185,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Rochety\\Downloads\\Proyecto\\Proyecto-Web\\Entidad\\Entidad.csproj",
+      "projectUniqueName": "e:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Entidad\\Entidad.csproj",
       "projectName": "Entidad",
-      "projectPath": "C:\\Users\\Rochety\\Downloads\\Proyecto\\Proyecto-Web\\Entidad\\Entidad.csproj",
+      "projectPath": "e:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Entidad\\Entidad.csproj",
       "packagesPath": "C:\\Users\\Rochety\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Rochety\\Downloads\\Proyecto\\Proyecto-Web\\Entidad\\obj\\",
+      "outputPath": "e:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Entidad\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Rochety\\AppData\\Roaming\\NuGet\\NuGet.Config"

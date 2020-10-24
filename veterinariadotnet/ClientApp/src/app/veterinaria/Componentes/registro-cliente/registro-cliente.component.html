@@ -1,53 +1,125 @@
-<div class="container ">
-    <div class="jumbotron ditancia-jumbotrom">
-        <section class="main row">
-            <div class="col-md-2"></div>
-            <article class="col-md-8">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="cabecera-formulario">
-                            <p>Registro De Cliente</p>
-                        </div>
-                        <form name="registro" onsubmit="">
-                            <div class="form-group">
-                                <label for="">Escriba su cedula : </label>
-                                <input name="identificacion" [(ngModel)]="cliente.identificacion" class="form-control"  type="text" placeholder="1065775558" >
-                            </div>
-                            <div class="form-group">
-                                <label for="">Escriba sus nombres : </label>
-                                <input name="nombres" [(ngModel)]="cliente.nombres"  class="form-control"  type="text" placeholder="Juan manuel" >
-                            </div>
-                            <div class="form-group">
-                                <label for="">Escriba su primer Apellido: </label>
-                                <input name="primerApellido" [(ngModel)]="cliente.primerApellido"   class="form-control"  type="text" placeholder="martinez" >
-                            </div>
-                            <div class="form-group">
-                                <label for="">Escriba su segundo Apellido: </label>
-                                <input name="segundoApellido" [(ngModel)]="cliente.segundoApellido" class="form-control"  type="text" placeholder="rocha" >
-                            </div>
-                            <div class="form-group">
-                                <label for="">Escriba su telefono : </label>
-                                <input name="telefono" class="form-control"  type="text" placeholder="9837903" >
-                            </div>
-                            <div class="form-group">
-                                <label for="">Escriba su celular: </label>
-                                <input name="celular" [(ngModel)]="cliente.celular" class="form-control"  type="text" placeholder="320 9873 3211" >
-                            </div>
-                            <div class="form-group">
-                                <label for="">Escriba su direccion : </label>
-                                <input name="direccion" [(ngModel)]="cliente.direccion"  class="form-control"  type="text" placeholder="calle 30 sabanas " >
-                            </div>
-                            <div class="form-group">
-                                <label for="">Escriba su correo electronico : </label>
-                                <input name="correo"[(ngModel)]="cliente.correo" class="form-control"  type="text" placeholder="lu@gmail.com" >
-                            </div>
-                            <input class=".btn-cancelar" type="reset" value= "Limpiar Form">
-                            <button  class="btn-guardar" (click)="add()" > Registrar Cliente </button>
-                        </form>
-                    </div>
-                </div>
-            </article>
-            <div class="col-md-2"></div>
-        </section>
+<div class="container">
+  <div class="card" style="width: 90%;">
+    <div class="card-body">
+      <div
+        class="cabecera-formulario">
+        <p class="tituloContainer">REGISTRO DE ClIENTES</p>
+      </div>
+
+
+      <form [formGroup]="formularioRegistro" (ngSubmit)="onSubmit()">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label>Identificacion del cliente:</label>
+              <input [(ngModel)]="cliente.identificacion" formControlName="identificacion" class="form-control"
+                [ngClass]="{ 'is-invalid': submitted && f.identificacion.errors }"
+                placeholder="digite la identificacion del cliente:" type="text" />
+              <div *ngIf="submitted && f.identificacion.errors" class="invalid-feedback">
+                <div *ngIf="f.identificacion.errors.required || f.identificacion.errors.pattern">la identificacion es
+                  requerida</div>
+                <div *ngIf="f.identificacion.errors.minlength">la identificacion debe tener minimo 7 caracteres</div>
+                <div *ngIf="f.identificacion.errors.pattern">la identificacion solo debe tener numeros</div>
+                
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Nombre Del Cliente:</label>
+              <input [(ngModel)]="cliente.nombres" formControlName="nombres" class="form-control"
+                [ngClass]="{ 'is-invalid': submitted && f.nombres.errors }" placeholder="digite nombres" type="text" />
+              <div *ngIf="submitted && f.nombres.errors" class="invalid-feedback">
+                <div *ngIf="f.nombres.errors.required">Campo nombres es requerido </div>
+                <div *ngIf="f.nombres.errors.minlength">el nombre debe tener minimo 4 caracteres</div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>primer Apellido :</label>
+              <input [(ngModel)]="cliente.primerApellido" formControlName="primerApellido" class="form-control"
+                [ngClass]="{ 'is-invalid': submitted && f.primerApellido.errors }" placeholder="digite primer apellido "
+                type="text" />
+              <div *ngIf="submitted && f.primerApellido.errors" class="invalid-feedback">
+                <div *ngIf="f.primerApellido.errors.required">Campo primerApellido es requerido </div>
+                <div *ngIf="f.primerApellido.errors.minlength">el primerApellido debe tener minimo 4 caracteres</div>
+
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Segundo Apellido :</label>
+              <input [(ngModel)]="cliente.segundoApellido" formControlName="segundoApellido" class="form-control"
+                [ngClass]="{ 'is-invalid': submitted && f.segundoApellido.errors }"
+                placeholder="digite segundo apellido " type="text" />
+              <div *ngIf="submitted && f.segundoApellido.errors" class="invalid-feedback">
+                <div *ngIf="f.segundoApellido.errors.required">Campo segundo Apellido es requerido </div>
+                <div *ngIf="f.segundoApellido.errors.minlength">el segundo Apellido debe tener minimo 4 caracteres</div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="form-group">
+              <label>Telefono :</label>
+              <input [(ngModel)]="cliente.telefono" formControlName="telefono" class="form-control"
+                [ngClass]="{ 'is-invalid': submitted && f.telefono.errors }" placeholder="digite telefono"
+                type="text" />
+              <div *ngIf="submitted && f.telefono.errors" class="invalid-feedback">
+                <div *ngIf="f.telefono.errors.required">telefono es requerido </div>
+                <div *ngIf="f.telefono.errors.minlength">telefono debe tener minimo 7 caracteres</div>
+                <div *ngIf="f.telefono.errors.pattern">El telefono solo debe tener numeros</div>
+
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Celular :</label>
+              <input [(ngModel)]="cliente.celular" formControlName="celular" class="form-control"
+                [ngClass]="{ 'is-invalid': submitted && f.celular.errors }" placeholder="digite celular " type="text" />
+              <div *ngIf="submitted && f.celular.errors" class="invalid-feedback">
+                <div *ngIf="f.celular.errors.required">Campo celular es requerido </div>
+                <div *ngIf="f.celular.errors.minlength">el celular debe tener minimo 10 caracteres</div>
+                <div *ngIf="f.celular.errors.pattern">el celular solo debe tener numeros</div>
+
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Direccion :</label>
+              <input [(ngModel)]="cliente.direccion" formControlName="direccion" class="form-control"
+                [ngClass]="{ 'is-invalid': submitted && f.direccion.errors }" placeholder="digite direccion"
+                type="text" />
+              <div *ngIf="submitted && f.direccion.errors" class="invalid-feedback">
+                <div *ngIf="f.direccion.errors.required">Campo direccion es requerido </div>
+                <div *ngIf="f.direccion.errors.minlength">el direccion debe tener minimo 7 caracteres</div>
+
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Correo :</label>
+              <input [(ngModel)]="cliente.correo" formControlName="correo" class="form-control"
+                [ngClass]="{ 'is-invalid': submitted && f.correo.errors }" placeholder="digite correo" type="text" />
+              <div *ngIf="submitted && f.correo.errors" class="invalid-feedback">
+                <div *ngIf="f.correo.errors.required">Campo correo es requerido </div>
+                <div *ngIf="f.correo.errors.minlength">el correo debe tener minimo 7 caracteres</div>
+                <div *ngIf="f.correo.errors.email">el correo es invalido</div>
+                
+              </div>
+            </div>
+
+            
+          </div>
+          
+
+        </div>
+        <div class="form-group">
+          <button class="btn-guardar"><i class="fas fa-save"></i>Registrar</button>
+          <button class="btn-cancelar" type="reset" (click)="onReset()"><i
+              class="fas fa-window-close"></i>Cancel</button>
+        </div>
+         </form>
+
+
     </div>
+
+  </div>
+
 </div>

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JHuytOVbEMy4Z3XPLhYy2mduuAqKyiKop5/OIKX8svRvPX97Cn8obPZs7oc44jsqdFjoDRc43Ez6JiaNkcRkQQ==",
+  "dgSpecHash": "/e96io0aHMlEKRPH0QX1m7MbAi6bRUGlpbod/eMU5YBEcP+gw4sFI/mbpSGNFhh4QiTXOhahuQgPWMxwwgijbQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Rochety\\Downloads\\Proyecto\\Proyecto-Web\\Logica\\Logica.csproj",
+  "projectFilePath": "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Logica\\Logica.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Rochety\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Rochety\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",

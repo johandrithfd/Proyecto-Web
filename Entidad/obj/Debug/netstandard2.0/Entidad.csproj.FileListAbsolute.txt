@@ -16,3 +16,12 @@ C:\Users\Rochety\Downloads\Proyecto\Proyecto-Web\Entidad\obj\Debug\netstandard2.
 C:\Users\Rochety\Downloads\Proyecto\Proyecto-Web\Entidad\obj\Debug\netstandard2.0\Entidad.csproj.CoreCompileInputs.cache
 C:\Users\Rochety\Downloads\Proyecto\Proyecto-Web\Entidad\obj\Debug\netstandard2.0\Entidad.dll
 C:\Users\Rochety\Downloads\Proyecto\Proyecto-Web\Entidad\obj\Debug\netstandard2.0\Entidad.pdb
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Entidad\bin\Debug\netstandard2.0\Entidad.deps.json
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Entidad\bin\Debug\netstandard2.0\Entidad.dll
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Entidad\bin\Debug\netstandard2.0\Entidad.pdb
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Entidad\obj\Debug\netstandard2.0\Entidad.csprojAssemblyReference.cache
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Entidad\obj\Debug\netstandard2.0\Entidad.AssemblyInfoInputs.cache
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Entidad\obj\Debug\netstandard2.0\Entidad.AssemblyInfo.cs
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Entidad\obj\Debug\netstandard2.0\Entidad.csproj.CoreCompileInputs.cache
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Entidad\obj\Debug\netstandard2.0\Entidad.dll
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Entidad\obj\Debug\netstandard2.0\Entidad.pdb

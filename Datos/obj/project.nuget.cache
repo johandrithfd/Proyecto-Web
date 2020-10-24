@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5yzmvRzVlm3HSmBtMs0dGaKhcNQ9RCZEcbsoP+qagWEO57Yy8PIIkN0oFM/945rbv4Y+MSP+u8DKFofA9z5P6g==",
+  "dgSpecHash": "kqWhtaGpPgjqdkbw6yAMkmbxcRwL5pkCgXoBTkbcyKxjvNAtR6cK6qXWBMnCe7DThkwV+qTe4P6geMFOao3hdA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Rochety\\Downloads\\Proyecto\\Proyecto-Web\\Datos\\Datos.csproj",
+  "projectFilePath": "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Datos\\Datos.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Rochety\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Rochety\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
