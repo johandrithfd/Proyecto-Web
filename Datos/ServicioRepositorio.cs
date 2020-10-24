@@ -1,3 +1,4 @@
+using System.Data.Common;
 using System;
 using Entidad;
 using System.Collections.Generic;
@@ -12,6 +13,53 @@ namespace Datos
         {
             _conexion = administradorDeConexion._conexion;
         }
-        
+
+        public void Guardar(Servicio servicio)
+        {
+            using (var comando = _conexion.CreateCommand())
+            {
+                comando.CommandText = @"Insert Into servicio (nombre,descripcion,valor) 
+                values (@nombre,@descripcion,@valor)";
+                comando.Parameters.AddWithValue ("@nombre", servicio.Nombre);
+                comando.Parameters.AddWithValue ("@descripcion", servicio.Descripcion);
+                comando.Parameters.AddWithValue ("@valor", servicio.Valor);
+                var filas = comando.ExecuteNonQuery ();
+            }
+        }
+
+        public List<Servicio> ConsultarServicios ()
+        {
+            servicios.Clear();
+            SqlDataReader lectorDatos;
+            using (var comando = _conexion.CreateCommand())
+            {
+                comando.CommandText = "SELECT * FROM servicio";
+                lectorDatos = comando.ExecuteReader();
+                if(lectorDatos.HasRows)
+                {
+                    while(lectorDatos.Read())
+                    {
+                        Servicio servicio = MapearDatosAServicio(lectorDatos);
+                        servicios.Add(servicio);
+                    }
+                }
+            }
+            return servicios;
+        }
+
+        public Servicio MapearDatosAServicio (SqlDataReader lectorDatos)
+        {
+            if(!lectorDatos.HasRows)
+                return null;
+            else
+            {
+                string nombre = (string) lectorDatos["nombre"];
+                string descripcion = (string) lectorDatos["descripcion"];
+                decimal valor = (decimal) lectorDatos["valor"];
+                Servicio servicio = new Servicio(nombre,valor,descripcion);
+                return servicio;
+            }
+            
+        }
     }
 }

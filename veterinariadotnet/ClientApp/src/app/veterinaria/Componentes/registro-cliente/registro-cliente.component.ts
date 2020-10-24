@@ -20,6 +20,10 @@ export class RegistroClienteComponent implements OnInit {
         alert("Cliente Creado!");
         this.cliente = c;
       }
+      else
+      {
+        alert("diego error   ");
+      }
     });
   }
 }

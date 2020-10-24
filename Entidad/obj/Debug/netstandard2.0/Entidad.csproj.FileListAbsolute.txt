@@ -16,3 +16,12 @@ C:\Users\Rochety\Downloads\Proyecto\Proyecto-Web\Entidad\obj\Debug\netstandard2.
 C:\Users\Rochety\Downloads\Proyecto\Proyecto-Web\Entidad\obj\Debug\netstandard2.0\Entidad.csproj.CoreCompileInputs.cache
 C:\Users\Rochety\Downloads\Proyecto\Proyecto-Web\Entidad\obj\Debug\netstandard2.0\Entidad.dll
 C:\Users\Rochety\Downloads\Proyecto\Proyecto-Web\Entidad\obj\Debug\netstandard2.0\Entidad.pdb
+D:\Descargas\trabajos Bajo Web\Veterinaria\Entidad\bin\Debug\netstandard2.0\Entidad.deps.json
+D:\Descargas\trabajos Bajo Web\Veterinaria\Entidad\bin\Debug\netstandard2.0\Entidad.dll
+D:\Descargas\trabajos Bajo Web\Veterinaria\Entidad\bin\Debug\netstandard2.0\Entidad.pdb
+D:\Descargas\trabajos Bajo Web\Veterinaria\Entidad\obj\Debug\netstandard2.0\Entidad.csprojAssemblyReference.cache
+D:\Descargas\trabajos Bajo Web\Veterinaria\Entidad\obj\Debug\netstandard2.0\Entidad.csproj.CoreCompileInputs.cache
+D:\Descargas\trabajos Bajo Web\Veterinaria\Entidad\obj\Debug\netstandard2.0\Entidad.AssemblyInfoInputs.cache
+D:\Descargas\trabajos Bajo Web\Veterinaria\Entidad\obj\Debug\netstandard2.0\Entidad.AssemblyInfo.cs
+D:\Descargas\trabajos Bajo Web\Veterinaria\Entidad\obj\Debug\netstandard2.0\Entidad.dll
+D:\Descargas\trabajos Bajo Web\Veterinaria\Entidad\obj\Debug\netstandard2.0\Entidad.pdb

@@ -36,7 +36,7 @@ namespace veterinariadotnet.Controllers
             var response = _clienteService.Guardar(cliente);
             if (response.Error) 
             {
-                return BadRequest(response.Mensaje);
+                return BadRequest("sadasd error : "+ response.Mensaje);
             }
             return Ok(response.Cliente);
         }

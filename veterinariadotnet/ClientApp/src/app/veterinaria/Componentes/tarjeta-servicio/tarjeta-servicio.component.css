@@ -1,0 +1,21 @@
+.imagen
+{
+  width: 98%;
+  height: 150px;
+  background-color: beige;
+}
+
+.borde{
+  box-shadow: 0px 0px 7px 0px rgba(120, 255, 172, 0.61);
+}
+
+.tarjeta
+{
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.m  :hover
+{
+  left: .4em;
+  top:.4em ;
+}

@@ -7,5 +7,4 @@ export class Cliente {
   celular :string;
   direccion: string;
   correo: string;
-  
 }
