@@ -1,5 +1,6 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "B0+SEXx9m/4nd1N8WuvV1l6IPTGHCtGihdPSSudbyfgJGc7GwdGTh3/6/k6IcAEA9XBLz/rilc0fFPzut2KC8g==",
   "success": true,
   "projectFilePath": "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Entidad\\Entidad.csproj",
@@ -7,5 +8,11 @@
     "C:\\Users\\Rochety\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Rochety\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
+=======
+  "dgSpecHash": "v6fGH5DDrg8MyFH77Vr58/VANASrlVsoZNM85Vt+/CA71TWmseKkVCvJtzPPPE9hVPdccmB75OhECcRHuCjEBQ==",
+  "success": true,
+  "projectFilePath": "D:\\Descargas\\trabajos Bajo Web\\Veterinaria\\Entidad\\Entidad.csproj",
+  "expectedPackageFiles": [],
+>>>>>>> c196ad5deec6e74b2aba0b019521696a18c0fd2a
   "logs": []
 }

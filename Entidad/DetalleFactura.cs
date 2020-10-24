@@ -16,7 +16,7 @@ namespace Entidad
             Servicio = servicio;
             ValorServicio = servicio.Valor;
             PorcentajeIva = servicio.Iva;
-            PorcentajeDescueto = servicio.Descuento;
+            PorcentajeDescueto = 0;
         }
         public decimal SubTotal 
         {

@@ -1,11 +1,9 @@
 import { HttpClient } from '@angular/common/http';
 import { Inject, Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import {Cliente } from '../../veterinaria/Componentes/models/cliente';
+import {Cliente} from '../../veterinaria/Componentes/models/cliente';
 import { tap, catchError } from 'rxjs/operators';
 import { HandleHttpErrorService } from 'src/app/@base/handle-http-error.service';
-
-
 
 @Injectable({
   providedIn: 'root'
@@ -22,7 +20,7 @@ export class ClienteService {
   get(): Observable<Cliente[]> {
     return this.http.get<Cliente[]>(this.baseUrl + 'api/Cliente')
       .pipe(tap(_ => this.handleErrorService.log('datos enviados')),
-        catchError(this.handleErrorService.handleError<Cliente[]>('Consulta Persona', null))
+        catchError(this.handleErrorService.handleError<Cliente[]>('Consulta Cliente', null))
       );
   }
   post(cliente: Cliente): Observable<Cliente> {
@@ -32,5 +30,4 @@ export class ClienteService {
         catchError(this.handleErrorService.handleError<Cliente>('Registrar Cliente', null))
       );
   }
-
 }

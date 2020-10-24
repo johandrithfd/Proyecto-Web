@@ -22,6 +22,7 @@ C:\Users\Rochety\Downloads\Proyecto\Proyecto-Web\Datos\obj\Debug\netstandard2.0\
 C:\Users\Rochety\Downloads\Proyecto\Proyecto-Web\Datos\obj\Debug\netstandard2.0\Datos.csproj.CopyComplete
 C:\Users\Rochety\Downloads\Proyecto\Proyecto-Web\Datos\obj\Debug\netstandard2.0\Datos.dll
 C:\Users\Rochety\Downloads\Proyecto\Proyecto-Web\Datos\obj\Debug\netstandard2.0\Datos.pdb
+<<<<<<< HEAD
 E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Datos\bin\Debug\netstandard2.0\Datos.deps.json
 E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Datos\bin\Debug\netstandard2.0\Datos.dll
 E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Datos\bin\Debug\netstandard2.0\Datos.pdb
@@ -34,3 +35,17 @@ E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Datos\obj\Debug\netstandard
 E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Datos\obj\Debug\netstandard2.0\Datos.csproj.CopyComplete
 E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Datos\obj\Debug\netstandard2.0\Datos.dll
 E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Datos\obj\Debug\netstandard2.0\Datos.pdb
+=======
+D:\Descargas\trabajos Bajo Web\Veterinaria\Datos\bin\Debug\netstandard2.0\Datos.deps.json
+D:\Descargas\trabajos Bajo Web\Veterinaria\Datos\bin\Debug\netstandard2.0\Datos.dll
+D:\Descargas\trabajos Bajo Web\Veterinaria\Datos\bin\Debug\netstandard2.0\Datos.pdb
+D:\Descargas\trabajos Bajo Web\Veterinaria\Datos\bin\Debug\netstandard2.0\Entidad.dll
+D:\Descargas\trabajos Bajo Web\Veterinaria\Datos\bin\Debug\netstandard2.0\Entidad.pdb
+D:\Descargas\trabajos Bajo Web\Veterinaria\Datos\obj\Debug\netstandard2.0\Datos.csprojAssemblyReference.cache
+D:\Descargas\trabajos Bajo Web\Veterinaria\Datos\obj\Debug\netstandard2.0\Datos.csproj.CoreCompileInputs.cache
+D:\Descargas\trabajos Bajo Web\Veterinaria\Datos\obj\Debug\netstandard2.0\Datos.AssemblyInfoInputs.cache
+D:\Descargas\trabajos Bajo Web\Veterinaria\Datos\obj\Debug\netstandard2.0\Datos.AssemblyInfo.cs
+D:\Descargas\trabajos Bajo Web\Veterinaria\Datos\obj\Debug\netstandard2.0\Datos.csproj.CopyComplete
+D:\Descargas\trabajos Bajo Web\Veterinaria\Datos\obj\Debug\netstandard2.0\Datos.dll
+D:\Descargas\trabajos Bajo Web\Veterinaria\Datos\obj\Debug\netstandard2.0\Datos.pdb
+>>>>>>> c196ad5deec6e74b2aba0b019521696a18c0fd2a

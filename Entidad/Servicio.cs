@@ -11,15 +11,14 @@ namespace Entidad {
                 return 21 / 100;
             }
         }
-        public decimal Descuento {
-            get {
-                return 0;
-            }
-        }
         public Servicio (string nombre, decimal valor, string descripcion) {
             Nombre = nombre;
             Valor = valor;
             Descripcion = descripcion;
+        }
+        public Servicio()
+        {
+            
         }
     }
 }
