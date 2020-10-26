@@ -15,6 +15,7 @@ import { RegistroClienteComponent } from './veterinaria/Componentes/registro-cli
 import { ConsultaClienteComponent } from './veterinaria/Componentes/consulta-cliente/consulta-cliente.component';
 import { ClienteService } from './services/serviciosRocha/cliente.service';
 import { TarjetaServicioComponent } from './veterinaria/Componentes/tarjeta-servicio/tarjeta-servicio.component';
+import { FacturaComponent } from './veterinaria/Componentes/factura/factura.component';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { TarjetaServicioComponent } from './veterinaria/Componentes/tarjeta-serv
     ConsultaClienteComponent,
     RegistroServicioComponent,
     TarjetaServicioComponent,
+    FacturaComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),

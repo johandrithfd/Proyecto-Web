@@ -18,4 +18,25 @@
   background-color:rgb(2, 76, 95);
   color:ivory;
 }
+th,td{
+
+  border: solid 1px black;
+  padding: 20px;
+  
+}
+thead{
+  background-color:rgb(1,124,104);
+  border-bottom: solid 7px #0f362d ;
+  color: white;
+
+}
+
+tr:nth-child(even){
+background-color:rgb(2, 76, 95);
+
+}
+tr:hover td{
+  background-color: #369681;
+  color: white;
+}
 

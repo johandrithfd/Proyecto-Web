@@ -14,26 +14,19 @@
         "outputPath": "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Datos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Johandrith\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Rochety\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.1": {
             "projectReferences": {
-<<<<<<< HEAD
               "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Entidad\\Entidad.csproj": {
                 "projectPath": "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Entidad\\Entidad.csproj"
-=======
-              "D:\\Descargas\\trabajos Bajo Web\\Veterinaria\\Entidad\\Entidad.csproj": {
-                "projectPath": "D:\\Descargas\\trabajos Bajo Web\\Veterinaria\\Entidad\\Entidad.csproj"
->>>>>>> c196ad5deec6e74b2aba0b019521696a18c0fd2a
               }
             }
           }
@@ -47,13 +40,21 @@
       "frameworks": {
         "netstandard2.1": {
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
             "System.Collections": {
               "target": "Package",
               "version": "[4.3.0, )"
             },
             "System.Data.SqlClient": {
               "target": "Package",
-              "version": "[4.8.2, )"
+              "version": "[4.8.1, )"
             }
           },
           "imports": [
@@ -71,11 +72,10 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-<<<<<<< HEAD
     "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Entidad\\Entidad.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -84,26 +84,14 @@
         "projectPath": "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Entidad\\Entidad.csproj",
         "packagesPath": "C:\\Users\\Rochety\\.nuget\\packages\\",
         "outputPath": "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Entidad\\obj\\",
-=======
-    "D:\\Descargas\\trabajos Bajo Web\\Veterinaria\\Entidad\\Entidad.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "D:\\Descargas\\trabajos Bajo Web\\Veterinaria\\Entidad\\Entidad.csproj",
-        "projectName": "Entidad",
-        "projectPath": "D:\\Descargas\\trabajos Bajo Web\\Veterinaria\\Entidad\\Entidad.csproj",
-        "packagesPath": "C:\\Users\\Johandrith\\.nuget\\packages\\",
-        "outputPath": "D:\\Descargas\\trabajos Bajo Web\\Veterinaria\\Entidad\\obj\\",
->>>>>>> c196ad5deec6e74b2aba0b019521696a18c0fd2a
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Johandrith\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Rochety\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -119,6 +107,12 @@
       },
       "frameworks": {
         "netstandard2.1": {
+          "dependencies": {
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -134,11 +128,10 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-<<<<<<< HEAD
     "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Logica\\Logica.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -147,44 +140,24 @@
         "projectPath": "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Logica\\Logica.csproj",
         "packagesPath": "C:\\Users\\Rochety\\.nuget\\packages\\",
         "outputPath": "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Logica\\obj\\",
-=======
-    "D:\\Descargas\\trabajos Bajo Web\\Veterinaria\\Logica\\Logica.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "D:\\Descargas\\trabajos Bajo Web\\Veterinaria\\Logica\\Logica.csproj",
-        "projectName": "Logica",
-        "projectPath": "D:\\Descargas\\trabajos Bajo Web\\Veterinaria\\Logica\\Logica.csproj",
-        "packagesPath": "C:\\Users\\Johandrith\\.nuget\\packages\\",
-        "outputPath": "D:\\Descargas\\trabajos Bajo Web\\Veterinaria\\Logica\\obj\\",
->>>>>>> c196ad5deec6e74b2aba0b019521696a18c0fd2a
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Johandrith\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Rochety\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.1": {
             "projectReferences": {
-<<<<<<< HEAD
               "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Datos\\Datos.csproj": {
                 "projectPath": "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Datos\\Datos.csproj"
               },
               "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Entidad\\Entidad.csproj": {
                 "projectPath": "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Entidad\\Entidad.csproj"
-=======
-              "D:\\Descargas\\trabajos Bajo Web\\Veterinaria\\Datos\\Datos.csproj": {
-                "projectPath": "D:\\Descargas\\trabajos Bajo Web\\Veterinaria\\Datos\\Datos.csproj"
-              },
-              "D:\\Descargas\\trabajos Bajo Web\\Veterinaria\\Entidad\\Entidad.csproj": {
-                "projectPath": "D:\\Descargas\\trabajos Bajo Web\\Veterinaria\\Entidad\\Entidad.csproj"
->>>>>>> c196ad5deec6e74b2aba0b019521696a18c0fd2a
               }
             }
           }
@@ -212,7 +185,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

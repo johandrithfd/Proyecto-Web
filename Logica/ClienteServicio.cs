@@ -4,34 +4,44 @@ using System.Collections.Generic;
 using System.Data;
 using Datos;
 using Entidad;
-
+using System.Linq;
+using System.Security.Permissions;
 
 
 namespace Logica
 {
     public class ClienteServicio {
-        private readonly AdministradorDeConexion _conexion;
-        private readonly ClienteRepositorio _repositorio;
-        public ClienteServicio (string connectionString) {
-            _conexion = new AdministradorDeConexion (connectionString);
-            _repositorio = new ClienteRepositorio (_conexion);
+        private readonly  VeterinariaContext  _context;
+
+        public ClienteServicio (VeterinariaContext context) {
+            _context=context;
         }
         public GuardarClienteResponse Guardar (Cliente cliente) {
-            try {
+            try
+            {
+                
+                var clientebuscado = _context.Clientes.Find(cliente.Identificacion);
+                if(clientebuscado!= null){
+                    return new GuardarClienteResponse("Error El cliente Ya se encuentra registrado");
+                }
+                 
 
-                _conexion.Open ();
-                _repositorio.Guardar (cliente);
-                _conexion.Close ();
-                return new GuardarClienteResponse (cliente);
-            } catch (Exception e) {
-                return new GuardarClienteResponse ($"Error de la Aplicacion: {e.Message}");
-            } finally { _conexion.Close (); }
+                _context.Clientes.Add(cliente);
+                _context.SaveChanges();
+                
+                
+                return new GuardarClienteResponse(cliente);
+            }
+           
+            catch (Exception e)
+            {
+                return new GuardarClienteResponse($"Error de la Aplicacion: {e.Message}");
+            }
+            
         }
         
         public List<Cliente> ConsultarClientes () {
-            _conexion.Open ();
-            List<Cliente> clientes = _repositorio.ConsultarClientes ();
-            _conexion.Close ();
+            List<Cliente> clientes = _context.Clientes.ToList();;
             return clientes;
         }
 

@@ -12,3 +12,17 @@ D:\Descargas\trabajos Bajo Web\Veterinaria\Logica\obj\Debug\netstandard2.1\Logic
 D:\Descargas\trabajos Bajo Web\Veterinaria\Logica\obj\Debug\netstandard2.1\Logica.csproj.CopyComplete
 D:\Descargas\trabajos Bajo Web\Veterinaria\Logica\obj\Debug\netstandard2.1\Logica.dll
 D:\Descargas\trabajos Bajo Web\Veterinaria\Logica\obj\Debug\netstandard2.1\Logica.pdb
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Logica\bin\Debug\netstandard2.1\Logica.deps.json
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Logica\bin\Debug\netstandard2.1\Logica.dll
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Logica\bin\Debug\netstandard2.1\Logica.pdb
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Logica\bin\Debug\netstandard2.1\Datos.dll
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Logica\bin\Debug\netstandard2.1\Entidad.dll
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Logica\bin\Debug\netstandard2.1\Datos.pdb
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Logica\bin\Debug\netstandard2.1\Entidad.pdb
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Logica\obj\Debug\netstandard2.1\Logica.csprojAssemblyReference.cache
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Logica\obj\Debug\netstandard2.1\Logica.AssemblyInfoInputs.cache
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Logica\obj\Debug\netstandard2.1\Logica.AssemblyInfo.cs
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Logica\obj\Debug\netstandard2.1\Logica.csproj.CoreCompileInputs.cache
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Logica\obj\Debug\netstandard2.1\Logica.csproj.CopyComplete
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Logica\obj\Debug\netstandard2.1\Logica.dll
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Logica\obj\Debug\netstandard2.1\Logica.pdb
