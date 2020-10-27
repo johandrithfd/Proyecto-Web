@@ -6,6 +6,9 @@ using Entidad;
 using Microsoft.Extensions.Configuration;
 using System.Collections.Generic;
 using veterinariadotnet.Models;
+using Datos;
+using System.Linq;
+using Microsoft.AspNetCore.Http;
 
 namespace veterinariadotnet.Controllers
 {  
@@ -14,12 +17,12 @@ namespace veterinariadotnet.Controllers
     public class ClienteController: ControllerBase
     {
         private readonly ClienteServicio _clienteService;
-        public IConfiguration Configuration { get; }
-        public ClienteController(IConfiguration configuration)
+        
+
+        public ClienteController(VeterinariaContext context)
         {
-            Configuration = configuration;
-            string connectionString = Configuration["ConnectionStrings:DefaultConnection"];
-            _clienteService = new ClienteServicio(connectionString);
+            
+            _clienteService = new ClienteServicio(context);
         }
         
         [HttpGet]

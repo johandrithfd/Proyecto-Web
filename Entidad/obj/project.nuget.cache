@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "0R+h9WZOAXnHOYDEPnxp7G+5PiG09GdgxmqeiyV5olGUEnrKsqJxYpAiJ79Ft8LGaHV6lGeGbiekWF+okonLxQ==",
+  "dgSpecHash": "kUPZT2YuRXMC8ktevd3aASyEy6dw6os73xMxs0pjxsZ6x0I005ghiqUKLQIluLRhxZnra776W5PkvfpIAevVow==",
   "success": true,
-  "projectFilePath": "D:\\Descargas\\trabajos Bajo Web\\Veterinaria\\Entidad\\Entidad.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Entidad\\Entidad.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Rochety\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }

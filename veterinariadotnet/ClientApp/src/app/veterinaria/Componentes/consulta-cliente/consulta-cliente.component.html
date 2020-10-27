@@ -1,32 +1,37 @@
-<body>
+<div class="cuerpo">
+  <div class="container contenido">
 
+    <p class="tituloContainer"><i class="fas fa-paw"></i>CONSULTA DE ClIENTES</p>
 
-<table class="table table-striped" *ngIf='clientes && clientes.length'>
-    <thead>
+      <table class="table table-striped" *ngIf='clientes && clientes.length'>
+      <thead>
         <tr>
-            <th scope="col">#</th>
-            <th scope="col">identificación</th>
-            <th scope="col">Nombres </th>
-            <th scope="col">Primer Apellido</th>
-            <th scope="col">Segundo Apellido</th>
-            <th scope="col">Telefono</th>
-            <th scope="col">Celular</th>
-            <th scope="col">Direccion</th>
-            <th scope="col">Correo</th>
+          <th scope="col">#</th>
+          <th scope="col">identificación</th>
+          <th scope="col">Nombres </th>
+          <th scope="col">Primer Apellido</th>
+          <th scope="col">Segundo Apellido</th>
+          <th scope="col">Telefono</th>
+          <th scope="col">Celular</th>
+          <th scope="col">Direccion</th>
+          <th scope="col">Correo</th>
         </tr>
-    </thead>
-    <tbody>
+      </thead>
+      <tbody>
         <tr *ngFor="let cliente of clientes; index as i ">
-            <th scope="row">{{ i + 1 }}</th>
-            <td>{{ cliente.identificacion }} </td>
-            <td>{{ cliente.nombres}}</td>
-            <td>{{cliente.primerApellido }}</td>
-            <td>{{ cliente.segundoApellido}}</td>
-            <td>{{ cliente.telefono }}</td>
-            <td>{{ cliente.celular }}</td>
-            <td>{{ cliente.direccion }}</td>
-            <td>{{ cliente.correo }}</td>
+          <th scope="row">{{ i + 1 }}</th>
+          <td>{{ cliente.identificacion }} </td>
+          <td>{{ cliente.nombres}}</td>
+          <td>{{cliente.primerApellido }}</td>
+          <td>{{ cliente.segundoApellido}}</td>
+          <td>{{ cliente.telefono }}</td>
+          <td>{{ cliente.celular }}</td>
+          <td>{{ cliente.direccion }}</td>
+          <td>{{ cliente.correo }}</td>
         </tr>
-    </tbody>
-</table>
-</body>
+      </tbody>
+    </table>
+
+  </div>
+
+</div>

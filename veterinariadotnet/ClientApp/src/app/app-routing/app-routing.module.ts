@@ -1,3 +1,4 @@
+import { FacturaComponent } from './../veterinaria/Componentes/factura/factura.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
@@ -13,6 +14,7 @@ import { ConsultaClienteComponent} from '../../app/veterinaria/Componentes/consu
       { path: 'registro-servicio', component: RegistroServicioComponent},
       { path: 'registro-cliente', component: RegistroClienteComponent},
       { path: 'consulta-cliente', component: ConsultaClienteComponent},
+      { path: 'factura', component: FacturaComponent},
     ]),
     CommonModule
   ],

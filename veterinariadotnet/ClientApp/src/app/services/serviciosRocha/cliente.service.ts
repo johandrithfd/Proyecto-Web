@@ -24,7 +24,7 @@ export class ClienteService {
       );
   }
   post(cliente: Cliente): Observable<Cliente> {
-    return this.http.post<Cliente>(this.baseUrl + 'api/Cliente',cliente)
+    return this.http.post<Cliente>(this.baseUrl + 'api/Cliente', cliente)
       .pipe(
         tap(_ => this.handleErrorService.log('datos enviados')),
         catchError(this.handleErrorService.handleError<Cliente>('Registrar Cliente', null))

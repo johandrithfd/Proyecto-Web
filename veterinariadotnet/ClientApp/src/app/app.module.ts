@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule} from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -15,6 +15,8 @@ import { RegistroClienteComponent } from './veterinaria/Componentes/registro-cli
 import { ConsultaClienteComponent } from './veterinaria/Componentes/consulta-cliente/consulta-cliente.component';
 import { ClienteService } from './services/serviciosRocha/cliente.service';
 import { TarjetaServicioComponent } from './veterinaria/Componentes/tarjeta-servicio/tarjeta-servicio.component';
+import { FacturaComponent } from './veterinaria/Componentes/factura/factura.component';
+
 
 @NgModule({
   declarations: [
@@ -26,6 +28,7 @@ import { TarjetaServicioComponent } from './veterinaria/Componentes/tarjeta-serv
     ConsultaClienteComponent,
     RegistroServicioComponent,
     TarjetaServicioComponent,
+    FacturaComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),

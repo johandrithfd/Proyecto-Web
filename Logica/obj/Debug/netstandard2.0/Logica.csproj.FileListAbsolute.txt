@@ -26,6 +26,22 @@ C:\Users\Rochety\Downloads\Proyecto\Proyecto-Web\Logica\obj\Debug\netstandard2.0
 C:\Users\Rochety\Downloads\Proyecto\Proyecto-Web\Logica\obj\Debug\netstandard2.0\Logica.csproj.CopyComplete
 C:\Users\Rochety\Downloads\Proyecto\Proyecto-Web\Logica\obj\Debug\netstandard2.0\Logica.dll
 C:\Users\Rochety\Downloads\Proyecto\Proyecto-Web\Logica\obj\Debug\netstandard2.0\Logica.pdb
+<<<<<<< HEAD
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Logica\bin\Debug\netstandard2.0\Logica.deps.json
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Logica\bin\Debug\netstandard2.0\Logica.dll
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Logica\bin\Debug\netstandard2.0\Logica.pdb
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Logica\bin\Debug\netstandard2.0\Datos.dll
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Logica\bin\Debug\netstandard2.0\Entidad.dll
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Logica\bin\Debug\netstandard2.0\Datos.pdb
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Logica\bin\Debug\netstandard2.0\Entidad.pdb
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Logica\obj\Debug\netstandard2.0\Logica.csprojAssemblyReference.cache
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Logica\obj\Debug\netstandard2.0\Logica.AssemblyInfoInputs.cache
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Logica\obj\Debug\netstandard2.0\Logica.AssemblyInfo.cs
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Logica\obj\Debug\netstandard2.0\Logica.csproj.CoreCompileInputs.cache
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Logica\obj\Debug\netstandard2.0\Logica.csproj.CopyComplete
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Logica\obj\Debug\netstandard2.0\Logica.dll
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Logica\obj\Debug\netstandard2.0\Logica.pdb
+=======
 D:\Descargas\trabajos Bajo Web\Veterinaria\Logica\bin\Debug\netstandard2.0\Logica.deps.json
 D:\Descargas\trabajos Bajo Web\Veterinaria\Logica\bin\Debug\netstandard2.0\Logica.dll
 D:\Descargas\trabajos Bajo Web\Veterinaria\Logica\bin\Debug\netstandard2.0\Logica.pdb
@@ -40,3 +56,4 @@ D:\Descargas\trabajos Bajo Web\Veterinaria\Logica\obj\Debug\netstandard2.0\Logic
 D:\Descargas\trabajos Bajo Web\Veterinaria\Logica\obj\Debug\netstandard2.0\Logica.csproj.CopyComplete
 D:\Descargas\trabajos Bajo Web\Veterinaria\Logica\obj\Debug\netstandard2.0\Logica.dll
 D:\Descargas\trabajos Bajo Web\Veterinaria\Logica\obj\Debug\netstandard2.0\Logica.pdb
+>>>>>>> c196ad5deec6e74b2aba0b019521696a18c0fd2a

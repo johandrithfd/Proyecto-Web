@@ -12,12 +12,12 @@
     <li><a [routerLink]='[""]'><i class="fas fa-home"></i> Inicio</a></li>
     <li><a [routerLink]='["registro-cliente"]'><i class="fas fa-save"></i> Registro cliente </a></li>
     <li><a [routerLink]='["registro-servicio"]'><i class="fab fa-buffer"></i>Registro Servicio</a></li>
-    <li><a [routerLink]='[""]'><i class="fas fa-money-bill-wave"> </i>Facturacion</a></li>
-    <li><a [routerLink]='["consulta-cliente"]'><i class="fas fa-home"></i> Consultar Cliente</a></li>
+    <li><a [routerLink]='["factura"]'><i class="fas fa-money-bill-wave"> </i>Facturacion</a></li>
+    <li><a [routerLink]='["consulta-cliente"]'><i class="fas fa-search-dollar"></i> Consultar Cliente</a></li>
     <li><a [routerLink]='[""]'><i class="fas fa-home"></i> Item 5</a></li>
   </ul>
 </div>
 <section>
-    <router-outlet></router-outlet>
-    <app-footer></app-footer>
+  <router-outlet></router-outlet>
+  <app-footer></app-footer>
 </section>

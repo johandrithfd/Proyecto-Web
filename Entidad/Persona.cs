@@ -1,8 +1,12 @@
 using System;
 using System.Security.Cryptography.X509Certificates;
+using System.ComponentModel.DataAnnotations;
+
 
 namespace Entidad {
    public class Persona {
+      
+      [Key]
       public string Identificacion { get; set; }
       public string Nombres { get; set; }
       public string PrimerApellido { get; set; }
