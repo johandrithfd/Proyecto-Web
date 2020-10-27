@@ -17,7 +17,7 @@ export class RegistroServicioComponent implements OnInit {
     private formBuilder : FormBuilder,
     private servicioService : ServiciosService
   ) { }
-  
+
 
   ngOnInit(): void {
     this.EstablecerValidacionesFormulario();
