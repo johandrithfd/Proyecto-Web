@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VHiPs4i0cgVSVnD9Q5pxu8IUJQ2bDranHeJM9YvKcCW2RQJbmUzIAHumjl8vPZRjDqPd5nG7igNwpt6x1p/Gow==",
+  "dgSpecHash": "bsd8GS/YGZaeyjQaloSgRNWdbGFD2lpYBMM7JPtTfqomsBeesQn+8sHG5xr7fLUJQ+vC55q4BZfSM2lK5xtUEQ==",
   "success": true,
-  "projectFilePath": "d:\\Descargas\\trabajos Bajo Web\\Veterinaria\\Entidad\\Entidad.csproj",
+  "projectFilePath": "D:\\Descargas\\trabajos Bajo Web\\Veterinaria\\Entidad\\Entidad.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\spayd\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512"
   ],

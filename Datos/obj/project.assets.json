@@ -6904,11 +6904,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\Descargas\\trabajos Bajo Web\\Veterinaria\\Datos\\Datos.csproj",
+      "projectUniqueName": "D:\\Descargas\\trabajos Bajo Web\\Veterinaria\\Datos\\Datos.csproj",
       "projectName": "Datos",
-      "projectPath": "d:\\Descargas\\trabajos Bajo Web\\Veterinaria\\Datos\\Datos.csproj",
+      "projectPath": "D:\\Descargas\\trabajos Bajo Web\\Veterinaria\\Datos\\Datos.csproj",
       "packagesPath": "C:\\Users\\spayd\\.nuget\\packages\\",
-      "outputPath": "d:\\Descargas\\trabajos Bajo Web\\Veterinaria\\Datos\\obj\\",
+      "outputPath": "D:\\Descargas\\trabajos Bajo Web\\Veterinaria\\Datos\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\spayd\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6924,8 +6924,8 @@
       "frameworks": {
         "netstandard2.1": {
           "projectReferences": {
-            "d:\\Descargas\\trabajos Bajo Web\\Veterinaria\\Entidad\\Entidad.csproj": {
-              "projectPath": "d:\\Descargas\\trabajos Bajo Web\\Veterinaria\\Entidad\\Entidad.csproj"
+            "D:\\Descargas\\trabajos Bajo Web\\Veterinaria\\Entidad\\Entidad.csproj": {
+              "projectPath": "D:\\Descargas\\trabajos Bajo Web\\Veterinaria\\Entidad\\Entidad.csproj"
             }
           }
         }

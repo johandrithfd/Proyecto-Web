@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ANbzXMu7F3U8opi+XGDepAn07YX4ldCNyyyLW5tjd9R9fscuAo+o1Kyk1DS8Tv39OG/szMGO1MOiCM8/hNN3VA==",
+  "dgSpecHash": "QxhYmfEwUgc4ZO5efLExJI4FlQXybnO6Mng33RhlSsSMzVMbEd1wQ9g9ikA/iqRi/7/yYlnWW3KNym6rLivEQQ==",
   "success": true,
-  "projectFilePath": "d:\\Descargas\\trabajos Bajo Web\\Veterinaria\\Logica\\Logica.csproj",
+  "projectFilePath": "D:\\Descargas\\trabajos Bajo Web\\Veterinaria\\Logica\\Logica.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\spayd\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\spayd\\.nuget\\packages\\microsoft.data.sqlclient\\1.0.19249.1\\microsoft.data.sqlclient.1.0.19249.1.nupkg.sha512",
