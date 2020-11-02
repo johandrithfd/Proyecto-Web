@@ -1,0 +1,63 @@
+<div class="row">
+  <div class="col-6">
+    <input [(ngModel)]="textoBuscado" type="text" class="form-control" placeholder="Type to filter">
+  </div>
+  <div class="col-2"></div>
+  <div class="col-3 ">
+    <ngb-pagination
+    [(page)]="page"
+    [pageSize]="pageSize"
+    [collectionSize]="servicios.length"></ngb-pagination>
+  </div>
+</div>
+<hr>
+<table class="table table-hover table-bordered table-sm" *ngIf='servicios && servicios.length'>
+  <thead class="header-table">
+    <tr>
+      <th scope="col">Nombre </th>
+      <th scope="col">Valor</th>
+      <th scope="col">Descripcion</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr
+    *ngFor="let servicio of servicios | filtroServicio:textoBuscado
+    | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize;" (click) ="CrearDetalleFactura(servicio)"
+    >
+      <td>{{servicio.nombre}} </td>
+      <td>{{servicio.valor}}</td>
+      <td>{{servicio.descripcion}}</td>
+    </tr>
+  </tbody>
+</table>
+<div *ngIf="detalleFactura.servicio">
+  <form >
+    <div class="row">
+      <div class="col-md-3">
+        <div class="form-group">
+          <label>Nombre : </label>
+          <input type="text" class="form-control" disabled [(ngModel)]="detalleFactura.servicio.nombre" name="nombre">
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="form-group">
+          <label>Valor: </label>
+          <input type="text" class="form-control" disabled [(ngModel)]="detalleFactura.servicio.valor" name="valor">
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="form-group">
+          <label>Cantidad: </label>
+          <input type="text" class="form-control"  [(ngModel)]="detalleFactura.cantidad" name="Cantidad">
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="form-group">
+          <label>Descuento: </label>
+          <input type="text" class="form-control"  [(ngModel)]="detalleFactura.valorDescuento" name="Descuento">
+        </div>
+      </div>
+      <button class="btn btn-verde" (click)="enviar(detalleFactura)" ><i class="fas fa-file-import"></i></button>
+    </div>
+  </form>
+</div>

@@ -1,155 +1,77 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-</head>
-
-<body>
-    <section id="container">
-        <div class="title_page">
-            <h1> <i class="fas fa-file-invoice-dollar"></i> Facturacion My Veter</h1>
+<div class="container">
+  <div class="card" style="width: 100%;">
+    <div class="card-body">
+      <form>
+        <div class="cabecera-formulario distacia-form ">
+          <h1 class=""><i class="fas fa-dog icono"></i> Factura My Veter</h1>
         </div>
-        <div class="datos_cliente">
-            <div class="action_cliente">
-                <h4>Datos De la Factura</h4><br>
-                
-
+        <div class="form-group distacia-form">
+          <h2><strong>Fecha : </strong>{{fecha | date }}</h2>
+          <div class="row">
+            <div class="col-md-4 ">
+              <label>Cedula : </label>
+              <div class="input-group">
+                <input [(ngModel)]="identificacion" type="text" class="form-control" placeholder="119281201" name="identificacion">
+                <span class="input-group-btn">
+                  <button (click) = "buscarCliente()" class="btn-buscar"><i class="fas fa-search-plus "></i></button>
+                </span>
+              </div>
             </div>
-            <form name="form_new_cliente_venta" id="form_new_cliente_venta" class="datos">
-                
-                <div class="w30">
-                    <label>Id Cliente</label>
-                    <input type="text" name="nit_factura" id="nit_factura">
-                </div>
-                <div class="w30">
-                    <label>Nombre Cliente: </label>
-                    <input type="text" name="nom_cliente" id="nom_cliente" disabled required>
-                </div>
-                <div class="w30">
-                    <label>Fecha Factura: </label>
-                    <input type="text" name="Fecha" id="Fecha">
-                </div>
-                <div class="w30">
-                    <label>Cantidad: </label>
-                    <input type="number" name="Cantidad" id="Cantidad">
-                </div>
-                <div class="w30">
-                    <label>Subtotal: </label>
-                    <input type="number" name="Subtotal" id="Subtotal" disabled required>
-                </div>
-                <div class="w30">
-                    <label>Total: </label>
-                    <input type="number" name="Total" id="Total" disabled required>
-                </div>
-                <div id="save" class="btn_save">
-                    <button type="submit" class="btn_save"><i class="far fa-save"></i> Guardar</button>
-                </div>
-                
-            </form>
-
-        </div>
-
-        <div class="datos_venta">
-
-            <h4>Datos de veterinario</h4>
-            <div class="datos">
-                <div class="w50">
-                    <label>Veterinario: </label>
-                    <p> Carlos Estrada Rocha</p>
-                    <label> Celular : 3209304907</label>
-                    <label> Correo : CarEstrada@Outlook.com</label>
-                </div>
-
-
-                <div class="w50">
-                    <label>Acciones</label>
-                    <div id="acciones_venta">
-                        <a href="#" class="btn_ok textcenter" id="btn_anular_venta"><i
-                                class="fas fa-ban"></i>Anular</a><br>
-                        <a href="#" class="btn_ok textcenter" id="btn_facturar_venta"><i
-                                class="fas fa-edit"></i>Procesar</a>
-                    </div>
-                </div>
+            <div class="col-md-4">
+              <label>Direccion : </label>
+              <input type="text" class="form-control" disabled [(ngModel)]="cliente.direccion" name="nombres">
             </div>
+            <div class="col-md-4">
+              <label>Apellido 1: </label>
+              <input type="text" class="form-control" disabled [(ngModel)]="cliente.primerApellido" name="primerApellido">
+            </div>
+            <div class="col-md-4">
+              <label>Apellido 2 : </label>
+              <input type="text" class="form-control" disabled [(ngModel)]="cliente.segundoApellido" name="segundoApellido">
+            </div>
+            <div class="col-md-4">
+              <label>Celular : </label>
+              <input type="text" class="form-control" disabled [(ngModel)]="cliente.celular" name="Celular">
+            </div>
+          </div>
         </div>
-        <h2><i class="fas fa-cat"></i> Detalles Factura</h2>
-        <table class="tbl_venta">
-            <thead>
+        <h2>Servicios : </h2>
+            <button class = "btn-verde" (click)="openModalServicio()"><i class="fas fa-plus-circle"></i> Agregar Servicio</button>
+            <br> <br>
+            <table class="table table-hover table-sm table-bordered">
+              <thead class="header-table">
                 <tr>
-
-                    <th width="100px">id detalle</th>
-                    <th width="100px">Cantidad</th>
-                    <th class="textrigth">Valor Servicio</th>
-                    <th class="textrigth">Iva</th>
-                    <th class="textrigth">Descuento</th>
-                    <th class="textrigth">Subtotal</th>
-                    <th class="textrigth">Total</th>
-                    <th>accion</th>
+                  <th>Nombre</th>
+                  <th>Precio</th>
+                  <th>PorcIva</th>
+                  <th>PorcDescuento</th>
+                  <th>ValIva</th>
+                  <th>ValDescuento</th>
+                  <th>Cantidad </th>
+                  <th>SubTotal </th>
+                  <th>Total</th>
+                  <th></th>
+                  <th></th>
                 </tr>
-                <tr>
-                    <td><input type="text" name="txt_cod_producto" id="txt_cod_producto"></td>
-
-                    <td><input type="number" name="txt_cant_producto" id="txt_cantidad" value="0" min="1"></td>
-                    <td><input type="number" name="txt_cant_producto" id="txt_valor" value="0" min="1"></td>
-                    <td class="textleft" id="txt_iva">21%</td>
-                    <td class="textrigth" id="txt_descuento">0.00</td>
-                    <td class="textrigth" id="txt_subtotal">0.00</td>
-                    <td class="textrigth" id="txt_total">0.00</td>
-                    <td><a href="#" id="add_product_venta" class="link_add"></a><i class="fas fa-plus"></i>Agregar</td>
+              </thead>
+              <tbody>
+                <tr *ngFor="let detalle of detallesFactura" >
+                  <td>{{detalle.servicio.nombre}}</td>
+                  <td>{{detalle.servicio.valor}}</td>
+                  <td>{{detalle.porcentajeIva}}</td>
+                  <td>{{detalle.porcentajeDescueto}}</td>
+                  <td>{{detalle.valorIva}}</td>
+                  <td>{{detalle.valorDescuento}}</td>
+                  <td>{{detalle.cantidad}}</td>
+                  <td>{{detalle.subTotal}}</td>
+                  <td>{{detalle.total}}</td>
+                  <td><button class="btn-azul">Modificar</button></td>
+                  <td><button class="btn-rojo">Eliminar</button></td>
                 </tr>
-                <tr>
-
-                    <th width="100px">id detalle</th>
-                    <th width="100px">Cantidad</th>
-                    <th class="textrigth">Valor Servicio</th>
-                    <th class="textrigth">Iva</th>
-                    <th class="textrigth">Descuento</th>
-                    <th class="textrigth">Subtotal</th>
-                    <th class="textrigth">Total</th>
-                    <th>accion</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td class="textcenter">2</td>
-                    <td class="textrigth">20.000</td>
-                    <td class="textrigth">21%</td>
-                    <td class="textrigth">3.000</td>
-                    <td class="textrigth">70.000</td>
-                    <td class="textrigth">100.000</td>
-                    <td class=""> <a class="link_delete" href="#"
-                            onclick="event.preventDefault(); del_product_detalle(1);"><i
-                                class="fas fa-trash-alt"></i></a></td>
-
-
-                </tr>
-
-
-
-            </thead>
-
-            <tfoot>
-
-                <tr>
-                    <td colspan="5"class="textrigth">SUBTOTAL Q.</td>
-                    <td class="textrigth">70.000</td>
-                </tr>
-                <tr>
-                    <td colspan="5"class="textrigth">IVA</td>
-                    <td class="textrigth">21%</td>
-                </tr>
-                <tr>
-                    <td colspan="5"class="textrigth">TOTAL</td>
-                    <td class="textrigth">100.000</td>
-                </tr>
-
-            </tfoot>
-        </table><br>
-
-
-
-    </section>
-</body>
+              </tbody>
+            </table>
+      </form>
+    </div>
+  </div>
+</div>
 

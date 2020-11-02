@@ -10,5 +10,6 @@ namespace Datos
       
       }
       public DbSet <Cliente> Clientes {get;set;}
+      public DbSet <Factura> Facturas {get;set;}
     }
 }

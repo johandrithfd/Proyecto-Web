@@ -5,7 +5,7 @@
               <div class="cabecera-formulario"> <p>Registro de Servicios</p> </div>
                 <div class="form-group">
                   <label>Nombre del Servicio:</label>
-                  <input type="text" formControlName="nombre" [(ngModel)]="servicio.Nombre" placeholder ="aqui el nombre del servicio" class="form-control">
+                  <input type="text" formControlName="nombre" [(ngModel)]="servicio.nombre" placeholder ="aqui el nombre del servicio" class="form-control">
                   <div
                     *ngIf="nombre.invalid && (nombre.dirty || nombre.touched)" class="alert alert-danger">
                     <div *ngIf="nombre.errors.required">
@@ -19,7 +19,7 @@
 
                 <div class="form-group">
                   <label>Valor del Servicio:</label>
-                  <input type="number" formControlName ="precio" [(ngModel)]="servicio.Valor"  placeholder ="aqui el precio del servicio, ejemplo 34999$" class="form-control">
+                  <input type="number" formControlName ="precio" [(ngModel)]="servicio.valor"  placeholder ="aqui el precio del servicio, ejemplo 34999$" class="form-control">
                   <div
                     *ngIf="precio.invalid && (precio.dirty || precio.touched)" class="alert alert-danger">
                     <div *ngIf="precio.errors.required || precio.errors.pattern">
@@ -36,7 +36,7 @@
 
                 <div class="form-group">
                   <label>Descripcion del Servicio:</label>
-                  <textarea rows="6" formControlName ="descripcion" class="form-control" [(ngModel)]="servicio.Descripcion" placeholder="Aqui tu descripcion del servicio"></textarea>
+                  <textarea rows="6" formControlName ="descripcion" class="form-control" [(ngModel)]="servicio.descripcion" placeholder="Aqui tu descripcion del servicio"></textarea>
                   <div
                     *ngIf="descripcion.invalid && (descripcion.dirty || descripcion.touched)" class="alert alert-danger">
                     <div *ngIf="descripcion.errors.required">

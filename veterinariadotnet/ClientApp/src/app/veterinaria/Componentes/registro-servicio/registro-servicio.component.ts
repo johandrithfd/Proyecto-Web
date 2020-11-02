@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {FormGroup,Validators,FormBuilder} from '@angular/forms';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { AlertModalComponent } from 'src/app/@base/alert-modal/alert-modal.component';
 import { ServicioVeterinaria } from '../../Modelos/servicio-veterinaria/servicio-veterinaria';
 import { ServiciosService } from '.././../../services/Servicios/servicios.service';
 
@@ -15,7 +17,8 @@ export class RegistroServicioComponent implements OnInit {
   servicio : ServicioVeterinaria ;
   constructor(
     private formBuilder : FormBuilder,
-    private servicioService : ServiciosService
+    private servicioService : ServiciosService,
+    private modalService: NgbModal
   ) { }
 
 
@@ -51,10 +54,15 @@ export class RegistroServicioComponent implements OnInit {
   }
   agregarServicio()
   {
+    const messageBox = this.modalService.open(AlertModalComponent)
+    messageBox.componentInstance.title = "Prueba";
+    messageBox.componentInstance.message = 'Prueba';
+
     this.servicioService.post(this.servicio).subscribe(s => {
       if (s != null) {
-        alert('servicio agregado!');
-        this.servicio = s;
+        const messageBox = this.modalService.open(AlertModalComponent)
+        messageBox.componentInstance.title = "Resultado Operación";
+        messageBox.componentInstance.message = 'Servicio creado!!! :-)';
       }
       else
       {

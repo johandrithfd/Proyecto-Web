@@ -7,7 +7,6 @@ using Microsoft.Extensions.Configuration;
 using System.Collections.Generic;
 using veterinariadotnet.Models;
 using Datos;
-using System.Linq;
 using Microsoft.AspNetCore.Http;
 
 namespace veterinariadotnet.Controllers
@@ -21,7 +20,6 @@ namespace veterinariadotnet.Controllers
 
         public ClienteController(VeterinariaContext context)
         {
-            
             _clienteService = new ClienteServicio(context);
         }
         
@@ -30,6 +28,12 @@ namespace veterinariadotnet.Controllers
         {
             var clientes = _clienteService.ConsultarClientes().Select(c=> new ClienteViewModel(c));
             return clientes;
+        }
+        [HttpGet("{identificacion}")]
+        public ActionResult<Cliente> BuscarCliente(string identificacion)
+        {
+            var cliente = _clienteService.BuscarCliente(identificacion);
+            return cliente;
         }
 
         [HttpPost]

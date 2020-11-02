@@ -18,15 +18,15 @@ namespace Datos
         {
             using (var comando = _conexion.CreateCommand())
             {
-                comando.CommandText = @"Insert Into servicio (nombre,descripcion,valor) 
+                comando.CommandText = @"Insert Into servicio (nombre,descripcion,valor,iva) 
                 values (@nombre,@descripcion,@valor)";
                 comando.Parameters.AddWithValue ("@nombre", servicio.Nombre);
                 comando.Parameters.AddWithValue ("@descripcion", servicio.Descripcion);
                 comando.Parameters.AddWithValue ("@valor", servicio.Valor);
+                comando.Parameters.AddWithValue ("@iva", servicio.Iva);
                 var filas = comando.ExecuteNonQuery ();
             }
         }
-
         public List<Servicio> ConsultarServicios ()
         {
             servicios.Clear();
@@ -57,6 +57,8 @@ namespace Datos
                 string descripcion = (string) lectorDatos["descripcion"];
                 decimal valor = (decimal) lectorDatos["valor"];
                 Servicio servicio = new Servicio(nombre,valor,descripcion);
+                servicio.IdServicio = (int) lectorDatos["id_servicio"];
+                servicio.Iva = (decimal) lectorDatos["iva"];
                 return servicio;
             }
             

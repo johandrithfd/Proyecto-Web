@@ -1,8 +1,8 @@
 export class ServicioVeterinaria {
-  IdServicio : 0;
-  Nombre : string;
-  Valor : number;
-  Descripcion : string;
-  Iva : 21;
+  idServicio : 0;
+  nombre : string;
+  valor : number;
+  descripcion : string;
+  iva : 0.21;
 }
 
