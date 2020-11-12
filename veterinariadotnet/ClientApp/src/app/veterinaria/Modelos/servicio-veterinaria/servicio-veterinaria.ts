@@ -1,5 +1,5 @@
 export class ServicioVeterinaria {
-  idServicio : 0;
+  servicioId: number;
   nombre : string;
   valor : number;
   descripcion : string;

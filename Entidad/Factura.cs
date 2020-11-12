@@ -9,9 +9,9 @@ namespace Entidad
     public class Factura
     {
         [Key]
-        public int IdFactura { get; set; }
-        
+        public int FacturaId { get; set; }
         public DateTime Fecha { get; set; }
+        [Display(Name = "CantidadServicios")]
         public int CantidadServicios 
         {
             get{
@@ -47,8 +47,8 @@ namespace Entidad
                 return SubTotal  + ValorIva - ValorDescuento;
             }
         }
-        public string Identificacion { get; set; }
-        public virtual Cliente Cliente { get; set; }
+        [Required]
+        public  string Identificacion { get; set; }
         public virtual List<DetalleFactura> DetallesFactura { get; set; }
     }
 }

@@ -3,7 +3,7 @@
     <div class="card-body">
       <form>
         <div class="cabecera-formulario distacia-form ">
-          <h1 class=""><i class="fas fa-dog icono"></i> Factura My Veter</h1>
+          <h1 class=""><i class="fas fa-dog icono"></i> Factura My Veter cliente id {{cliente.identificacion}}</h1>
         </div>
         <div class="form-group distacia-form">
           <h2><strong>Fecha : </strong>{{fecha | date }}</h2>
@@ -41,7 +41,7 @@
             <table class="table table-hover table-sm table-bordered">
               <thead class="header-table">
                 <tr>
-                  <th>Nombre</th>
+                  <th>Servicio</th>
                   <th>Precio</th>
                   <th>PorcIva</th>
                   <th>PorcDescuento</th>
@@ -55,9 +55,9 @@
                 </tr>
               </thead>
               <tbody>
-                <tr *ngFor="let detalle of detallesFactura" >
-                  <td>{{detalle.servicio.nombre}}</td>
-                  <td>{{detalle.servicio.valor}}</td>
+                <tr *ngFor="let detalle of factura.detallesFactura" >
+                  <td>{{nombreServicio(detalle.servicioId)}}</td>
+                  <td>{{valorServicio(detalle.servicioId)}}</td>
                   <td>{{detalle.porcentajeIva}}</td>
                   <td>{{detalle.porcentajeDescueto}}</td>
                   <td>{{detalle.valorIva}}</td>
@@ -70,8 +70,30 @@
                 </tr>
               </tbody>
             </table>
+            <br><br>
+
+            <div class="row">
+              <div class="col-md-9">
+              </div>
+              <div>
+                <div class="estilo-detalle">
+                  <p>Valor Iva : {{valorIva}}</p>
+                  <p>Valor Descuento : {{valordescuento}}</p>
+                  <p>Valor SubTotal : {{subTotal}}</p>
+                  <p>Valor Total : <strong style="color: rgb(1,124,104);font-size: x-large;" >{{total}}</strong> </p>
+                </div>
+              </div>
+
+            </div>
+
+            <br><br>
+            <button class = "btn-verde" (click)="registrarFactura()"><i class="fas fa-save"></i> Registrar Factura</button>
       </form>
     </div>
   </div>
+
+
+  <br><br><br>
+
 </div>
 

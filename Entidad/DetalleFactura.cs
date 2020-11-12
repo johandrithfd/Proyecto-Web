@@ -9,14 +9,14 @@ namespace Entidad
     {
         [Key]
         public int IdDetalleFactura {get; set;}
-        [Column(TypeName = "decimal(5, 2)")]
+        [Column(TypeName = "decimal(9, 2)")]
         public decimal ValorServicio {get; set;}
         [Column(TypeName = "Int")]
         public int Cantidad {get; set;}
-        [Column(TypeName = "decimal(4, 2)")]
+        [Column(TypeName = "decimal(5, 2)")]
         public decimal PorcentajeIva {get; set;}
-        [Column(TypeName = "decimal(4, 2)")]
-        public decimal PorcentajeDescueto {get; set;}
+        [Column(TypeName = "decimal(5, 2)")]
+        public decimal PorcentajeDescuento {get; set;}
 
         [Display(Name = "SubTotal")]
         public decimal SubTotal 
@@ -36,7 +36,7 @@ namespace Entidad
         public decimal ValorDescuento
         {
             get{
-                return SubTotal * PorcentajeDescueto;
+                return SubTotal * PorcentajeDescuento;
             }
         }
         [Display(Name = "Total")]
@@ -46,10 +46,7 @@ namespace Entidad
                 return SubTotal + ValorIva - ValorDescuento;
             }
         }
-        public int IdFactura { get; set; }
-        public virtual Factura Factura { get; set; }
-
-        public int IdServicio { get; set; }
-        public virtual Servicio Servicio {get; set;}
+        public int ServicioId { get; set; }
+        
     }
 }

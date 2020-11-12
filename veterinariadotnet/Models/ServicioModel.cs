@@ -8,7 +8,7 @@ namespace veterinariadotnet.Models
         public string Nombre { get; set; }
         public decimal Valor { get; set; }
         public string Descripcion { get; set; }
-        public decimal Iva { get; set; }
+
         
     }
     public class ServicioViewModel : ServicioInputModel
@@ -23,11 +23,11 @@ namespace veterinariadotnet.Models
             Nombre = servicio.Nombre;
             Valor = servicio.Valor;
             Descripcion = servicio.Descripcion;
-            IdServicio = servicio.IdServicio;
+            ServicioId = servicio.ServicioId;
             Iva = servicio.Iva;
         }
-        public int IdServicio { get; set; }
-        
+        public int ServicioId { get; set; }
+        public double Iva { get; set; }
         
     }
 }

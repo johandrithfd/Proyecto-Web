@@ -1,12 +1,3 @@
-D:\Descargas\trabajos Bajo Web\Veterinaria\Entidad\bin\Debug\netstandard2.1\Entidad.deps.json
-D:\Descargas\trabajos Bajo Web\Veterinaria\Entidad\bin\Debug\netstandard2.1\Entidad.dll
-D:\Descargas\trabajos Bajo Web\Veterinaria\Entidad\bin\Debug\netstandard2.1\Entidad.pdb
-D:\Descargas\trabajos Bajo Web\Veterinaria\Entidad\obj\Debug\netstandard2.1\Entidad.csprojAssemblyReference.cache
-D:\Descargas\trabajos Bajo Web\Veterinaria\Entidad\obj\Debug\netstandard2.1\Entidad.csproj.CoreCompileInputs.cache
-D:\Descargas\trabajos Bajo Web\Veterinaria\Entidad\obj\Debug\netstandard2.1\Entidad.AssemblyInfoInputs.cache
-D:\Descargas\trabajos Bajo Web\Veterinaria\Entidad\obj\Debug\netstandard2.1\Entidad.AssemblyInfo.cs
-D:\Descargas\trabajos Bajo Web\Veterinaria\Entidad\obj\Debug\netstandard2.1\Entidad.dll
-D:\Descargas\trabajos Bajo Web\Veterinaria\Entidad\obj\Debug\netstandard2.1\Entidad.pdb
 E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Entidad\bin\Debug\netstandard2.1\Entidad.deps.json
 E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Entidad\bin\Debug\netstandard2.1\Entidad.dll
 E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Entidad\bin\Debug\netstandard2.1\Entidad.pdb
@@ -16,3 +7,12 @@ E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Entidad\obj\Debug\netstanda
 E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Entidad\obj\Debug\netstandard2.1\Entidad.csproj.CoreCompileInputs.cache
 E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Entidad\obj\Debug\netstandard2.1\Entidad.dll
 E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Entidad\obj\Debug\netstandard2.1\Entidad.pdb
+D:\Descargas\trabajos Bajo Web\Veterinaria\Entidad\bin\Debug\netstandard2.1\Entidad.deps.json
+D:\Descargas\trabajos Bajo Web\Veterinaria\Entidad\bin\Debug\netstandard2.1\Entidad.dll
+D:\Descargas\trabajos Bajo Web\Veterinaria\Entidad\bin\Debug\netstandard2.1\Entidad.pdb
+D:\Descargas\trabajos Bajo Web\Veterinaria\Entidad\obj\Debug\netstandard2.1\Entidad.csprojAssemblyReference.cache
+D:\Descargas\trabajos Bajo Web\Veterinaria\Entidad\obj\Debug\netstandard2.1\Entidad.csproj.CoreCompileInputs.cache
+D:\Descargas\trabajos Bajo Web\Veterinaria\Entidad\obj\Debug\netstandard2.1\Entidad.AssemblyInfoInputs.cache
+D:\Descargas\trabajos Bajo Web\Veterinaria\Entidad\obj\Debug\netstandard2.1\Entidad.AssemblyInfo.cs
+D:\Descargas\trabajos Bajo Web\Veterinaria\Entidad\obj\Debug\netstandard2.1\Entidad.dll
+D:\Descargas\trabajos Bajo Web\Veterinaria\Entidad\obj\Debug\netstandard2.1\Entidad.pdb

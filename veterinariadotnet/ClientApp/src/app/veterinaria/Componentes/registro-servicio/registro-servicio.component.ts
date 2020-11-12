@@ -4,6 +4,7 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { AlertModalComponent } from 'src/app/@base/alert-modal/alert-modal.component';
 import { ServicioVeterinaria } from '../../Modelos/servicio-veterinaria/servicio-veterinaria';
 import { ServiciosService } from '.././../../services/Servicios/servicios.service';
+import { Mensaje } from '../../../services/Servicios/mensaje';
 
 @Component({
   selector: 'app-registro-servicio',
@@ -18,7 +19,8 @@ export class RegistroServicioComponent implements OnInit {
   constructor(
     private formBuilder : FormBuilder,
     private servicioService : ServiciosService,
-    private modalService: NgbModal
+    private modalService: NgbModal,
+    private mensaje: Mensaje
   ) { }
 
 
@@ -54,19 +56,13 @@ export class RegistroServicioComponent implements OnInit {
   }
   agregarServicio()
   {
-    const messageBox = this.modalService.open(AlertModalComponent)
-    messageBox.componentInstance.title = "Prueba";
-    messageBox.componentInstance.message = 'Prueba';
-
     this.servicioService.post(this.servicio).subscribe(s => {
       if (s != null) {
-        const messageBox = this.modalService.open(AlertModalComponent)
-        messageBox.componentInstance.title = "Resultado Operación";
-        messageBox.componentInstance.message = 'Servicio creado!!! :-)';
+        this.mensaje.Informar("Registro Servicio","Registro de servicio realizado con exito");
       }
       else
       {
-        alert('error');
+        this.mensaje.Informar("Registro Servicio", "Oh no Ha ocurrido un error al registrar el servicio");
       }
     });
   }

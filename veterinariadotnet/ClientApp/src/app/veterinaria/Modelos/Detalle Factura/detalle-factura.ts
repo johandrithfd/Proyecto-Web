@@ -10,7 +10,7 @@ export class DetalleFactura {
   total : number;
   valorDescuento : number;
   valorIva : number;
-  servicio : ServicioVeterinaria;
+  servicioId : number;
 
   EstablecerValores ()
   {

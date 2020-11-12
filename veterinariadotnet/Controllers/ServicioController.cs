@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using veterinariadotnet.Models;
+using Datos;
 
 namespace veterinariadotnet.Controllers
 {
@@ -12,13 +13,10 @@ namespace veterinariadotnet.Controllers
     [ApiController]
     public class ServicioController :  ControllerBase
     {
-        public IConfiguration Configuration { get; }
         private readonly ServicioVeterinariaServicio _servicio;
-        public ServicioController(IConfiguration configuration)
+        public ServicioController(VeterinariaContext context)
         {
-            Configuration = configuration;
-            string cadenaConexion = configuration["ConnectionStrings:DefaultConnection"];
-            _servicio = new ServicioVeterinariaServicio(cadenaConexion);
+            _servicio = new ServicioVeterinariaServicio(context);
         }
         [HttpPost]
         public ActionResult<ServicioViewModel> Post(ServicioInputModel servicioInputModel)
@@ -37,7 +35,7 @@ namespace veterinariadotnet.Controllers
             {
                 Nombre = servicioInputModel.Nombre,
                 Valor = servicioInputModel.Valor,
-                Descripcion = servicioInputModel.Descripcion     
+                Descripcion = servicioInputModel.Descripcion
             };
             return servicio;
         }

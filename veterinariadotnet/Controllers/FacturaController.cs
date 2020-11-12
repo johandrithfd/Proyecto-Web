@@ -7,6 +7,8 @@ using Microsoft.Extensions.Configuration;
 using System.Collections.Generic;
 using veterinariadotnet.Models;
 using Datos;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 namespace veterinariadotnet.Controllers
 {
     [Route("api/[controller]")]
@@ -20,14 +22,16 @@ namespace veterinariadotnet.Controllers
         }
 
         [HttpPost]
-        public ActionResult<FacturaViewModel> Post(FacturaInputModel facturaInputModel)
+        public ActionResult<Respuesta<FacturaViewModel>> Post(FacturaInputModel facturaInputModel)
         {
+            
             Factura factura = Mapear(facturaInputModel);
             var response = _facturaServicio.Guardar(factura);
             if (response.Error) 
             {
                 return BadRequest(response);
             }
+
             return Ok(response);
         }
         
@@ -36,8 +40,8 @@ namespace veterinariadotnet.Controllers
             var factura = new Factura
             {
                 DetallesFactura = facturaInputModel.DetallesFactura,
-                Fecha = facturaInputModel.Fecha,
-                Cliente = facturaInputModel.Cliente
+                Fecha = DateTime.Now,
+                Identificacion = facturaInputModel.Identificacion
             };
             return factura;
         }

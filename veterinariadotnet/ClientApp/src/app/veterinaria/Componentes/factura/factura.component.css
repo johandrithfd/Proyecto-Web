@@ -106,3 +106,12 @@
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
+
+.estilo-detalle p{
+  color: black;
+  font-size: large;
+}
+.estilo-detalle-total p{
+  color: black;
+  font-size: x-large;
+}

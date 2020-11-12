@@ -9,41 +9,30 @@ namespace Logica
 {
     public class FacturaServicio
     {
-        private readonly  VeterinariaContext  _context;
-        public FacturaServicio (VeterinariaContext context) {
-            _context=context;
+        private readonly VeterinariaContext _context;
+        public FacturaServicio(VeterinariaContext context)
+        {
+            _context = context;
         }
-        public GuardarFacturaResponse Guardar (Factura factura) {
+        public Respuesta<Factura> Guardar(Factura factura)
+        {
             try
             {
                 _context.Facturas.Add(factura);
                 _context.SaveChanges();
-                return new GuardarFacturaResponse(factura);
+                return new Respuesta<Factura>(factura,"Factura registrada con exito",false);
             }
             catch (Exception e)
             {
-                return new GuardarFacturaResponse($"Error de la Aplicacion: {e.Message}");
+                Respuesta<Factura> respuesta = new Respuesta<Factura>(factura);
+                respuesta.Mensaje = $"error {e.Message}";
+                respuesta.Error = true;
+                return respuesta;
             }
         }
-        public List<Factura> ConsultarFacturas () {
-            List<Factura> facturas = _context.Facturas.Include(d => d.DetallesFactura.
-                                                    Select(s => s.Servicio)).
-                                                    ToList();
-            return facturas;
-        }
+
     }
-        public class GuardarFacturaResponse {
-        public GuardarFacturaResponse (Factura factura) {
-            Error = false;
-            Factura  = factura;
-        }
-        public GuardarFacturaResponse (string mensaje) {
-            Error = true;
-            Mensaje = mensaje;
-        }
-        public bool Error { get; set; }
-        public string Mensaje { get; set; }
-        public Factura Factura { get; set; }
-        }
     
 }
+    
+

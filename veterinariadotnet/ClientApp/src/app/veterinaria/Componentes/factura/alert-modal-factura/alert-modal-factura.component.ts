@@ -13,6 +13,7 @@ export class AlertModalFacturaComponent implements OnInit {
 
   textoBuscado: string;
   servicios : ServicioVeterinaria [];
+  servicio : ServicioVeterinaria = new ServicioVeterinaria();
   detalleFactura : DetalleFactura = new DetalleFactura();
   public page = 1;
   public pageSize = 5;
@@ -34,9 +35,10 @@ export class AlertModalFacturaComponent implements OnInit {
   }
   CrearDetalleFactura (servicio : ServicioVeterinaria)
   {
-    this.detalleFactura.servicio = servicio;
-    this.detalleFactura.valorServicio = servicio.valor;
-    this.detalleFactura.porcentajeIva = servicio.iva;
+    this.servicio = servicio;
+    this.detalleFactura.servicioId = this.servicio.servicioId;
+    this.detalleFactura.valorServicio = this.servicio.valor;
+    this.detalleFactura.porcentajeIva = this.servicio.iva;
     this.detalleFactura.EstablecerValores();
   }
 

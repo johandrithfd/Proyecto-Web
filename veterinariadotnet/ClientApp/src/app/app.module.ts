@@ -19,7 +19,6 @@ import { FiltroServicioPipe } from './Pipe/filtro-servicio.pipe';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AlertModalComponent } from './@base/alert-modal/alert-modal.component';
 import { AlertModalFacturaComponent } from './veterinaria/Componentes/factura/alert-modal-factura/alert-modal-factura.component';
-import { ConsultaServiciosComponent } from './veterinaria/Componentes/factura/consulta-servicios/consulta-servicios.component';
 
 
 
@@ -38,8 +37,7 @@ import { ConsultaServiciosComponent } from './veterinaria/Componentes/factura/co
     FacturaComponent,
     FiltroServicioPipe,
     AlertModalComponent,
-    AlertModalFacturaComponent,
-    ConsultaServiciosComponent
+    AlertModalFacturaComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
