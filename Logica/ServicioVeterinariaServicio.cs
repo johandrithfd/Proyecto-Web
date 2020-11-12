@@ -2,42 +2,38 @@ using System.Collections.Generic;
 using System;
 using Entidad;
 using Datos;
+using System.Linq;
+
 namespace Logica
 {    
     public class ServicioVeterinariaServicio
     {
-        private readonly AdministradorDeConexion administradorDeConexion;
-        private readonly ServicioRepositorio _repositorio;
-        public ServicioVeterinariaServicio(string cadenaConexion)
+        private readonly VeterinariaContext _repositorio;
+        public ServicioVeterinariaServicio(VeterinariaContext context)
         {
-            administradorDeConexion = new AdministradorDeConexion(cadenaConexion);
-            _repositorio = new ServicioRepositorio(administradorDeConexion);
+            _repositorio = context;
         }
         public GuardarServicioRespuesta Guardar (Servicio servicio) {
             try {
-
-                administradorDeConexion.Open ();
-                _repositorio.Guardar (servicio);
-                administradorDeConexion.Close ();
+                _repositorio.Servicios.Add(servicio);
+                _repositorio.SaveChanges();
                 return new GuardarServicioRespuesta (servicio);
             } catch (Exception e) {
                 return new GuardarServicioRespuesta ($"Error de la Aplicacion: {e.Message}");
-            } finally { administradorDeConexion.Close (); }
+            } 
         }
         public ConsultarServicioRespuesta ConsultarServicios ()
         {
             try
             {
-                administradorDeConexion.Open();
-                List<Servicio> servicios = _repositorio.ConsultarServicios();
-                administradorDeConexion.Close();
+                List<Servicio> servicios  = _repositorio.Servicios.ToList();
                 return new ConsultarServicioRespuesta(servicios);
             }
             catch( Exception e)
             {
                 return new ConsultarServicioRespuesta("error al consultar los servicios : " + e.Message);
             }
-            finally {administradorDeConexion.Close();}
+            
         }
     }
     public class GuardarServicioRespuesta {

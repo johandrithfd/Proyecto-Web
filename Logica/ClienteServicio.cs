@@ -12,27 +12,20 @@ namespace Logica
 {
     public class ClienteServicio {
         private readonly  VeterinariaContext  _context;
-
         public ClienteServicio (VeterinariaContext context) {
             _context=context;
         }
         public GuardarClienteResponse Guardar (Cliente cliente) {
             try
             {
-                
                 var clientebuscado = _context.Clientes.Find(cliente.Identificacion);
                 if(clientebuscado!= null){
                     return new GuardarClienteResponse("Error El cliente Ya se encuentra registrado");
                 }
-                 
-
                 _context.Clientes.Add(cliente);
                 _context.SaveChanges();
-                
-                
                 return new GuardarClienteResponse(cliente);
             }
-           
             catch (Exception e)
             {
                 return new GuardarClienteResponse($"Error de la Aplicacion: {e.Message}");
@@ -44,7 +37,10 @@ namespace Logica
             List<Cliente> clientes = _context.Clientes.ToList();;
             return clientes;
         }
-
+        public Cliente BuscarCliente (string identificacion) {
+            var clientebuscado = _context.Clientes.Find(identificacion);
+            return clientebuscado;
+        }
     }
     public class GuardarClienteResponse {
         public GuardarClienteResponse (Cliente cliente) {

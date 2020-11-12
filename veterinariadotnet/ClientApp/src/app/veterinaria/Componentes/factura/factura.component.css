@@ -1,119 +1,117 @@
-.datos_cliente, .datos_venta, .title_page{
-	width: 100%;
-	max-width: 900px;
-	margin: auto;
-	margin-bottom: 20px;
+.div-box{
+  background: #f5f3f3;
+  width: 100%;
+  border-radius: 25px;
+  padding: 12px;
 }
 
-.action_cliente{
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	align-items: center;
+.btn-buscar i
+{
+  color: aliceblue;
 }
-.datos{
-	background-color: #e3ecef;
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    border: 2px solid #78909C;
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 10px;
+.btn-buscar
+{
+  background-color: rgb(1,124,104);
+  height:38px;
+  width:40px;
+  border-color: rgb(1,124,104);
+
 }
-#detalle_venta tr{
-	background-color: rgb(1, 99, 124);
+.btn-verde
+{
+  color: white;
+  background-color: rgb(1,124,104);
+  border-radius: 6px;
+  font-size: 18px;
+  border: 2px solid rgb(1,124,104);
+  height: 37px;
+  margin: 0;
 }
-#detalle_venta td{
-	border-bottom: 1px solid #CCC;
+
+.btn-verde:hover
+{
+  color: rgb(231, 236, 241);
+  background-color: rgb(1, 75, 63);
+  border: 2px solid rgb(1, 75, 63);
 }
-.btn_save{
-    color: white;
-background-color: rgb(1, 99, 124);
-border-radius: 6px;
-font-size: 18px;
-border: 2px solid rgb(1, 99, 124);
-padding: 16;
-height: 37px;
-margin: 5px;
+
+.btn-verde i
+{
+  color: aliceblue;
 }
-.datos label{
-	margin: 5px auto;
+.distacia-form
+{
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
-.datos_venta label{
-    margin: 5px auto; 
+
+.distacia-form h2
+{
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
-.wd20{
-	width: 20%;
+.cabecera-formulario {
+  background-color:rgb(1,124,104);
+  height: 44px;
+  padding: 5;
+  margin-bottom: 14px;
 }
-.wd25{
-	width: 25%;
+.cabecera-formulario h1{
+  margin-left: 10px;
+  font-size: 38px;
+  color: ivory;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.wd30{
-	width: 30%;
+.icono i
+{
+  color:rgb(1,124,104);
 }
-.wd40{
-	width: 40%;
+
+.btn-azul
+{
+  color: white;
+  background-color: rgb(1, 99, 124);
+  border-radius: 6px;
+  font-size: 18px;
+  border: 2px solid rgb(1, 99, 124);
+  height: 37px;
+  margin: 0;
 }
-.wd60{
-	width: 60%;
+.btn-rojo
+{
+  color: white;
+  background-color:  #213e3b;
+  border-radius: 6px;
+  font-size: 18px;
+  border: 2px solid #213e3b;
+  height: 37px;
+  margin: 0;
 }
-.wd100{
-	width: 100%;
+.btn-azul:hover
+{
+  color: rgb(231, 236, 241);
+  background-color: rgb(2, 76, 95);
+  border: 2px solid rgb(2, 76, 95);
 }
-#div_registro_cliente, #add_product_venta{
-	display: none;
+.btn-rojo:hover
+{
+  color: rgb(231, 236, 241);
+  background-color:  #172c2a;
+  border: 2px solid  #172c2a;
 }
-.displayN{
-	display: none;
+.header-table
+{
+  background-color: rgb(1,124,104);
+  color: rgb(255, 255, 255);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
-.tbl_venta{
-	max-width: 900px;
-	margin: auto;
+
+.estilo-detalle p{
+  color: black;
+  font-size: large;
 }
-.tbl_venta tfoot td{
-	font-weight: bold;
-	background-color:#78909C;
+.estilo-detalle-total p{
+  color: black;
+  font-size: x-large;
 }
-.textright{
-	text-align: right;
-}
-.textcenter{
-	text-align: center;
-}
-.textleft{
-	text-align: left;
-}
-.btn_anular{
-	background-color: #f36a6a;
-	border: 0;
-	border-radius: 5px;
-	cursor: pointer;
-	padding: 10px;
-	margin: 0 3px;
-	color: #FFF;
-}
-thead{
-	background-color:#78909C;
-	border-bottom: solid 7px rgb(2, 76, 95) ;
-	color: white;
-}
-.table {
-	margin-top: 4%;
-	background-color:rgb(2, 76, 95);
-	color:ivory;
-  }
-h2{
-	width: 100%;
-	max-width: 900px;
-	margin: auto;
-	margin-bottom: 20px;
-}
-  

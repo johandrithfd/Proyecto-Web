@@ -1,0 +1,73 @@
+<div class="modal-header header">
+  <h1 class="modal-title ">Consulta de Servicios</h1>
+  <button type="button" class="ico"  (click)="activeModal.dismiss('Cross click')">
+    <i class="fas fa-window-close" ></i>
+  </button>
+</div>
+<div class="modal-body">
+  <div class="row">
+    <div class="col-md-6">
+      <input [(ngModel)]="textoBuscado" type="text" class="form-control" placeholder="Type to filter">
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-3">
+      <ngb-pagination
+      [(page)]="page"
+      [pageSize]="pageSize"
+      [collectionSize]="servicios.length"></ngb-pagination>
+    </div>
+  </div>
+  <table class="table table-hover table-bordered table-sm" *ngIf='servicios && servicios.length'>
+    <thead class="header-table">
+      <tr>
+        <th scope="col">Nombre </th>
+        <th scope="col">Valor</th>
+        <th scope="col">Descripcion</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+      *ngFor="let servicio of servicios | filtroServicio:textoBuscado
+      | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize;" (click) ="CrearDetalleFactura(servicio)"
+      >
+        <td>{{servicio.nombre}} </td>
+        <td>{{servicio.valor}}</td>
+        <td>{{servicio.descripcion}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <div *ngIf="detalleFactura.servicioId">
+    <form >
+      <div class="row">
+        <div class="col-md-3">
+          <div class="form-group">
+            <label>Nombre : </label>
+            <input type="text" class="form-control" disabled [(ngModel)]="servicio.nombre" name="nombre">
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="form-group">
+            <label>Valor: </label>
+            <input type="number" class="form-control" disabled [(ngModel)]="servicio.valor" name="valor">
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="form-group">
+            <label>Cantidad: </label>
+            <input type="number" class="form-control"  [(ngModel)]="detalleFactura.cantidad" name="Cantidad">
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="form-group">
+            <label>Descuento: </label>
+            <input type="number" class="form-control"  [(ngModel)]="detalleFactura.porcentajeDescueto" name="Descuento">
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn-verde" (click)="cerrar()">Agregar Servicio</button>
+</div>

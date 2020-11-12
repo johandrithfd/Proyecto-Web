@@ -20,7 +20,7 @@
                   requerida</div>
                 <div *ngIf="f.identificacion.errors.minlength">la identificacion debe tener minimo 7 caracteres</div>
                 <div *ngIf="f.identificacion.errors.pattern">la identificacion solo debe tener numeros</div>
-                
+
               </div>
             </div>
 
@@ -101,13 +101,13 @@
                 <div *ngIf="f.correo.errors.required">Campo correo es requerido </div>
                 <div *ngIf="f.correo.errors.minlength">el correo debe tener minimo 7 caracteres</div>
                 <div *ngIf="f.correo.errors.email">el correo es invalido</div>
-                
+
               </div>
             </div>
 
-            
+
           </div>
-          
+
 
         </div>
         <div class="form-group">
@@ -115,7 +115,7 @@
           <button class="btn-cancelar" type="reset" (click)="onReset()"><i
               class="fas fa-window-close"></i>Cancel</button>
         </div>
-         </form>
+        </form>
 
 
     </div>
