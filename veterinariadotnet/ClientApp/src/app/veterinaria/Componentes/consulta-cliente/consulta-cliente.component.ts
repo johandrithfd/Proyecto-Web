@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {Cliente } from '../models/cliente';
 import {ClienteService} from '../../../services/serviciosRocha/cliente.service' ;
+import { CurrencyPipe } from '@angular/common';
+
 
 
 @Component({
@@ -10,6 +12,7 @@ import {ClienteService} from '../../../services/serviciosRocha/cliente.service' 
 })
 export class ConsultaClienteComponent implements OnInit {
     clientes: Cliente[];
+    searchText: string;
   constructor(private clienteService: ClienteService) { }
 
   ngOnInit(): void {

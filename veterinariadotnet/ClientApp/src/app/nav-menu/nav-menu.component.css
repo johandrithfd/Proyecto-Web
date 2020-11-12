@@ -8,6 +8,7 @@
     background: #213e3b;
     transition: all .5s ease;
     scroll-behavior: smooth;
+    box-shadow: 7px 14px 38px #111111;
   }
 
   * {
@@ -30,6 +31,7 @@
     background-size: 80%;
     background-position: center;
     background-repeat: no-repeat;
+    box-shadow: 7px 14px 38px #111111;
   }
 
   .sidebar ul a {
@@ -101,6 +103,8 @@
   .header{
     background-color: rgb(1,124,104);
     height: 50px;
+    box-shadow: 7px 14px 38px #111111;
+    
   }
 
   .header a{
@@ -119,4 +123,13 @@
 
   section {
     transition: all .5s;
+  }
+  span {
+    color: #FFFF;
+    font-size: 180%;
+  }
+  
+  .date {
+    text-align: center;
+    padding-top: 15%;
   }

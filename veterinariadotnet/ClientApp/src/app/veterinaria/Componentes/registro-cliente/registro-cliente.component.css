@@ -86,3 +86,7 @@ border: 2px solid  #172c2a;
   width: 100%; height: 100%;
   padding-top: 3%;
 }
+.form{
+  box-shadow: 7px 14px 38px #111111;
+  
+}

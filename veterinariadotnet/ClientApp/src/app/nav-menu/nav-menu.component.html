@@ -1,5 +1,6 @@
-<header class="header">
-</header>
+<div class="header">
+ 
+</div>
 
 <input type="checkbox" id="check">
 <label for="check">
@@ -9,14 +10,25 @@
 <div class="sidebar">
   <ul>
     <header> </header>
-    <li><a [routerLink]='[""]'><i class="fas fa-home"></i> Inicio</a></li>
-    <li><a [routerLink]='["registro-cliente"]'><i class="fas fa-save"></i> Registro cliente </a></li>
-    <li><a [routerLink]='["registro-servicio"]'><i class="fab fa-buffer"></i>Registro Servicio</a></li>
-    <li><a [routerLink]='["factura"]'><i class="fas fa-money-bill-wave"> </i>Facturacion</a></li>
-    <li><a [routerLink]='["consulta-cliente"]'><i class="fas fa-search-dollar"></i> Consultar Cliente</a></li>
-    <li><a [routerLink]='[""]'><i class="fas fa-home"></i> Item 5</a></li>
-  </ul>
+    <li><a [routerLink]='["login"]' *ngIf="!currentUser"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+    <li><a [routerLink]='[""]' *ngIf="currentUser" ><i class="fas fa-home "></i> Inicio</a></li>
+    <li><a [routerLink]='["registro-cliente"]' *ngIf="currentUser"><i class="fas fa-save"></i> Registro cliente </a></li>
+    <li><a [routerLink]='["registro-servicio"]' *ngIf="currentUser"><i class="fab fa-buffer"></i>Registro Servicio</a></li>
+    <li><a [routerLink]='["factura"]' *ngIf="currentUser"><i class="fas fa-money-bill-wave"> </i>Facturacion</a></li>
+    <li><a [routerLink]='["consulta-cliente"]' *ngIf="currentUser"><i class="fas fa-search-dollar"></i> Consultar Cliente</a></li>
+    <li [routerLinkActive]="['link-active']" *ngIf="currentUser"><a class="nav-link" (click)="logout()">Logout</a>
+    </li>
+</ul>
+<div class="date">
+  <div class="onlydate">
+    <span id="day" class="day"></span><span id="month" class="month"></span><span id="year" class="year"></span>
+  </div>
+  <div class="clock">
+    <span id="hours" class="hours"></span><span id="minutes" class="minutes"></span><span id="seconds"
+      class="seconds"></span>
+  </div>
 </div>
+  </div>
 <section>
   <router-outlet></router-outlet>
   <app-footer></app-footer>

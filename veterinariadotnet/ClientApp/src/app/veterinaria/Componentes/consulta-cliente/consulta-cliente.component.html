@@ -1,9 +1,26 @@
+
+
+
+
+
+
 <div class="cuerpo">
   <div class="container contenido">
 
     <p class="tituloContainer"><i class="fas fa-paw"></i>CONSULTA DE ClIENTES</p>
-
-      <table class="table table-striped" *ngIf='clientes && clientes.length'>
+    <div class="col-md-4">
+      <div class="form" id="filtro">
+        <div class="form-group">
+          <div class="col-md-12">
+            <label class="control-label">Filtrar por Nombres o Apellidos:</label>
+            <input type="text" id="txtfiltroPersona" name="txtfiltroPersona" [(ngModel)]="searchText"
+              class="form-control" placeholder="Digite aquí su búsqueda">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+<table class="table table-striped" *ngIf='clientes && clientes.length'>
       <thead>
         <tr>
           <th scope="col">#</th>
@@ -18,7 +35,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let cliente of clientes; index as i ">
+        <tr *ngFor="let cliente of clientes | filtrocliente: searchText; index as i ">
           <th scope="row">{{ i + 1 }}</th>
           <td>{{ cliente.identificacion }} </td>
           <td>{{ cliente.nombres}}</td>

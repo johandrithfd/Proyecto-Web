@@ -2,6 +2,7 @@ footer {
     height:240px;
     width:100%;
     background: rgb(1,124,104);
+    box-shadow: 7px 14px 38px #111111;
 }
 footer a{
     color: rgb(231, 231, 232);

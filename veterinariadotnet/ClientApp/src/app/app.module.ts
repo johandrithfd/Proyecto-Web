@@ -16,6 +16,11 @@ import { ConsultaClienteComponent } from './veterinaria/Componentes/consulta-cli
 import { ClienteService } from './services/serviciosRocha/cliente.service';
 import { TarjetaServicioComponent } from './veterinaria/Componentes/tarjeta-servicio/tarjeta-servicio.component';
 import { FacturaComponent } from './veterinaria/Componentes/factura/factura.component';
+import { LoginComponent } from './veterinaria/Componentes/login/login.component';
+
+import { FiltroclientePipe } from './pipe/filtrocliente.pipe';
+import { RegistroUsuarioComponent } from './veterinaria/Componentes/registro-usuario/registro-usuario.component';
+import { JwtInterceptorService } from './services/serviciosRocha/jwt-interceptor.service';
 
 
 @NgModule({
@@ -28,7 +33,10 @@ import { FacturaComponent } from './veterinaria/Componentes/factura/factura.comp
     ConsultaClienteComponent,
     RegistroServicioComponent,
     TarjetaServicioComponent,
-    FacturaComponent
+    FacturaComponent,
+    LoginComponent,
+    FiltroclientePipe,
+    RegistroUsuarioComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -37,7 +45,7 @@ import { FacturaComponent } from './veterinaria/Componentes/factura/factura.comp
     AppRoutingModule,
     ReactiveFormsModule
   ],
-  providers: [ClienteService],
+  providers: [ClienteService,{ provide: HTTP_INTERCEPTORS, useClass: JwtInterceptorService, multi: true }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
