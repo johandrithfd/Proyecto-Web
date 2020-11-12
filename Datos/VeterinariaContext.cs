@@ -12,6 +12,7 @@ namespace Datos
         public DbSet <Cliente> Clientes {get;set;}
         public DbSet <Factura> Facturas {get;set;}
         public DbSet <Servicio> Servicios {get;set;}
+        public DbSet <User> Users {get;set;}
            
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

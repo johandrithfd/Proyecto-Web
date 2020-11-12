@@ -1,3 +1,4 @@
+import { FiltroServicioPipe } from './pipe/filtro-servicio.pipe';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule} from '@angular/forms';
@@ -20,7 +21,6 @@ import { LoginComponent } from './veterinaria/Componentes/login/login.component'
 import { FiltroclientePipe } from './pipe/filtrocliente.pipe';
 import { RegistroUsuarioComponent } from './veterinaria/Componentes/registro-usuario/registro-usuario.component';
 import { JwtInterceptorService } from './services/serviciosRocha/jwt-interceptor.service';
-import { FiltroServicioPipe } from './Pipe/filtro-servicio.pipe';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AlertModalComponent } from './@base/alert-modal/alert-modal.component';
 import { AlertModalFacturaComponent } from './veterinaria/Componentes/factura/alert-modal-factura/alert-modal-factura.component';
@@ -42,10 +42,10 @@ import { AlertModalFacturaComponent } from './veterinaria/Componentes/factura/al
     FacturaComponent,
     LoginComponent,
     FiltroclientePipe,
-    RegistroUsuarioComponent
-    FiltroServicioPipe,
+    RegistroUsuarioComponent,
     AlertModalComponent,
-    AlertModalFacturaComponent
+    AlertModalFacturaComponent,
+    FiltroServicioPipe
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -57,7 +57,6 @@ import { AlertModalFacturaComponent } from './veterinaria/Componentes/factura/al
   ],
   providers: [ClienteService,{ provide: HTTP_INTERCEPTORS, useClass: JwtInterceptorService, multi: true }],
   entryComponents:[AlertModalComponent , AlertModalFacturaComponent],
-  providers: [ClienteService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

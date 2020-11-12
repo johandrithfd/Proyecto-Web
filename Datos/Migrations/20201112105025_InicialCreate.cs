@@ -41,6 +41,24 @@ namespace Datos.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Users",
+                columns: table => new
+                {
+                    UserName = table.Column<string>(nullable: false),
+                    Password = table.Column<string>(nullable: true),
+                    Estado = table.Column<string>(nullable: true),
+                    FirstName = table.Column<string>(nullable: true),
+                    LastName = table.Column<string>(nullable: true),
+                    Email = table.Column<string>(nullable: true),
+                    Role = table.Column<string>(nullable: true),
+                    MobilePhone = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Users", x => x.UserName);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Facturas",
                 columns: table => new
                 {
@@ -110,6 +128,9 @@ namespace Datos.Migrations
         {
             migrationBuilder.DropTable(
                 name: "DetalleFactura");
+
+            migrationBuilder.DropTable(
+                name: "Users");
 
             migrationBuilder.DropTable(
                 name: "Facturas");
