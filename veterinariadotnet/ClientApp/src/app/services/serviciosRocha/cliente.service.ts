@@ -31,10 +31,24 @@ export class ClienteService {
     );
   }
   BuscarPersona(identificacion : string): Observable<Cliente> {
-    return this.http.get<Cliente>(this.baseUrl + 'api/Cliente/'+identificacion)
+    return this.http.get<Cliente>(this.baseUrl + 'api/Cliente/' + identificacion)
     .pipe(
         tap(_ => this.handleErrorService.log('datos enviados')),
         catchError(this.handleErrorService.handleError<Cliente>('busqueda Persona', null))
     );
   }
+
+  Eliminar(identificacion: string): Observable<Cliente> {
+    return this.http.delete<Cliente>(this.baseUrl + 'api/Cliente/' + identificacion).pipe (
+      tap(_ => this.handleErrorService.log('Datos enviados exitosamente')),
+      catchError(this.handleErrorService.handleError<Cliente>('Eliminar cliente', null))
+    );
+  }
+   Modificar(cliente: Cliente): Observable<Cliente> {
+    return this.http.put<Cliente>(this.baseUrl + 'api/Cliente', cliente).pipe(
+      tap(_ => this.handleErrorService.log('Datos enviados exitosamente')),
+      catchError(this.handleErrorService.handleError<Cliente>('Modificar Cliente', null))
+    );
+  }
+
 }

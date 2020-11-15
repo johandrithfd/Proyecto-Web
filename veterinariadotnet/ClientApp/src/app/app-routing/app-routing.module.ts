@@ -1,3 +1,6 @@
+import { ClienteModificarComponent } from './../veterinaria/Componentes/cliente-modificar/cliente-modificar.component';
+import { ClienteEliminarComponent } from './../veterinaria/Componentes/cliente-eliminar/cliente-eliminar.component';
+import { RegistroUsuarioComponent } from './../veterinaria/Componentes/registro-usuario/registro-usuario.component';
 import { FacturaComponent } from './../veterinaria/Componentes/factura/factura.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -18,6 +21,9 @@ import { AuthGuard } from '../services/serviciosRocha/auth.guard';
       { path: 'consulta-cliente', component: ConsultaClienteComponent , canActivate: [AuthGuard]},
       { path: 'factura', component: FacturaComponent, canActivate: [AuthGuard]},
       { path: 'login', component: LoginComponent},
+      { path: 'registro-usuario', component: RegistroUsuarioComponent},
+      { path: 'eliminar-cliente', component: ClienteEliminarComponent,canActivate: [AuthGuard]},
+      { path: 'modificar-cliente', component: ClienteModificarComponent,canActivate: [AuthGuard]}
     ]),
     CommonModule
   ],

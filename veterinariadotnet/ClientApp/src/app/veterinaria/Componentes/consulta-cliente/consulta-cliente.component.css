@@ -40,4 +40,21 @@ tr:hover td{
   background-color: #369681;
   color: white;
 }
+.btn-azul
+{
+  color: white;
+  background-color: rgb(53, 109, 252);
+  border-radius: 6px;
+  font-size: 18px;
+  border: 2px solid rgb(53, 109, 252);
+  padding: 16;
+  height: 37px;
+  margin: 5px;
+}
+.btn-azul:hover
+{
+  color: rgb(231, 236, 241);
+  background-color:rgb(1,124,104);
+  border: 2px solid rgb(27, 91, 255);
+}
 

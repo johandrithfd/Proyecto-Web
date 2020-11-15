@@ -37,6 +37,54 @@ namespace Logica
             List<Cliente> clientes = _context.Clientes.ToList();;
             return clientes;
         }
+        public Cliente Eliminar(string identificacion)
+        {
+            try
+            {
+                
+                var cliente = _context.Clientes.Find(identificacion);
+                if (cliente!= null)
+                {
+                    _context.Clientes.Remove(cliente);
+                    _context.SaveChanges();
+                    return cliente;
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            catch (Exception e)
+            {
+
+                return null;
+            }
+            
+
+        }
+        public GuardarClienteResponse Modificar(Cliente cliente){
+            var clienteAntiguo = _context.Clientes.Find(cliente.Identificacion);
+            if(clienteAntiguo !=null){
+                clienteAntiguo.Nombres = cliente.Nombres;
+                clienteAntiguo.PrimerApellido = cliente.PrimerApellido;
+                clienteAntiguo.SegundoApellido = cliente.SegundoApellido;
+                clienteAntiguo.Telefono= cliente.Telefono;
+                clienteAntiguo.Correo= cliente.Correo;
+                clienteAntiguo.Direccion=cliente.Direccion;
+                clienteAntiguo.Celular=cliente.Celular;
+                _context.Clientes.Update(clienteAntiguo);
+                _context.SaveChanges();
+                return new GuardarClienteResponse(cliente);
+            }
+
+            return new GuardarClienteResponse($"Error de la Aplicacion: {cliente.Identificacion} no se encuentra registrado.");
+        }
+
+    
+         
+         
+
+
         public Cliente BuscarCliente (string identificacion) {
             var clientebuscado = _context.Clientes.Find(identificacion);
             return clientebuscado;

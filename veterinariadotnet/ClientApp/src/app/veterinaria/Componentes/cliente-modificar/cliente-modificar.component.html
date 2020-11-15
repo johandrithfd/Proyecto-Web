@@ -1,0 +1,63 @@
+<div class="cuerpo">
+    <div class="container contenido">
+
+        <p class="tituloContainer"> ACTUALIZACION DE DATOS</p>
+    
+        <div class="row">
+            <div class="col-md-6">
+                <label class="control-label">Identificación:</label>
+                <input type="text" form="actualizacion" id="txtIdentificacion" name="txtIdentificacion" [(ngModel)]="cliente.identificacion" class="form-control">
+            </div>
+            <div class="col-md-6">
+                <button form="actualizacion" class="btn btn-secondary btn-block" (click)="buscar()">Buscar</button>
+            </div>
+            <div class="col-md-6">
+                <form class="form" id="actualizacion" style="padding-top: 5%;">
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <label class="control-label">Identificación:</label>
+                            <input type="text"  name="txtIdentificacion" [(ngModel)]="cliente.identificacion" class="form-control">
+                        </div>
+                        <div class="col-md-12">
+                            <label class="control-label">Nombres:</label>
+                            <input type="text"  name="txtNombres" [(ngModel)]="cliente.nombres" class="form-control">
+                        </div>
+                        <div class="col-md-12">
+                            <label class="control-label">Primer Apellido:</label>
+                            <input type="text" name="txtprimerApellido" [(ngModel)]="cliente.primerApellido" class="form-control">
+                        </div>
+                        <div class="col-md-12">
+                            <label class="control-label">SegundoApellido:</label>
+                            <input type="text"  name="txtsegundoApellido" [(ngModel)]="cliente.segundoApellido" class="form-control">
+                        </div>
+                        <div class="col-md-12">
+                            <label class="control-label">Telefono:</label>
+                            <input type="text"  name="txtTelefono" [(ngModel)]="cliente.telefono" class="form-control">
+                        </div>
+                        <div class="col-md-12">
+                            <label class="control-label">Correo:</label>
+                            <input type="text"  name="txtcorreo" [(ngModel)]="cliente.correo" class="form-control">
+                        </div>
+                        <div class="col-md-12">
+                            <label class="control-label">Direccion:</label>
+                            <input type="text"  name="txtDireccion" [(ngModel)]="cliente.direccion" class="form-control">
+                        </div>
+                        <div class="col-md-12">
+                            <label class="control-label">Celular:</label>
+                            <input type="text"  name="txtCelular" [(ngModel)]="cliente.celular" class="form-control">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <img class="logoActualizacion" src="../../../../assets/Imagenes/ActualizacionPersonas.png" alt="ActualizacionPersonas">
+            </div>
+            <div class="col-md-6">
+                <button form="actualizacion" class="btn btn-secondary btn-block" (click)="actualizarDatos()">Actualizar datos</button>
+            </div>
+            <div class="col-md-6">
+                <button type="reset" form="actualizacion" class="btn btn-secondary btn-block"> Limpiar Formulario</button>
+            </div>
+        </div>
+    </div>
+</div>

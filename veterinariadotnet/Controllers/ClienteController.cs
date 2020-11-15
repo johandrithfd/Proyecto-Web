@@ -36,6 +36,28 @@ namespace veterinariadotnet.Controllers
             return cliente;
         }
 
+        [HttpDelete("{identificacion}")]
+        public ActionResult<string> Delete(string identificacion)
+        {
+            var cliente = _clienteService.Eliminar(identificacion);
+            return Ok(cliente);
+        }
+
+        [HttpPut]
+        public ActionResult<ClienteViewModel> Put(Cliente cliente)
+        {
+            var response = _clienteService.Modificar(cliente);
+            if (response.Error)
+            {
+                return BadRequest(response.Mensaje);
+            }
+            return Ok(response.Cliente);
+            
+        }
+
+
+
+
         [HttpPost]
         public ActionResult<ClienteViewModel> Post(ClienteModel clienteimputModel)
         {

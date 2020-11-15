@@ -24,6 +24,8 @@ import { JwtInterceptorService } from './services/serviciosRocha/jwt-interceptor
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AlertModalComponent } from './@base/alert-modal/alert-modal.component';
 import { AlertModalFacturaComponent } from './veterinaria/Componentes/factura/alert-modal-factura/alert-modal-factura.component';
+import { ClienteModificarComponent } from './veterinaria/Componentes/cliente-modificar/cliente-modificar.component';
+import { ClienteEliminarComponent } from './veterinaria/Componentes/cliente-eliminar/cliente-eliminar.component';
 
 
 
@@ -45,7 +47,9 @@ import { AlertModalFacturaComponent } from './veterinaria/Componentes/factura/al
     RegistroUsuarioComponent,
     AlertModalComponent,
     AlertModalFacturaComponent,
-    FiltroServicioPipe
+    FiltroServicioPipe,
+    ClienteModificarComponent,
+    ClienteEliminarComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -56,7 +60,8 @@ import { AlertModalFacturaComponent } from './veterinaria/Componentes/factura/al
     NgbModule
   ],
   providers: [ClienteService,{ provide: HTTP_INTERCEPTORS, useClass: JwtInterceptorService, multi: true }],
-  entryComponents:[AlertModalComponent , AlertModalFacturaComponent],
+  // tslint:disable-next-line:max-line-length
+  entryComponents:[AlertModalComponent , AlertModalFacturaComponent,ConsultaClienteComponent,ClienteEliminarComponent,ClienteModificarComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

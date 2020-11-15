@@ -19,6 +19,12 @@
         </div>
       </div>
     </div>
+
+    <button class="btn-azul" (click)="openModalManipulador()">
+      <i class="fas fa-plus-circle"></i> Eliminar Cliente</button><br><br>
+
+      <button class="btn-azul" (click)="openModal()">
+        <i class="fas fa-plus-circle"></i> Modificar Cliente</button><br><br>
     
 <table class="table table-striped" *ngIf='clientes && clientes.length'>
       <thead>
