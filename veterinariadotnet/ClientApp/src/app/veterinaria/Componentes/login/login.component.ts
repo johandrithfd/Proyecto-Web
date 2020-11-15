@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { first } from 'rxjs/operators';
+import { Mensaje } from 'src/app/services/Servicios/mensaje';
 import { AuthenticationService } from 'src/app/services/serviciosRocha/authentication.service';
 
 @Component({
@@ -17,7 +18,7 @@ export class LoginComponent implements OnInit {
   constructor(private route: ActivatedRoute,
     private formBuilder: FormBuilder,
     private router: Router,
-    private authenticationService: AuthenticationService) {
+    private authenticationService: AuthenticationService,private mensajes: Mensaje) {
       if (this.authenticationService.currentUserValue) {
         this.router.navigate(['/']);
     }
@@ -49,7 +50,7 @@ export class LoginComponent implements OnInit {
                   this.router.navigate([this.returnUrl]);
               },
               error => {
-                  alert('Acceso denegado, usuario incorrecto');
+                this.mensajes.Informar('Iniciar Seccion', 'Usuario O contraseña incorrecta');
                   this.loading = false;
               });
   }

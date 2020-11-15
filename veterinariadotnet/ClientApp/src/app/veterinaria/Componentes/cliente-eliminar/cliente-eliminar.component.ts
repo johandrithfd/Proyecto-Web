@@ -1,6 +1,8 @@
 import { ClienteService } from 'src/app/services/serviciosRocha/cliente.service';
 import { Cliente } from './../models/cliente';
 import { Component, OnInit } from '@angular/core';
+import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
+import { Mensaje } from 'src/app/services/Servicios/mensaje';
 
 @Component({
   selector: 'app-cliente-eliminar',
@@ -9,7 +11,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClienteEliminarComponent implements OnInit {
   cliente: Cliente;
-  constructor(private clienteService : ClienteService) { }
+  constructor(private clienteService : ClienteService, public activeModal: NgbActiveModal, private mensajes: Mensaje) { }
 
   ngOnInit(): void {
     this.cliente= new Cliente();
@@ -19,13 +21,13 @@ export class ClienteEliminarComponent implements OnInit {
       if (result.identificacion != null)
       {
         this.cliente = result;
-        alert('Busqueda realizada con éxito');
+        this.mensajes.Informar('Busqueda Cliente', 'Cliente encontrado con exito');
       }
       // tslint:disable-next-line:one-line
       else
       {
         this.cliente = new Cliente();
-        alert('La búsqueda no arrojó ningún resultado');
+        this.mensajes.Informar('Busqueda Cliente', 'Cliente no encontrado ');
       }
     });
   }
@@ -33,12 +35,14 @@ export class ClienteEliminarComponent implements OnInit {
   eliminar(){
     this.clienteService.Eliminar(this.cliente.identificacion).subscribe(p =>{
       if (p != null) {
-        alert('Cliente eliminado con éxito:');
+        // tslint:disable-next-line:quotemark
+        this.mensajes.Informar("Eliminacion Cliente","Cliente eliminado con exito");
         this.cliente = p;
       }
       // tslint:disable-next-line:one-line
       else {
-        alert('El cliente que intenta eliminar no se encuentra registrada');
+        // tslint:disable-next-line:quotemark
+        this.mensajes.Informar("Error","Cliente no encontrado");
         this.cliente= new Cliente();
       }
     });

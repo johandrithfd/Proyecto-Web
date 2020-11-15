@@ -61,7 +61,7 @@ import { ClienteEliminarComponent } from './veterinaria/Componentes/cliente-elim
   ],
   providers: [ClienteService,{ provide: HTTP_INTERCEPTORS, useClass: JwtInterceptorService, multi: true }],
   // tslint:disable-next-line:max-line-length
-  entryComponents:[AlertModalComponent , AlertModalFacturaComponent,ConsultaClienteComponent,ClienteEliminarComponent,ClienteModificarComponent],
+  entryComponents:[AlertModalComponent ,AlertModalFacturaComponent,ConsultaClienteComponent,ClienteEliminarComponent,ClienteModificarComponent,LoginComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

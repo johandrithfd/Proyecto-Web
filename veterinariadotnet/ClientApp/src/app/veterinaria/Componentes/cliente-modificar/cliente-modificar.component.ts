@@ -1,6 +1,8 @@
 import { ClienteService } from 'src/app/services/serviciosRocha/cliente.service';
 import { Component, OnInit } from '@angular/core';
 import { Cliente } from '../models/cliente';
+import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
+import { Mensaje } from 'src/app/services/Servicios/mensaje';
 
 @Component({
   selector: 'app-cliente-modificar',
@@ -9,7 +11,7 @@ import { Cliente } from '../models/cliente';
 })
 export class ClienteModificarComponent implements OnInit {
   cliente: Cliente;
-  constructor(private clienteService: ClienteService) { }
+  constructor(private clienteService: ClienteService,public activeModal: NgbActiveModal,private mensajes: Mensaje) { }
 
   ngOnInit(): void {
     this.cliente = new Cliente();
@@ -20,13 +22,13 @@ export class ClienteModificarComponent implements OnInit {
       if (result.identificacion != null)
       {
         this.cliente = result;
-        alert('Busqueda realizada con éxito');
+        this.mensajes.Informar('Busqueda Cliente', 'Cliente encontrado con exito');
       }
       // tslint:disable-next-line:one-line
       else
       {
         this.cliente = new Cliente();
-        alert('La búsqueda no arrojó ningún resultado');
+        this.mensajes.Informar('error', 'Cliente no encontrado ');
       }
     });
   }
@@ -34,13 +36,15 @@ export class ClienteModificarComponent implements OnInit {
   actualizarDatos(){
     this.clienteService.Modificar(this.cliente).subscribe(result =>{
       if (result.identificacion != null) {
-        alert('Datos actualizados con éxito:');
+        // tslint:disable-next-line:quotemark
+        this.mensajes.Informar("Modificacion Cliente", "Cliente modificado exitosamente");
         this.cliente = result;
       }
       // tslint:disable-next-line:one-line
       else {
         this.cliente = new Cliente();
-        alert('La persona que intenta modificar no se encuentra registrada');
+        // tslint:disable-next-line:quotemark
+        this.mensajes.Informar("Error", "Cliente no encontrado");
       }
     });
   }

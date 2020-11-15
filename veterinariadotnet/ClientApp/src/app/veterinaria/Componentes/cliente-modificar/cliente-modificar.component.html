@@ -1,6 +1,12 @@
 <div class="cuerpo">
+    
+
     <div class="container contenido">
 
+        
+        <button type="button" class="ico"  (click)="activeModal.dismiss('Cross click')">
+            <i class="fas fa-window-close" ></i>
+          </button>
         <p class="tituloContainer"> ACTUALIZACION DE DATOS</p>
     
         <div class="row">
@@ -60,4 +66,7 @@
             </div>
         </div>
     </div>
+    <div class="modal-footer">
+        <button type="button" (click)="activeModal.dismiss('Cross click')" class="btn-rojo" >Cerrar</button>
+      </div>
 </div>
