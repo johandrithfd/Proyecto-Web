@@ -24,11 +24,11 @@ export class ConsultaClienteComponent implements OnInit {
 
   openModalManipulador()
   {
-    this.modalService.open(ClienteEliminarComponent, { size: 'xl' });
+    this.modalService.open(ClienteEliminarComponent, { size: 'lg' });
   }
   openModal()
   {
-    this.modalService.open(ClienteModificarComponent, { size: 'xl' });
+    this.modalService.open(ClienteModificarComponent, { size: 'lg' });
   }
 
 
