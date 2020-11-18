@@ -7,6 +7,7 @@ import {
   FormBuilder,
   AsyncValidator,
 } from "@angular/forms";
+import { Mensaje } from "src/app/services/Servicios/mensaje";
 
 @Component({
   selector: "app-registro-cliente",
@@ -19,7 +20,8 @@ export class RegistroClienteComponent implements OnInit {
 
   constructor(
     private clienteService: ClienteService,
-    private formBuilder: FormBuilder
+    private formBuilder: FormBuilder,
+    private mensajes: Mensaje
   ) {}
   cliente: Cliente;
 
@@ -67,10 +69,10 @@ export class RegistroClienteComponent implements OnInit {
   add() {
     this.clienteService.post(this.cliente).subscribe((c) => {
       if (c != null) {
-        alert("Cliente Creado Correctamente!");
+        this.mensajes.Informar('Agregar CLiente', 'Cliente Guardado satisfatoriamente');
         this.cliente = c;
       }
-      alert("Cliente Ya se encuentre Registrado");
+      //this.mensajes.Informar('Error', 'Cliente Ya se encuentra registrado');
     });
   }
 

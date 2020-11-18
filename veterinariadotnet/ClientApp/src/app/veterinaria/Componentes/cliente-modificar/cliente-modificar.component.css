@@ -7,7 +7,7 @@ mat-icon {
 }
 
 .tituloContainer {
-    color:white;
+    color:ivory;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: bolder; font-size: 200%;
     text-align: center; padding-bottom: 3%;
@@ -24,11 +24,19 @@ mat-icon {
 }
 
 .btn-secondary {
-    background: #0c4463;
+    background: rgb(1, 99, 124);
     font-weight: bold; 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-bottom: 5%; margin-top: 2%;
     height: 83%;
+}
+.btn-secondary1 {
+    background: #213e3b ;
+    font-weight: bold; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 5%; margin-top: 2%;
+    height: 83%;
+    color: white;
 }
 
 .btn-secondary:hover {
@@ -38,14 +46,17 @@ mat-icon {
 .btn-secondary:active {
     background: rgb(1,124,104);
 }
+.btn-secondary1:active {
+    background: rgb(1,124,104);
+}
 
 .table {
     margin-top: 3%;
 }
 
-.cuerpo {
-    background-image: url("../../../../assets/Imagenes/dandole.jpg");
-    background-position: 100%;
-    background-repeat: repeat-y;
-    background-size: 100%;
+.modal-footer{
+    background-color: rgb(1,124,104) ;
+}
+.modal-header{
+    background-color: rgb(1,124,104) ;
 }

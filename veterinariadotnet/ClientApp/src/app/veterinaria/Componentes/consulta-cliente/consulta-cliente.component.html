@@ -20,12 +20,6 @@
       </div>
     </div>
 
-    <button class="btn-azul" (click)="openModalManipulador()">
-      <i class="fas fa-plus-circle"></i> Eliminar Cliente</button><br><br>
-
-      <button class="btn-azul" (click)="openModal()">
-        <i class="fas fa-plus-circle"></i> Modificar Cliente</button><br><br>
-    
 <table class="table table-striped" *ngIf='clientes && clientes.length'>
       <thead>
         <tr>
@@ -38,6 +32,8 @@
           <th scope="col">Celular</th>
           <th scope="col">Direccion</th>
           <th scope="col">Correo</th>
+          <th>Modificar Cliente</th>
+          <th>Eliminar Cliente</th>
         </tr>
       </thead>
       <tbody>
@@ -51,6 +47,8 @@
           <td>{{ cliente.celular }}</td>
           <td>{{ cliente.direccion }}</td>
           <td>{{ cliente.correo }}</td>
+          <td><button class="btn-azul" (click)="openModal(cliente.identificacion) ">Modificar </button></td>
+          <td><button class="btn-azul2" (click)="openModalManipulador(cliente.identificacion) ">Eliminar</button></td>
         </tr>
       </tbody>
     </table>

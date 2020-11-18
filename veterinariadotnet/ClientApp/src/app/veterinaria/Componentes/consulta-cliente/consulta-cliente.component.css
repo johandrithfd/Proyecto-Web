@@ -15,8 +15,8 @@
 }
 .table {
   margin-top: 4%;
-  background-color:rgb(2, 76, 95);
-  color:ivory;
+  background-color:white;
+  color:black;
   box-shadow:7px 14px 38px #111111 ;
 }
 th,td{
@@ -28,12 +28,12 @@ th,td{
 thead{
   background-color:rgb(1,124,104);
   border-bottom: solid 7px #0f362d ;
-  color: white;
+  color:ivory;
 
 }
 
 tr:nth-child(even){
-background-color:rgb(2, 76, 95);
+background-color:white;
 
 }
 tr:hover td{
@@ -43,7 +43,7 @@ tr:hover td{
 .btn-azul
 {
   color: white;
-  background-color: rgb(53, 109, 252);
+  background-color: rgb(1, 99, 124);
   border-radius: 6px;
   font-size: 18px;
   border: 2px solid rgb(53, 109, 252);
@@ -57,4 +57,21 @@ tr:hover td{
   background-color:rgb(1,124,104);
   border: 2px solid rgb(27, 91, 255);
 }
+.btn-azul2{
+  color: white;
+  background-color:#213e3b ;
+  border-radius: 6px;
+  font-size: 18px;
+  border: 2px solid rgb(53, 109, 252);
+  padding: 16;
+  height: 37px;
+  margin: 5px;
+}
+.btn-azul2:hover
+{
+  color: rgb(231, 236, 241);
+  background-color:rgb(1,124,104);
+  border: 2px solid rgb(27, 91, 255);
+}
+
 

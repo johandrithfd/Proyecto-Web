@@ -24,15 +24,29 @@ mat-icon {
 }
 
 .btn-secondary {
-    background: #0c4463;
+    background: rgb(1, 99, 124);
     font-weight: bold; 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-bottom: 5%; margin-top: 2%;
     height: 83%;
 }
+.btn-secondary1 {
+    background: #213e3b ;
+    font-weight: bold; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 5%; margin-top: 2%;
+    height: 83%;
+    color: white;
+}
+
 
 .btn-secondary:hover {
     background: rgb(1,124,104);
+}
+
+.btn-secondary1:hover{
+    background-color:
+    rgb(1, 99, 124);
 }
 
 .btn-secondary:active {
@@ -43,9 +57,9 @@ mat-icon {
     margin-top: 3%;
 }
 
-.cuerpo {
-    background-image: url("../../../../assets/Imagenes/opcion3.jpg");
-    background-position: 100%;
-    background-repeat: repeat-y;
-    background-size: 100%;
+.modal-footer{
+    background-color: rgb(1,124,104);
+}
+.modal-header{
+    background: rgb(1,124,104);
 }

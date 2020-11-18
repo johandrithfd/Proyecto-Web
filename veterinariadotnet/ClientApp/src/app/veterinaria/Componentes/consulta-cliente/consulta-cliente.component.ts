@@ -22,13 +22,16 @@ export class ConsultaClienteComponent implements OnInit {
     this.clienteService.get().subscribe(result => { this.clientes = result; });
   }
 
-  openModalManipulador()
+  openModalManipulador(clienteId: number)
   {
-    this.modalService.open(ClienteEliminarComponent, { size: 'lg' });
+    const consultaBox = this.modalService.open(ClienteEliminarComponent, { size: 'lg' });
+    consultaBox.componentInstance.identificacion = clienteId;
   }
-  openModal()
+  openModal(clienteId: number)
   {
-    this.modalService.open(ClienteModificarComponent, { size: 'lg' });
+      const consultaBox = this.modalService.open(ClienteModificarComponent, { size: 'lg' });
+      consultaBox.componentInstance.identificacion = clienteId;
+    
   }
 
 
