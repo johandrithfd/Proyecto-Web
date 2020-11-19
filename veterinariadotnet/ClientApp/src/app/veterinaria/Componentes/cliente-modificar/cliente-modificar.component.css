@@ -18,10 +18,7 @@ mat-icon {
     font-size: 120%;
 }
 
-.logoActualizacion {
-    width: 80%; height: 85%;
-    padding-top: 7%; margin-left: 10%;
-}
+
 
 .btn-secondary {
     background: rgb(1, 99, 124);
@@ -50,9 +47,7 @@ mat-icon {
     background: rgb(1,124,104);
 }
 
-.table {
-    margin-top: 3%;
-}
+
 
 .modal-footer{
     background-color: rgb(1,124,104) ;

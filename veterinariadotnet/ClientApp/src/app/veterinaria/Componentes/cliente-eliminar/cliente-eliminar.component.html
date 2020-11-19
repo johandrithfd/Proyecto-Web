@@ -1,25 +1,23 @@
 <div class="cuerpo">
-
-    <div class="container contenido">
-
-        <div class="modal-header">
+    <div class="modal-header">
         <button type="button" class="ico"  (click)="activeModal.dismiss('Cross click')">
             <i class="fas fa-window-close" ></i>
           </button>
 
         <p class="tituloContainer"> ELIMINACION DE CLIENTES</p>
          </div><br>
+    <div class="container contenido">
+
         <div class="row">
-            <div class="col-md-6">
-                <label class="control-label">Identificación:</label>
-                <input type="text" form="eliminacion" id="txtIdentificacion" name="txtIdentificacion" [(ngModel)]="cliente.identificacion" class="form-control">
-            </div>
-            <div class="col-md-6">
-                <button form="eliminacion" class="btn btn-secondary btn-block" (click)="buscar()">Buscar</button>
-            </div>
+            
+            
             <div class="col-md-6">
                 <form class="form" id="eliminacion" style="padding-top: 5%;">
                     <div class="form-group">
+                        <div class="col-md-12">
+                            <label class="control-label">Identificación:</label>
+                            <input type="text" readonly form="eliminacion" id="txtIdentificacion" name="txtIdentificacion" [(ngModel)]="cliente.identificacion" class="form-control">
+                        </div>
                         <div class="col-md-12">
                             <label class="control-label">Nombres:</label>
                             <input type="text" readonly id="txtNombres" name="txtNombres" [(ngModel)]="cliente.nombres" class="form-control">
@@ -32,18 +30,7 @@
                             <label class="control-label">SegundoApellido:</label>
                             <input type="text" readonly id="txtsegundoApellido" name="txtsegundoApellido" [(ngModel)]="cliente.segundoApellido" class="form-control">
                         </div>
-                        <div class="col-md-12">
-                            <label class="control-label">Telefono:</label>
-                            <input type="text" readonly id="txtTelefono" name="txtTelefono" [(ngModel)]="cliente.telefono" class="form-control">
-                        </div>
-                        <div class="col-md-12">
-                            <label class="control-label">Correo:</label>
-                            <input type="text" readonly id="txtcorreo" name="txtcorreo" [(ngModel)]="cliente.correo" class="form-control">
-                        </div>
-                        <div class="col-md-12">
-                            <label class="control-label">Direccion:</label>
-                            <input type="text" readonly id="txtDireccion" name="txtDireccion" [(ngModel)]="cliente.direccion" class="form-control">
-                        </div>
+                        
                         <div class="col-md-12">
                             <label class="control-label">Celular:</label>
                             <input type="text" readonly id="txtCelular" name="txtCelular" [(ngModel)]="cliente.celular" class="form-control">
@@ -63,8 +50,6 @@
             </div>
         </div>
     </div>
-    <div class="modal-footer">
-        <button type="button" (click)="activeModal.dismiss('Cross click')" class="btn-rojo" >Cerrar</button>
-      </div>
+  
 </div>
 

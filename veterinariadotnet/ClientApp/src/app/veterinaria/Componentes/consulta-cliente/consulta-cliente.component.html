@@ -47,8 +47,8 @@
           <td>{{ cliente.celular }}</td>
           <td>{{ cliente.direccion }}</td>
           <td>{{ cliente.correo }}</td>
-          <td><button class="btn-azul" (click)="openModal(cliente.identificacion) ">Modificar </button></td>
-          <td><button class="btn-azul2" (click)="openModalManipulador(cliente.identificacion) ">Eliminar</button></td>
+          <td><button class="btn-azul" (click)="ModalModificar(i) ">Modificar </button></td>
+          <td><button class="btn-azul2" (click)="ModalEliminar(i) ">Eliminar</button></td>
         </tr>
       </tbody>
     </table>

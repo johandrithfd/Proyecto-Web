@@ -1,6 +1,6 @@
 import { ClienteService } from 'src/app/services/serviciosRocha/cliente.service';
 import { Cliente } from './../models/cliente';
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { Mensaje } from 'src/app/services/Servicios/mensaje';
 
@@ -10,28 +10,13 @@ import { Mensaje } from 'src/app/services/Servicios/mensaje';
   styleUrls: ['./cliente-eliminar.component.css']
 })
 export class ClienteEliminarComponent implements OnInit {
+  @Input() Cliente: Cliente;
   cliente: Cliente;
   constructor(private clienteService : ClienteService, public activeModal: NgbActiveModal, private mensajes: Mensaje) { }
 
   ngOnInit(): void {
-    this.cliente= new Cliente();
+    this.cliente = this.Cliente;
   }
-  buscar() {
-    this.clienteService.BuscarPersona(this.cliente.identificacion).subscribe(result => {
-      if (result.identificacion != null)
-      {
-        this.cliente = result;
-        this.mensajes.Informar('Busqueda Cliente', 'Cliente encontrado con exito');
-      }
-      // tslint:disable-next-line:one-line
-      else
-      {
-        this.cliente = new Cliente();
-        this.mensajes.Informar('Busqueda Cliente', 'Cliente no encontrado ');
-      }
-    });
-  }
-
   eliminar(){
     this.clienteService.Eliminar(this.cliente.identificacion).subscribe(p =>{
       if (p != null) {

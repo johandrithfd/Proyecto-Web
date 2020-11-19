@@ -1,3 +1,4 @@
+import { RespuestaConsulta } from './../../Modelos/Respuesta/respuesta-consulta';
 import { ClienteModificarComponent } from './../cliente-modificar/cliente-modificar.component';
 import { ClienteEliminarComponent } from './../cliente-eliminar/cliente-eliminar.component';
 import { Component, OnInit } from '@angular/core';
@@ -22,16 +23,19 @@ export class ConsultaClienteComponent implements OnInit {
     this.clienteService.get().subscribe(result => { this.clientes = result; });
   }
 
-  openModalManipulador(clienteId: number)
+  ModalEliminar(indice)
   {
     const consultaBox = this.modalService.open(ClienteEliminarComponent, { size: 'lg' });
-    consultaBox.componentInstance.identificacion = clienteId;
+    // tslint:disable-next-line:prefer-const
+    let respuesta = this.clientes[indice];
+    consultaBox.componentInstance.Cliente = respuesta;
   }
-  openModal(clienteId: number)
+  ModalModificar(indice)
   {
-      const consultaBox = this.modalService.open(ClienteModificarComponent, { size: 'lg' });
-      consultaBox.componentInstance.identificacion = clienteId;
-    
+      const modelo = this.modalService.open(ClienteModificarComponent, { size: 'l' });
+      // tslint:disable-next-line:prefer-const
+      let cliente = this.clientes[indice];
+     modelo.componentInstance.Cliente = cliente;
   }
 
 
