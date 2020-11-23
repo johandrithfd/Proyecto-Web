@@ -6918,7 +6918,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Rochety\\.nuget\\packages\\": {}
+    "C:\\Users\\ROCHETY\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -6926,11 +6926,11 @@
       "projectUniqueName": "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Logica\\Logica.csproj",
       "projectName": "Logica",
       "projectPath": "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Logica\\Logica.csproj",
-      "packagesPath": "C:\\Users\\Rochety\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\ROCHETY\\.nuget\\packages\\",
       "outputPath": "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Logica\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Rochety\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\ROCHETY\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.1"
@@ -6973,7 +6973,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

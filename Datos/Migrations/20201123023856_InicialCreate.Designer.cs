@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Datos.Migrations
 {
     [DbContext(typeof(VeterinariaContext))]
-    [Migration("20201112105025_InicialCreate")]
+    [Migration("20201123023856_InicialCreate")]
     partial class InicialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

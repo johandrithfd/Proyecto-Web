@@ -10,11 +10,11 @@
         "projectUniqueName": "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Datos\\Datos.csproj",
         "projectName": "Datos",
         "projectPath": "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Datos\\Datos.csproj",
-        "packagesPath": "C:\\Users\\Rochety\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\ROCHETY\\.nuget\\packages\\",
         "outputPath": "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Datos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Rochety\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\ROCHETY\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
@@ -72,7 +72,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -82,11 +82,11 @@
         "projectUniqueName": "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Entidad\\Entidad.csproj",
         "projectName": "Entidad",
         "projectPath": "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Entidad\\Entidad.csproj",
-        "packagesPath": "C:\\Users\\Rochety\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\ROCHETY\\.nuget\\packages\\",
         "outputPath": "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Entidad\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Rochety\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\ROCHETY\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
@@ -128,7 +128,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
