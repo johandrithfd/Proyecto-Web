@@ -17,10 +17,10 @@ namespace veterinariadotnet.Models
             
         }
         public int FacturaId { get; set; }
-        public decimal SubTotal { get; set; }
-        public decimal ValorIva { get; set; }
-        public decimal ValorDescuento { get; set; }
-        public decimal Total { get; set; }
+        public double SubTotal { get; set; }
+        public double ValorIva { get; set; }
+        public double ValorDescuento { get; set; }
+        public double Total { get; set; }
         public int CantidadServicios { get; set; }
         public DateTime Fecha { get; set; }
 
@@ -39,3 +39,4 @@ namespace veterinariadotnet.Models
         
     }
 }
+

@@ -1,0 +1,27 @@
+<div class="container">
+  <h2>Consulta de facturas</h2>
+  <table class="table table-hover table-sm table-bordered">
+    <thead class="header-table">
+      <tr>
+        <th>Factura Id</th>
+        <th>Fecha</th>
+        <th>Valor Iva</th>
+        <th>Valor Descuento</th>
+        <th>Subtotal</th>
+        <th>Total</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let factura of facturas">
+        <td>{{factura.facturaId}}</td>
+        <td>{{factura.fecha | date:'dd/mm/yy'}}</td>
+        <td>{{SepararPorPunto(factura.valorIva)}}</td>
+        <td>{{SepararPorPunto(factura.valorDescuento)}}</td>
+        <td>{{SepararPorPunto(factura.subTotal)}}</td>
+        <td>{{SepararPorPunto(factura.total)}}</td>
+        <td><button class="btn-verde" (click)="AbrirConsulta(factura)">Ver</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,138 @@
+<div class="modal-header">
+      <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
+  <div class="modal-body">
+        <div class="container">
+      <div class="card" style="width: 100%">
+        <div class="card-body">
+          <form>
+            <div class="cabecera-formulario distacia-form">
+              <h1 class=""><i class="fas fa-dog icono"></i> Factura My Veter</h1>
+            </div>
+            <div class="form-group distacia-form">
+              <h2><strong>Fecha : </strong>{{ factura.fecha | date:'dd/mm/yy' }}</h2>
+              <div class="row">
+                <div class="col-md-4">
+                  <label>Cedula : </label>
+                  <div>
+                    <input
+                      [(ngModel)]="factura.identificacion"
+                      type="text"
+                      class="form-control"
+                      placeholder="119281201"
+                      name="identificacion"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label>Direccion : </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    disabled
+                    [(ngModel)]="cliente.direccion"
+                    name="nombres"
+                  />
+                </div>
+                <div class="col-md-4">
+                  <label>Apellido 1: </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    disabled
+                    [(ngModel)]="cliente.primerApellido"
+                    name="primerApellido"
+                  />
+                </div>
+                <div class="col-md-4">
+                  <label>Apellido 2 : </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    disabled
+                    [(ngModel)]="cliente.segundoApellido"
+                    name="segundoApellido"
+                  />
+                </div>
+                <div class="col-md-4">
+                  <label>Celular : </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    disabled
+                    [(ngModel)]="cliente.celular"
+                    name="Celular"
+                  />
+                </div>
+              </div>
+            </div>
+            <h2>Servicios :</h2>
+            <table class="table table-hover table-sm table-bordered">
+              <thead class="header-table">
+                <tr>
+                  <th>Servicio</th>
+                  <th>Precio</th>
+                  <th>Porcentaje Iva</th>
+                  <th>Porcentaje Descuento</th>
+                  <th>Valor Iva</th>
+                  <th>Valor Descuento</th>
+                  <th>Cantidad</th>
+                  <th>SubTotal</th>
+                  <th>Total</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let detalle of factura.detallesFactura">
+                  <td>{{ nombreServicio(detalle.servicioId) }}</td>
+                  <td>{{SepararPorPunto(valorServicio(detalle.servicioId))  }}</td>
+                  <td>{{ detalle.porcentajeIva }}</td>
+                  <td>{{ detalle.porcentajeDescuento }}</td>
+                  <td>{{ SepararPorPunto(detalle.valorIva) }}</td>
+                  <td>{{SepararPorPunto(detalle.valorDescuento)}}</td>
+                  <td>{{ detalle.cantidad }}</td>
+                  <td>{{SepararPorPunto( detalle.subTotal) }}</td>
+                  <td>{{ SepararPorPunto(detalle.total) }}</td>
+                </tr>
+              </tbody>
+            </table>
+            <br /><br />
+            <div class="row">
+              <div class="col-md-8"></div>
+              <table class="table table-hover table-sm table-bordered" style="width: 20%;">
+                <thead class="header-table">
+                  <tr>
+                    <th></th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Valor Iva :</td>
+                    <td>{{SepararPorPunto(factura.valorIva)}}</td>
+                  </tr>
+                  <tr>
+                    <td>Valor Descuento :</td>
+                    <td>{{SepararPorPunto(factura.valorDescuento)}}</td>
+                  </tr>
+                  <tr>
+                    <td>Valor Iva :</td>
+                    <td>{{SepararPorPunto(factura.subTotal)}}</td>
+                  </tr>
+                  <tr>
+                    <td>Valor SubTotal :</td>
+                    <td><strong style="color: rgb(1, 124, 104); font-size: x-large">{{SepararPorPunto(factura.total)}}</strong></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <br/>
+          </form>
+        </div>
+      </div>
+      <br/>
+    </div>
+   </div>
+

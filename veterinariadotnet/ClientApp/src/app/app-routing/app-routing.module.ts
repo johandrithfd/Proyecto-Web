@@ -12,6 +12,7 @@ import { RegistroClienteComponent} from '../../app/veterinaria/Componentes/regis
 import { ConsultaClienteComponent} from '../../app/veterinaria/Componentes/consulta-cliente/consulta-cliente.component';
 import { LoginComponent } from '../veterinaria/Componentes/login/login.component';
 import { AuthGuard } from '../services/serviciosRocha/auth.guard';
+import { ConsultaFacturaComponent } from '../veterinaria/Componentes/consulta-factura/consulta-factura.component';
 @NgModule({
   declarations: [],
   imports: [RouterModule.forRoot([
@@ -23,6 +24,7 @@ import { AuthGuard } from '../services/serviciosRocha/auth.guard';
       { path: 'login', component: LoginComponent},
       { path: 'registro-usuario', component: RegistroUsuarioComponent},
       { path: 'eliminar-cliente', component: ClienteEliminarComponent,canActivate: [AuthGuard]},
+      { path: 'app-consulta-factura', component: ConsultaFacturaComponent, canActivate: [AuthGuard] },
       { path: 'modificar-cliente', component: ClienteModificarComponent,canActivate: [AuthGuard]}
     ]),
     CommonModule

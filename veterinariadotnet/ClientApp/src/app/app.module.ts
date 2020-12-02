@@ -26,7 +26,8 @@ import { AlertModalComponent } from './@base/alert-modal/alert-modal.component';
 import { AlertModalFacturaComponent } from './veterinaria/Componentes/factura/alert-modal-factura/alert-modal-factura.component';
 import { ClienteModificarComponent } from './veterinaria/Componentes/cliente-modificar/cliente-modificar.component';
 import { ClienteEliminarComponent } from './veterinaria/Componentes/cliente-eliminar/cliente-eliminar.component';
-
+import { ConsultaFacturaComponent } from './veterinaria/Componentes/consulta-factura/consulta-factura.component'
+import { ImfoFacturaComponent } from './veterinaria/Componentes/consulta-factura/imfo-factura/imfo-factura.component'
 
 
 
@@ -49,7 +50,10 @@ import { ClienteEliminarComponent } from './veterinaria/Componentes/cliente-elim
     AlertModalFacturaComponent,
     FiltroServicioPipe,
     ClienteModificarComponent,
-    ClienteEliminarComponent
+    ClienteEliminarComponent,
+    ConsultaFacturaComponent,
+    ImfoFacturaComponent
+
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -61,7 +65,7 @@ import { ClienteEliminarComponent } from './veterinaria/Componentes/cliente-elim
   ],
   providers: [ClienteService,{ provide: HTTP_INTERCEPTORS, useClass: JwtInterceptorService, multi: true }],
   // tslint:disable-next-line:max-line-length
-  entryComponents:[AlertModalComponent ,AlertModalFacturaComponent,ConsultaClienteComponent,ClienteEliminarComponent,ClienteModificarComponent,LoginComponent],
+  entryComponents:[ImfoFacturaComponent,AlertModalComponent ,AlertModalFacturaComponent,ConsultaClienteComponent,ClienteEliminarComponent,ClienteModificarComponent,LoginComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

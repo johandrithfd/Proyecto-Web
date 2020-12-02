@@ -41,5 +41,10 @@ export class AlertModalFacturaComponent implements OnInit {
     this.detalleFactura.porcentajeIva = this.servicio.iva;
     this.detalleFactura.EstablecerValores();
   }
-
+  SepararPorPunto(valor): any {
+    while (/(\d+)(\d{3})/.test(valor.toString())) {
+      valor = valor.toString().replace(/(\d+)(\d{3})/, '$1' + '.' + '$2');
+    }
+    return valor+" $";
+  }
 }

@@ -35,6 +35,16 @@ namespace veterinariadotnet.Controllers
             return Ok(response);
         }
         
+        [HttpGet]
+        public ActionResult<RespuestaConsulta<FacturaViewModel>> Get()
+        {
+            var respuesta = _facturaServicio.Consutar();
+            if (respuesta.Error)
+            {
+                return BadRequest(respuesta);
+            }
+            return Ok(respuesta);
+        }
         private Factura Mapear(FacturaInputModel facturaInputModel)
         {
             var factura = new Factura

@@ -5,10 +5,10 @@ namespace veterinariadotnet.Models
     public class DetalleFacturaInputModel 
     {
         public int ServicioId { get; set; }
-        public decimal ValorServicio {get; set;}
+        public double ValorServicio {get; set;}
         public int Cantidad {get; set;}
-        public decimal PorcentajeDescuento {get; set;}
-        public decimal PorcentajeIva {get; set;}
+        public double PorcentajeDescuento {get; set;}
+        public double PorcentajeIva {get; set;}
     }
     public class DetalleFacturaViewModel : DetalleFacturaInputModel
     {

@@ -3,6 +3,7 @@
   <button type="button" class="ico"  (click)="activeModal.dismiss('Cross click')">
     <i class="fas fa-window-close" ></i>
   </button>
+  
 </div>
 <div class="modal-body">
   <div class="row">
@@ -31,7 +32,7 @@
       | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize;" (click) ="CrearDetalleFactura(servicio)"
       >
         <td>{{servicio.nombre}} </td>
-        <td>{{servicio.valor}}</td>
+        <td>{{SepararPorPunto(servicio.valor)}}</td>
         <td>{{servicio.descripcion}}</td>
       </tr>
     </tbody>
@@ -60,7 +61,7 @@
         <div class="col-md-3">
           <div class="form-group">
             <label>Descuento: </label>
-            <input type="number" class="form-control"  [(ngModel)]="detalleFactura.porcentajeDescueto" name="Descuento">
+            <input type="number" class="form-control"  [(ngModel)]="detalleFactura.porcentajeDescuento" name="Descuento">
           </div>
         </div>
       </div>

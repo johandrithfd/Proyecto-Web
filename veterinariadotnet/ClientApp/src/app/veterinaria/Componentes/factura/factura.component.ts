@@ -24,7 +24,7 @@ export class FacturaComponent implements OnInit {
   factura : Factura = new Factura();
   servicios : ServicioVeterinaria [];
   total : number = 0;
-  valordescuento : number = 0;
+  valorDescuento : number = 0;
   valorIva : number = 0;
   subTotal : number = 0;
 
@@ -61,17 +61,44 @@ export class FacturaComponent implements OnInit {
   {
     return this.servicios.find(d => d.servicioId == servicioId).nombre;
   }
-  actualizarValoresFactura ()
-  {
-    this.valorIva = this.factura.CalcularIva();
-    this.valordescuento = this.factura.CalcularDescuento();
-    this.subTotal = this.factura.CalcularTotal();
-    this.total = this.factura.CalcularTotal();
-  }
   valorServicio (servicioId : number)
   {
     return this.servicios.find(d => d.servicioId == servicioId).valor;
   }
+  actualizarValoresFactura ()
+  {
+    this.subTotal = this.calcularSubtoal();
+    this.valorIva = this.factura.CalcularIva();
+    this.valorDescuento = this.factura.CalcularDescuento();
+    this.total = this.calcularTotal();
+  }
+
+  calcularDescuento ()
+  {
+    let valorDescuento = 0;
+    this.factura.detallesFactura.forEach(d => {
+      valorDescuento = valorDescuento + d.valorDescuento;
+    })
+    return valorDescuento;
+  }
+  calcularTotal ()
+  {
+    let valorTotal = 0;
+    this.factura.detallesFactura.forEach(d => {
+      valorTotal = valorTotal + d.total;
+    })
+    return valorTotal;
+  }
+
+  calcularSubtoal ()
+  {
+    let valorTotal = 0;
+    this.factura.detallesFactura.forEach(d => {
+      valorTotal = valorTotal + d.subTotal;
+    })
+    return valorTotal;
+  }
+
   openModalServicio()
   {
     this.modalService.open(AlertModalFacturaComponent, { size: 'lg' }).result.then((d) => {  this.agregarDetalleFactura(d)});
@@ -86,11 +113,31 @@ export class FacturaComponent implements OnInit {
 
   registrarFactura()
   {
-    this.factura.RealizarCalculos();
-    this.factura.identificacion = this.cliente.identificacion;
-    this.facturaService.post(this.factura).subscribe(r =>{
-      this.mensaje.Informar("Registro Factura", r.mensaje);
-    });
+    if(this.cliente.identificacion == null)
+    {
+      this.mensaje.Informar("Error Al registrar Factura","No se ha asociado a ningun cliente");
+    }
+    else
+    {
+      if(this.factura.detallesFactura.length == 0)
+      {
+        this.mensaje.Informar("Error Al registrar Factura","No se ha asociado a ningun servicio a la factura");
+      }
+      else{
+        this.factura.RealizarCalculos();
+        this.factura.identificacion = this.cliente.identificacion;
+        this.facturaService.post(this.factura).subscribe(r =>{
+          this.mensaje.Informar("Registro Factura", r.mensaje);
+        });
+      }
+    }
+
+  }
+  SepararPorPunto(valor): any {
+    while (/(\d+)(\d{3})/.test(valor.toString())) {
+      valor = valor.toString().replace(/(\d+)(\d{3})/, '$1' + '.' + '$2');
+    }
+    return "$"+valor;
   }
 
 }

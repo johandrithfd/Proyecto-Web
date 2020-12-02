@@ -1,99 +1,149 @@
 <div class="container">
-  <div class="card" style="width: 100%;">
+  <div class="card" style="width: 100%">
     <div class="card-body">
       <form>
-        <div class="cabecera-formulario distacia-form ">
-          <h1 class=""><i class="fas fa-dog icono"></i> Factura My Veter cliente id {{cliente.identificacion}}</h1>
+        <div class="cabecera-formulario distacia-form">
+          <h1 class=""><i class="fas fa-dog icono"></i> Factura My Veter</h1>
         </div>
         <div class="form-group distacia-form">
-          <h2><strong>Fecha : </strong>{{fecha | date }}</h2>
+          <h2><strong>Fecha : </strong>{{ fecha | date:'dd/mm/yy' }}</h2>
           <div class="row">
-            <div class="col-md-4 ">
+            <div class="col-md-4">
               <label>Cedula : </label>
               <div class="input-group">
-                <input [(ngModel)]="identificacion" type="text" class="form-control" placeholder="119281201" name="identificacion">
+                <input
+                  [(ngModel)]="identificacion"
+                  type="text"
+                  class="form-control"
+                  placeholder="119281201"
+                  name="identificacion"
+                />
                 <span class="input-group-btn">
-                  <button (click) = "buscarCliente()" class="btn-buscar"><i class="fas fa-search-plus "></i></button>
+                  <button (click)="buscarCliente()" class="btn-buscar">
+                    <i class="fas fa-search-plus"></i>
+                  </button>
                 </span>
               </div>
             </div>
             <div class="col-md-4">
               <label>Direccion : </label>
-              <input type="text" class="form-control" disabled [(ngModel)]="cliente.direccion" name="nombres">
+              <input
+                type="text"
+                class="form-control"
+                disabled
+                [(ngModel)]="cliente.direccion"
+                name="nombres"
+              />
             </div>
             <div class="col-md-4">
               <label>Apellido 1: </label>
-              <input type="text" class="form-control" disabled [(ngModel)]="cliente.primerApellido" name="primerApellido">
+              <input
+                type="text"
+                class="form-control"
+                disabled
+                [(ngModel)]="cliente.primerApellido"
+                name="primerApellido"
+              />
             </div>
             <div class="col-md-4">
               <label>Apellido 2 : </label>
-              <input type="text" class="form-control" disabled [(ngModel)]="cliente.segundoApellido" name="segundoApellido">
+              <input
+                type="text"
+                class="form-control"
+                disabled
+                [(ngModel)]="cliente.segundoApellido"
+                name="segundoApellido"
+              />
             </div>
             <div class="col-md-4">
               <label>Celular : </label>
-              <input type="text" class="form-control" disabled [(ngModel)]="cliente.celular" name="Celular">
+              <input
+                type="text"
+                class="form-control"
+                disabled
+                [(ngModel)]="cliente.celular"
+                name="Celular"
+              />
             </div>
           </div>
         </div>
-        <h2>Servicios : </h2>
-            <button class = "btn-verde" (click)="openModalServicio()"><i class="fas fa-plus-circle"></i> Agregar Servicio</button>
-            <br> <br>
-            <table class="table table-hover table-sm table-bordered">
-              <thead class="header-table">
-                <tr>
-                  <th>Servicio</th>
-                  <th>Precio</th>
-                  <th>PorcIva</th>
-                  <th>PorcDescuento</th>
-                  <th>ValIva</th>
-                  <th>ValDescuento</th>
-                  <th>Cantidad </th>
-                  <th>SubTotal </th>
-                  <th>Total</th>
-                  <th></th>
-                  <th></th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr *ngFor="let detalle of factura.detallesFactura" >
-                  <td>{{nombreServicio(detalle.servicioId)}}</td>
-                  <td>{{valorServicio(detalle.servicioId)}}</td>
-                  <td>{{detalle.porcentajeIva}}</td>
-                  <td>{{detalle.porcentajeDescueto}}</td>
-                  <td>{{detalle.valorIva}}</td>
-                  <td>{{detalle.valorDescuento}}</td>
-                  <td>{{detalle.cantidad}}</td>
-                  <td>{{detalle.subTotal}}</td>
-                  <td>{{detalle.total}}</td>
-                  <td><button class="btn-azul">Modificar</button></td>
-                  <td><button class="btn-rojo">Eliminar</button></td>
-                </tr>
-              </tbody>
-            </table>
-            <br><br>
+        <h2>Servicios :</h2>
+        <button class="btn-verde" (click)="openModalServicio()">
+          <i class="fas fa-plus-circle"></i> Agregar Servicio
+        </button>
+        <br />
+        <br />
+        <table class="table table-hover table-sm table-bordered">
+          <thead class="header-table">
+            <tr>
+              <th>Servicio</th>
+              <th>Precio</th>
+              <th>Porcentaje Iva</th>
+              <th>Porcentaje Descuento</th>
+              <th>Valor Iva</th>
+              <th>Valor Descuento</th>
+              <th>Cantidad</th>
+              <th>SubTotal</th>
+              <th>Total</th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let detalle of factura.detallesFactura">
+              <td>{{ nombreServicio(detalle.servicioId) }}</td>
+              <td>{{SepararPorPunto(valorServicio(detalle.servicioId))  }}</td>
+              <td>{{ detalle.porcentajeIva }}</td>
+              <td>{{ detalle.porcentajeDescuento }}</td>
+              <td>{{ SepararPorPunto(detalle.valorIva) }}</td>
+              <td>{{SepararPorPunto(detalle.valorDescuento)}}</td>
+              <td>{{ detalle.cantidad }}</td>
+              <td>{{SepararPorPunto( detalle.subTotal) }}</td>
+              <td>{{ SepararPorPunto(detalle.total) }}</td>
+              <td><button class="btn-azul">Modificar</button></td>
+              <td><button class="btn-rojo">Eliminar</button></td>
+            </tr>
+          </tbody>
+        </table>
+        <br /><br /><br>
 
-            <div class="row">
-              <div class="col-md-9">
-              </div>
-              <div>
-                <div class="estilo-detalle">
-                  <p>Valor Iva : {{valorIva}}</p>
-                  <p>Valor Descuento : {{valordescuento}}</p>
-                  <p>Valor SubTotal : {{subTotal}}</p>
-                  <p>Valor Total : <strong style="color: rgb(1,124,104);font-size: x-large;" >{{total}}</strong> </p>
-                </div>
-              </div>
-
-            </div>
-
-            <br><br>
-            <button class = "btn-verde" (click)="registrarFactura()"><i class="fas fa-save"></i> Registrar Factura</button>
+        <div class="row">
+          <div class="col-md-9"></div>
+          <table class="table table-hover table-sm table-bordered" style="width: 20%;">
+            <thead class="header-table">
+              <tr>
+                <th></th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Valor Iva :</td>
+                <td>{{SepararPorPunto(valorIva)}}</td>
+              </tr>
+              <tr>
+                <td>Valor Descuento :</td>
+                <td>{{SepararPorPunto(valorDescuento)}}</td>
+              </tr>
+              <tr>
+                <td>Valor Iva :</td>
+                <td>{{SepararPorPunto(subTotal)}}</td>
+              </tr>
+              <tr>
+                <td>Valor SubTotal :</td>
+                <td><strong style="color: rgb(1, 124, 104); font-size: x-large">{{SepararPorPunto(total)}}</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <br/><br/>
+        <button class="btn-verde" (click)="registrarFactura()">
+          <i class="fas fa-save"></i> Registrar Factura
+        </button>
       </form>
     </div>
+
   </div>
-
-
-  <br><br><br>
-
+  <br/><br/><br/>
 </div>
 
