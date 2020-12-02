@@ -6918,36 +6918,34 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\spayd\\.nuget\\packages\\": {}
+    "C:\\Users\\ROCHETY\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Descargas\\trabajos Bajo Web\\Veterinaria 2\\Proyecto-Web\\Logica\\Logica.csproj",
+      "projectUniqueName": "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Logica\\Logica.csproj",
       "projectName": "Logica",
-      "projectPath": "D:\\Descargas\\trabajos Bajo Web\\Veterinaria 2\\Proyecto-Web\\Logica\\Logica.csproj",
-      "packagesPath": "C:\\Users\\spayd\\.nuget\\packages\\",
-      "outputPath": "D:\\Descargas\\trabajos Bajo Web\\Veterinaria 2\\Proyecto-Web\\Logica\\obj\\",
+      "projectPath": "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Logica\\Logica.csproj",
+      "packagesPath": "C:\\Users\\ROCHETY\\.nuget\\packages\\",
+      "outputPath": "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Logica\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\spayd\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\ROCHETY\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netstandard2.1": {
           "projectReferences": {
-            "D:\\Descargas\\trabajos Bajo Web\\Veterinaria 2\\Proyecto-Web\\Datos\\Datos.csproj": {
-              "projectPath": "D:\\Descargas\\trabajos Bajo Web\\Veterinaria 2\\Proyecto-Web\\Datos\\Datos.csproj"
+            "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Datos\\Datos.csproj": {
+              "projectPath": "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Datos\\Datos.csproj"
             },
-            "D:\\Descargas\\trabajos Bajo Web\\Veterinaria 2\\Proyecto-Web\\Entidad\\Entidad.csproj": {
-              "projectPath": "D:\\Descargas\\trabajos Bajo Web\\Veterinaria 2\\Proyecto-Web\\Entidad\\Entidad.csproj"
+            "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Entidad\\Entidad.csproj": {
+              "projectPath": "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Entidad\\Entidad.csproj"
             }
           }
         }
@@ -6975,7 +6973,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

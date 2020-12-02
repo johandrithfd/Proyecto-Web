@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "0nLEU7MWnObcUQwWfR5F676+qGFQIuwGN10uYtKsqiQ7AztyBtuZaFqsbQ/3NuScK+q4w5WcQG+g4YzJ1+T73w==",
+  "dgSpecHash": "c6o4/aXE5weBNX4xsieaYfO8UUB97s4k7P0MXtUUC8d/mSo2iXFB3LFmEdGdrPAhqfTqeNOdJfTRH8QWrMcHaw==",
   "success": true,
-  "projectFilePath": "D:\\Descargas\\trabajos Bajo Web\\Veterinaria 2\\Proyecto-Web\\Entidad\\Entidad.csproj",
+  "projectFilePath": "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Entidad\\Entidad.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\spayd\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512"
+    "C:\\Users\\ROCHETY\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512"
   ],
   "logs": []
 }

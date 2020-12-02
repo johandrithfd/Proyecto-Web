@@ -29,7 +29,7 @@ import { CategoriaComponent } from '../veterinaria/Componentes/categoria/categor
       { path: 'eliminar-cliente', component: ClienteEliminarComponent,canActivate: [AuthGuard]},
 
       { path: 'graficas', component: GraficasComponent,canActivate: [AuthGuard]},
-      { path: 'categorias-servicos', component: CategoriaComponent,canActivate: [AuthGuard]}
+      { path: 'categorias-servicos', component: CategoriaComponent,canActivate: [AuthGuard]},
       { path: 'app-consulta-factura', component: ConsultaFacturaComponent, canActivate: [AuthGuard] },
       { path: 'modificar-cliente', component: ClienteModificarComponent,canActivate: [AuthGuard]}
     ]),

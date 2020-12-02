@@ -51,20 +51,15 @@ public barChartLabels: Label[] = ['Peluqueria', 'pediquiere','baño canino','cor
   public barChartLegend = true;
 
 
-  // tslint:disable-next-line: member-ordering
+
   public barChartData: ChartDataSets[];
-  // tslint:disable-next-line: member-ordering
   public barChartPlugins =[pluginDataLabels];
 
 
-  // tslint:disable-next-line: member-ordering
+
   private servicios:ServicioVeterinaria [];
-  // tslint:disable-next-line: member-ordering
-  // tslint:disable-next-line: member-ordering
   private valores= [];
   private nombreServicios = [];
-
-private detalleFacturas:DetalleFactura[];
 
 
   ngOnInit(): void {
