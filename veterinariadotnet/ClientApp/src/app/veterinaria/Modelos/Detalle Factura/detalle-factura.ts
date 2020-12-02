@@ -5,7 +5,7 @@ export class DetalleFactura {
   valorServicio : number;
   cantidad : number;
   porcentajeIva : number;
-  porcentajeDescueto : number;
+  porcentajeDescuento : number;
   subTotal : number;
   total : number;
   valorDescuento : number;
@@ -16,7 +16,7 @@ export class DetalleFactura {
   {
     this.subTotal = this.valorServicio * this.cantidad;
     this.valorIva =  this.subTotal * this.porcentajeIva;
-    this.valorDescuento = this.subTotal * this.porcentajeDescueto/100;
+    this.valorDescuento = this.subTotal * this.porcentajeDescuento/100;
     this.total = this.subTotal + this.valorIva - this.valorDescuento;
   }
 

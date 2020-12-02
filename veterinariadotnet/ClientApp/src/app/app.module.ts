@@ -29,6 +29,9 @@ import { ClienteEliminarComponent } from './veterinaria/Componentes/cliente-elim
 import { ChartsModule } from 'ng2-charts';
 import { GraficasComponent } from './veterinaria/Componentes/graficas/graficas.component';
 import { CategoriaComponent } from './veterinaria/Componentes/categoria/categoria.component';
+import { ConsultaFacturaComponent } from './veterinaria/Componentes/consulta-factura/consulta-factura.component';
+import { ImfoFacturaComponent } from './veterinaria/Componentes/consulta-factura/imfo-factura/imfo-factura.component';
+
 
 
 
@@ -54,7 +57,10 @@ import { CategoriaComponent } from './veterinaria/Componentes/categoria/categori
     ClienteModificarComponent,
     ClienteEliminarComponent,
     GraficasComponent,
-    CategoriaComponent
+    CategoriaComponent,
+    ConsultaFacturaComponent,
+    ImfoFacturaComponent
+
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -67,7 +73,7 @@ import { CategoriaComponent } from './veterinaria/Componentes/categoria/categori
   ],
   providers: [ClienteService,{ provide: HTTP_INTERCEPTORS, useClass: JwtInterceptorService, multi: true }],
   // tslint:disable-next-line:max-line-length
-  entryComponents:[AlertModalComponent ,AlertModalFacturaComponent,ConsultaClienteComponent,ClienteEliminarComponent,ClienteModificarComponent,LoginComponent],
+  entryComponents:[ImfoFacturaComponent,AlertModalComponent ,AlertModalFacturaComponent,ConsultaClienteComponent,ClienteEliminarComponent,ClienteModificarComponent,LoginComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

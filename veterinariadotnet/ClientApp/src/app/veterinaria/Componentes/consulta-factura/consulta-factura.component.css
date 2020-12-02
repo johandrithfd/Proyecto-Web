@@ -1,0 +1,15 @@
+.btn-verde {
+  color: white;
+  background-color: rgb(1,124,104);
+  border-radius: 6px;
+  font-size: 18px;
+  border: 2px solid rgb(1,124,104);
+  height: 37px;
+  margin: 0;
+}
+
+  .btn-verde:hover {
+    color: rgb(231, 236, 241);
+    background-color: rgb(1, 75, 63);
+    border: 2px solid rgb(1, 75, 63);
+  }

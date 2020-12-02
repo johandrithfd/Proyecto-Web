@@ -30,6 +30,26 @@ namespace Logica
                 return respuesta;
             }
         }
+        public RespuestaConsulta<Factura> Consutar()
+        {
+            List<Factura> facturas;
+            try
+            {
+                facturas = _context.Facturas.Include(d => d.DetallesFactura).ToList();
+                if (facturas.Count == 0)
+                { 
+                    return new RespuestaConsulta<Factura>(facturas, "Oh no,no encontramos facturas", false);
+                }
+                return new RespuestaConsulta<Factura>(facturas, "Consulta de factura con  exito", false);
+            }
+            catch (Exception e)
+            {
+                RespuestaConsulta<Factura> respuesta = new RespuestaConsulta<Factura>();
+                respuesta.Mensaje = $"error {e.Message}";
+                respuesta.Error = true;
+                return respuesta;
+            }
+        }
 
     }
     

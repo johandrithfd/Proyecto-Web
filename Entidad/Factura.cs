@@ -20,28 +20,28 @@ namespace Entidad
         }
         
         [Display(Name = "SubTotal")]
-        public decimal SubTotal 
+        public double SubTotal 
         {
             get{
                 return DetallesFactura.Sum(s => s.SubTotal);
             }
         }
         [Display(Name = "ValorIva")]
-        public decimal ValorIva 
+        public double ValorIva 
         {
             get{
                 return  DetallesFactura.Sum(s => s.ValorIva); 
             }
         }
         [Display(Name = "ValorDescuento")]
-        public decimal ValorDescuento
+        public double ValorDescuento
         {
             get{
                 return DetallesFactura.Sum(s => s.ValorDescuento); 
             }
         }
         [Display(Name = "Total")]
-        public decimal Total 
+        public double Total 
         {
             get{
                 return SubTotal  + ValorIva - ValorDescuento;
