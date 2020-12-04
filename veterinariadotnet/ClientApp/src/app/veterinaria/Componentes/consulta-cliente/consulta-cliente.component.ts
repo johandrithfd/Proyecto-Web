@@ -6,6 +6,7 @@ import {Cliente } from '../models/cliente';
 import {ClienteService} from '../../../services/serviciosRocha/cliente.service' ;
 import { CurrencyPipe } from '@angular/common';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { SignalRService } from 'src/app/services/signal-r.service';
 
 
 
@@ -17,10 +18,14 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 export class ConsultaClienteComponent implements OnInit {
     clientes: Cliente[];
     searchText: string;
-  constructor(private clienteService: ClienteService, private modalService: NgbModal) { }
+  constructor(private clienteService: ClienteService, private modalService: NgbModal,private signalRService : SignalRService) { }
 
   ngOnInit(): void {
     this.clienteService.get().subscribe(result => { this.clientes = result; });
+    /// Se suscribe al servicio de signal r y cuando se regustr una nueva persona se agregará el registro nuevo al array personas
+    this.signalRService.clienteReceived.subscribe((cliente: Cliente) => {
+      this.clientes.push(cliente);
+    });
   }
 
   ModalEliminar(indice)

@@ -1,5 +1,6 @@
 <div class="header">
 
+
 </div>
 
 <input type="checkbox" id="check">
@@ -17,8 +18,8 @@
     <li><a [routerLink]='["registro-servicio"]' *ngIf="currentUser"><i class="fab fa-buffer"></i>Registro Servicio</a>
     </li>
     <li><a [routerLink]='["factura"]' *ngIf="currentUser"><i class="fas fa-money-bill-wave"> </i>Facturacion</a></li>
-    <li><a [routerLink]='["app-consulta-factura"]'*ngIf="currentUser"><i class="fas fa-search-dollar"></i>Consulta Facturas</a></li>
-    <li><a [routerLink]='["consulta-cliente"]' *ngIf="currentUser"><i class="fas fa-search-dollar"></i> Consultar
+    <li><a [routerLink]='["app-consulta-factura"]'*ngIf="currentUser"><i class="fas fa-file-invoice-dollar"></i>Reportes Facturas</a></li>
+    <li><a [routerLink]='["consulta-cliente"]' *ngIf="currentUser"><i class="fas fa-users"></i> Consultar
         Cliente</a></li>
         <li><a [routerLink]='["graficas"]'*ngIf="currentUser"><i class="fas fa-search-dollar"></i>Estadisticas</a></li>
 

@@ -73,7 +73,7 @@ import { ImfoFacturaComponent } from './veterinaria/Componentes/consulta-factura
   ],
   providers: [ClienteService,{ provide: HTTP_INTERCEPTORS, useClass: JwtInterceptorService, multi: true }],
   // tslint:disable-next-line:max-line-length
-  entryComponents:[ImfoFacturaComponent,AlertModalComponent ,AlertModalFacturaComponent,ConsultaClienteComponent,ClienteEliminarComponent,ClienteModificarComponent,LoginComponent],
+  entryComponents:[ImfoFacturaComponent,AlertModalComponent ,AlertModalFacturaComponent,ConsultaClienteComponent,ClienteEliminarComponent,ClienteModificarComponent,LoginComponent,RegistroUsuarioComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

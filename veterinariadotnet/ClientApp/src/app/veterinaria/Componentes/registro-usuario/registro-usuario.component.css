@@ -1,13 +1,14 @@
 body{
     margin-top: -70px !important;
-    background-image: url('../../../../assets/Imagenes/FondoNivel.jpg'); 
+    background-image: url('../../../../assets/Imagenes/FondoNivel.jpg');
     background-repeat: repeat-y;
     background-size: cover;
     background-attachment: fixed;
 }
+
 .formulario{
     background:rgba(0,0,0,.1);
-    padding: 20px;
+
     border-radius: 10px;
     box-shadow:7px 14px 38px #111111 ;
     color: white;
@@ -19,11 +20,8 @@ body{
     border-style: none;
     transition: 0.3s ease-in;
     outline: none;
-    box-shadow: none;
+
     color: white;
-
-
-
 }
 .form-control::placeholder{
     color: white;
@@ -54,4 +52,51 @@ body{
     text-decoration-style: none;
     text-decoration-line: none;
     cursor: pointer;
+}
+
+
+
+.cabecera-formulario {
+  background-color: rgb(1, 99, 124);
+  padding: 5;
+  margin-bottom: 14px;
+  border-radius: 6px;
+}
+.cabecera-formulario p{
+  text-align:center;
+  font-size: 20px;
+  color: ivory;
+}
+h3
+{
+  text-align: center;
+}
+
+.btn-guardar
+{
+  color: white;
+  background-color: rgb(1, 99, 124);
+  border-radius: 6px;
+  font-size: 18px;
+  border: 2px solid rgb(1, 99, 124);
+  padding: 16;
+
+  margin: 5px;
+  height: 83%;
+}
+.btn-cancelar
+{
+color: white;
+background-color:  #213e3b;
+border-radius: 6px;
+font-size: 18px;
+border: 2px solid #213e3b;
+padding: 16;
+height: 37px;
+margin: 5px;
+
+}
+.btn-cancelar i
+{
+padding-right: 15px;
 }

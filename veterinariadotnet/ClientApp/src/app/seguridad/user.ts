@@ -1,11 +1,11 @@
 export class User {
     userName: string;
     password: string;
-    estado:string;
+    identificacion:string;
     firstName: string;
     lastName: string;
     email:string;
     role:string;
-    mobilePhone:string;  
+    mobilePhone:string;
     token: string;
 }
