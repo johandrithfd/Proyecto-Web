@@ -26,6 +26,8 @@ export class ConsultaClienteComponent implements OnInit {
     this.signalRService.clienteReceived.subscribe((cliente: Cliente) => {
       this.clientes.push(cliente);
     });
+
+
   }
 
   ModalEliminar(indice)

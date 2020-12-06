@@ -15,11 +15,13 @@ import { ConsultaClienteComponent} from '../../app/veterinaria/Componentes/consu
 import { LoginComponent } from '../veterinaria/Componentes/login/login.component';
 import { AuthGuard } from '../services/serviciosRocha/auth.guard';
 import { CategoriaComponent } from '../veterinaria/Componentes/categoria/categoria.component';
+import { ComienzoComponent } from '../veterinaria/Componentes/comienzo/comienzo.component';
+
 
 @NgModule({
   declarations: [],
   imports: [RouterModule.forRoot([
-      { path: '', component: HomeComponent, pathMatch: 'full', canActivate: [AuthGuard] },
+      { path: 'home', component: HomeComponent, pathMatch: 'full', canActivate: [AuthGuard] },
       { path: 'registro-servicio', component: RegistroServicioComponent, canActivate: [AuthGuard]},
       { path: 'registro-cliente', component: RegistroClienteComponent, canActivate: [AuthGuard]},
       { path: 'consulta-cliente', component: ConsultaClienteComponent , canActivate: [AuthGuard]},
@@ -31,7 +33,9 @@ import { CategoriaComponent } from '../veterinaria/Componentes/categoria/categor
       { path: 'graficas', component: GraficasComponent,canActivate: [AuthGuard]},
       { path: 'categorias-servicos', component: CategoriaComponent,canActivate: [AuthGuard]},
       { path: 'app-consulta-factura', component: ConsultaFacturaComponent, canActivate: [AuthGuard] },
-      { path: 'modificar-cliente', component: ClienteModificarComponent,canActivate: [AuthGuard]}
+      { path: 'modificar-cliente', component: ClienteModificarComponent,canActivate: [AuthGuard]},
+      { path: '', component: ComienzoComponent,canActivate: [AuthGuard]}
+
     ]),
     CommonModule
   ],

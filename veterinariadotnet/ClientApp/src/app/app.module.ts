@@ -31,6 +31,8 @@ import { GraficasComponent } from './veterinaria/Componentes/graficas/graficas.c
 import { CategoriaComponent } from './veterinaria/Componentes/categoria/categoria.component';
 import { ConsultaFacturaComponent } from './veterinaria/Componentes/consulta-factura/consulta-factura.component';
 import { ImfoFacturaComponent } from './veterinaria/Componentes/consulta-factura/imfo-factura/imfo-factura.component';
+import { ComienzoComponent } from './veterinaria/Componentes/comienzo/comienzo.component';
+
 
 
 
@@ -59,7 +61,9 @@ import { ImfoFacturaComponent } from './veterinaria/Componentes/consulta-factura
     GraficasComponent,
     CategoriaComponent,
     ConsultaFacturaComponent,
-    ImfoFacturaComponent
+    ImfoFacturaComponent,
+    ComienzoComponent,
+
 
   ],
   imports: [

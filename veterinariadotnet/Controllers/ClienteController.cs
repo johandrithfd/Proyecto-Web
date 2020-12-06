@@ -45,6 +45,7 @@ namespace veterinariadotnet.Controllers
         public ActionResult<string> Delete(string identificacion)
         {
             var cliente = _clienteService.Eliminar(identificacion);
+            
             return Ok(cliente);
         }
 
