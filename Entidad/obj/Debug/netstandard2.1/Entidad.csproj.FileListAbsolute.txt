@@ -16,3 +16,12 @@ D:\Descargas\trabajos Bajo Web\Veterinaria\Entidad\obj\Debug\netstandard2.1\Enti
 D:\Descargas\trabajos Bajo Web\Veterinaria\Entidad\obj\Debug\netstandard2.1\Entidad.AssemblyInfo.cs
 D:\Descargas\trabajos Bajo Web\Veterinaria\Entidad\obj\Debug\netstandard2.1\Entidad.dll
 D:\Descargas\trabajos Bajo Web\Veterinaria\Entidad\obj\Debug\netstandard2.1\Entidad.pdb
+D:\Documentos\Upc\Trabajos Web\Proyecto-Web\Entidad\bin\Debug\netstandard2.1\Entidad.deps.json
+D:\Documentos\Upc\Trabajos Web\Proyecto-Web\Entidad\bin\Debug\netstandard2.1\Entidad.dll
+D:\Documentos\Upc\Trabajos Web\Proyecto-Web\Entidad\bin\Debug\netstandard2.1\Entidad.pdb
+D:\Documentos\Upc\Trabajos Web\Proyecto-Web\Entidad\obj\Debug\netstandard2.1\Entidad.csprojAssemblyReference.cache
+D:\Documentos\Upc\Trabajos Web\Proyecto-Web\Entidad\obj\Debug\netstandard2.1\Entidad.AssemblyInfoInputs.cache
+D:\Documentos\Upc\Trabajos Web\Proyecto-Web\Entidad\obj\Debug\netstandard2.1\Entidad.AssemblyInfo.cs
+D:\Documentos\Upc\Trabajos Web\Proyecto-Web\Entidad\obj\Debug\netstandard2.1\Entidad.csproj.CoreCompileInputs.cache
+D:\Documentos\Upc\Trabajos Web\Proyecto-Web\Entidad\obj\Debug\netstandard2.1\Entidad.dll
+D:\Documentos\Upc\Trabajos Web\Proyecto-Web\Entidad\obj\Debug\netstandard2.1\Entidad.pdb

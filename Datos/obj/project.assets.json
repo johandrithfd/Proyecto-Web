@@ -6899,19 +6899,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ROCHETY\\.nuget\\packages\\": {}
+    "C:\\Users\\EQUIPO\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Datos\\Datos.csproj",
+      "projectUniqueName": "D:\\Documentos\\Upc\\Trabajos Web\\Proyecto-Web\\Datos\\Datos.csproj",
       "projectName": "Datos",
-      "projectPath": "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Datos\\Datos.csproj",
-      "packagesPath": "C:\\Users\\ROCHETY\\.nuget\\packages\\",
-      "outputPath": "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Datos\\obj\\",
+      "projectPath": "D:\\Documentos\\Upc\\Trabajos Web\\Proyecto-Web\\Datos\\Datos.csproj",
+      "packagesPath": "C:\\Users\\EQUIPO\\.nuget\\packages\\",
+      "outputPath": "D:\\Documentos\\Upc\\Trabajos Web\\Proyecto-Web\\Datos\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ROCHETY\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\EQUIPO\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.1"
@@ -6922,8 +6922,8 @@
       "frameworks": {
         "netstandard2.1": {
           "projectReferences": {
-            "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Entidad\\Entidad.csproj": {
-              "projectPath": "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Entidad\\Entidad.csproj"
+            "D:\\Documentos\\Upc\\Trabajos Web\\Proyecto-Web\\Entidad\\Entidad.csproj": {
+              "projectPath": "D:\\Documentos\\Upc\\Trabajos Web\\Proyecto-Web\\Entidad\\Entidad.csproj"
             }
           }
         }
@@ -6969,7 +6969,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.404\\RuntimeIdentifierGraph.json"
       }
     }
   }

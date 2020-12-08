@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "c6o4/aXE5weBNX4xsieaYfO8UUB97s4k7P0MXtUUC8d/mSo2iXFB3LFmEdGdrPAhqfTqeNOdJfTRH8QWrMcHaw==",
+  "dgSpecHash": "fvh8lOxEfD1/yxd0w5KEHYcsY15sIdbONoYXOmTpT+3BvPcY+wq8sQbYNO9oPAj0ltMdF6IIQlfr9nR3H5K7IQ==",
   "success": true,
-  "projectFilePath": "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Entidad\\Entidad.csproj",
+  "projectFilePath": "D:\\Documentos\\Upc\\Trabajos Web\\Proyecto-Web\\Entidad\\Entidad.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\ROCHETY\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512"
+    "C:\\Users\\EQUIPO\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512"
   ],
   "logs": []
 }

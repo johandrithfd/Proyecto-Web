@@ -22,3 +22,15 @@ D:\Descargas\trabajos Bajo Web\Veterinaria\Datos\obj\Debug\netstandard2.1\Datos.
 D:\Descargas\trabajos Bajo Web\Veterinaria\Datos\obj\Debug\netstandard2.1\Datos.csproj.CopyComplete
 D:\Descargas\trabajos Bajo Web\Veterinaria\Datos\obj\Debug\netstandard2.1\Datos.dll
 D:\Descargas\trabajos Bajo Web\Veterinaria\Datos\obj\Debug\netstandard2.1\Datos.pdb
+D:\Documentos\Upc\Trabajos Web\Proyecto-Web\Datos\bin\Debug\netstandard2.1\Datos.deps.json
+D:\Documentos\Upc\Trabajos Web\Proyecto-Web\Datos\bin\Debug\netstandard2.1\Datos.dll
+D:\Documentos\Upc\Trabajos Web\Proyecto-Web\Datos\bin\Debug\netstandard2.1\Datos.pdb
+D:\Documentos\Upc\Trabajos Web\Proyecto-Web\Datos\bin\Debug\netstandard2.1\Entidad.dll
+D:\Documentos\Upc\Trabajos Web\Proyecto-Web\Datos\bin\Debug\netstandard2.1\Entidad.pdb
+D:\Documentos\Upc\Trabajos Web\Proyecto-Web\Datos\obj\Debug\netstandard2.1\Datos.csprojAssemblyReference.cache
+D:\Documentos\Upc\Trabajos Web\Proyecto-Web\Datos\obj\Debug\netstandard2.1\Datos.AssemblyInfoInputs.cache
+D:\Documentos\Upc\Trabajos Web\Proyecto-Web\Datos\obj\Debug\netstandard2.1\Datos.AssemblyInfo.cs
+D:\Documentos\Upc\Trabajos Web\Proyecto-Web\Datos\obj\Debug\netstandard2.1\Datos.csproj.CoreCompileInputs.cache
+D:\Documentos\Upc\Trabajos Web\Proyecto-Web\Datos\obj\Debug\netstandard2.1\Datos.csproj.CopyComplete
+D:\Documentos\Upc\Trabajos Web\Proyecto-Web\Datos\obj\Debug\netstandard2.1\Datos.dll
+D:\Documentos\Upc\Trabajos Web\Proyecto-Web\Datos\obj\Debug\netstandard2.1\Datos.pdb
