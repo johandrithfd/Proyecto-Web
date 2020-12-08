@@ -3,7 +3,7 @@
     <div class="card-body">
       <div
         class="cabecera-formulario">
-        <p class="tituloContainer"><i class="fas fa-dog"></i>REGISTRO DE ClIENTES</p>
+        <p class="tituloContainer"><i class="fas fa-dog"></i> REGISTRO DE ClIENTES</p>
       </div>
 
 
@@ -11,10 +11,11 @@
         <div class="row">
           <div class="col-md-6">
             <div class="form-group">
-              <label>Identificacion del cliente:</label>
+              <label><i class="fas fa-id-card"></i> Identificacion del cliente:</label>
+              
               <input [(ngModel)]="cliente.identificacion" formControlName="identificacion" class="form-control"
                 [ngClass]="{ 'is-invalid': submitted && f.identificacion.errors }"
-                placeholder="digite la identificacion del cliente:" type="text" />
+                placeholder="digite la identificacion del cliente" type="text" />
               <div *ngIf="submitted && f.identificacion.errors" class="invalid-feedback">
                 <div *ngIf="f.identificacion.errors.required || f.identificacion.errors.pattern">la identificacion es
                   requerida</div>
@@ -25,7 +26,7 @@
             </div>
 
             <div class="form-group">
-              <label>Nombre Del Cliente:</label>
+              <label><i class="fas fa-user-edit"></i>  Nombre Del Cliente:</label>
               <input [(ngModel)]="cliente.nombres" formControlName="nombres" class="form-control"
                 [ngClass]="{ 'is-invalid': submitted && f.nombres.errors }" placeholder="digite nombres" type="text" />
               <div *ngIf="submitted && f.nombres.errors" class="invalid-feedback">
@@ -35,7 +36,7 @@
             </div>
 
             <div class="form-group">
-              <label>primer Apellido :</label>
+              <label> <i class="fas fa-user-tie"></i> primer Apellido :</label>
               <input [(ngModel)]="cliente.primerApellido" formControlName="primerApellido" class="form-control"
                 [ngClass]="{ 'is-invalid': submitted && f.primerApellido.errors }" placeholder="digite primer apellido "
                 type="text" />
@@ -46,7 +47,7 @@
               </div>
             </div>
             <div class="form-group">
-              <label>Segundo Apellido :</label>
+              <label> <i class="fas fa-user-ninja"></i>  Segundo Apellido :</label>
               <input [(ngModel)]="cliente.segundoApellido" formControlName="segundoApellido" class="form-control"
                 [ngClass]="{ 'is-invalid': submitted && f.segundoApellido.errors }"
                 placeholder="digite segundo apellido " type="text" />
@@ -60,7 +61,7 @@
 
           <div class="col-md-6">
             <div class="form-group">
-              <label>Telefono :</label>
+              <label> <i class="fas fa-phone-square-alt"></i> Telefono :</label>
               <input [(ngModel)]="cliente.telefono" formControlName="telefono" class="form-control"
                 [ngClass]="{ 'is-invalid': submitted && f.telefono.errors }" placeholder="digite telefono"
                 type="text" />
@@ -72,7 +73,7 @@
               </div>
             </div>
             <div class="form-group">
-              <label>Celular :</label>
+              <label> <i class="fas fa-mobile"></i> Celular :</label>
               <input [(ngModel)]="cliente.celular" formControlName="celular" class="form-control"
                 [ngClass]="{ 'is-invalid': submitted && f.celular.errors }" placeholder="digite celular " type="text" />
               <div *ngIf="submitted && f.celular.errors" class="invalid-feedback">
@@ -83,7 +84,7 @@
               </div>
             </div>
             <div class="form-group">
-              <label>Direccion :</label>
+              <label> <i class="fas fa-map-marker-alt"></i> Direccion :</label>
               <input [(ngModel)]="cliente.direccion" formControlName="direccion" class="form-control"
                 [ngClass]="{ 'is-invalid': submitted && f.direccion.errors }" placeholder="digite direccion"
                 type="text" />
@@ -94,7 +95,7 @@
               </div>
             </div>
             <div class="form-group">
-              <label>Correo :</label>
+              <label> <i class="fas fa-envelope-square"></i> Correo :</label>
               <input [(ngModel)]="cliente.correo" formControlName="correo" class="form-control"
                 [ngClass]="{ 'is-invalid': submitted && f.correo.errors }" placeholder="digite correo" type="text" />
               <div *ngIf="submitted && f.correo.errors" class="invalid-feedback">

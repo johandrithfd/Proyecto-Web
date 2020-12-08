@@ -33,7 +33,7 @@ namespace veterinariadotnet.Controllers
                     UserName="Lrochety", 
                     Password="4444", 
                     Email="Lrochety@gmail.com", 
-                    Estado="AC", 
+                    identificacion="938493094", 
                     FirstName="Rocha jr", 
                     LastName="", 
                     Role="admin",
@@ -55,8 +55,6 @@ namespace veterinariadotnet.Controllers
             return Ok(response);
         }
 
-
-
-
+        
     }
-}
+    }

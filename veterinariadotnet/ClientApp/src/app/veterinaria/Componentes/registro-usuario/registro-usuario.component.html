@@ -1,0 +1,104 @@
+<body>
+  <div class="container">
+    <div class="row justify-content-center pt-5 mt-5 mr-1">
+        <div class="col-md-7 formulario ">
+
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+  <div class="form-group text-center pt-3">
+
+    <div class="cabecera-formulario" > <h1 class="text-light" > <i class="fas fa-sign-in-alt"></i>  Registrarse</h1> </div>
+</div>
+
+  <div class="row">
+    <div class="col-md-6">
+    <div class="form-group">
+      <label for="firstName"> <i class="fas fa-user-shield"></i>  Primer Nombre: </label>
+
+
+     <input  type="text" formControlName="firstName" class="form-control" placeholder ="Digite aquí el nombre" [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }" />
+        <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+            <div *ngIf="f.firstName.errors.required">Nombre es requerido</div>
+        </div>
+
+    </div>
+    <div class="form-group">
+        <label for="lastName"> <i class="fas fa-user-circle"></i> Apellido :</label>
+        <input type="text" formControlName="lastName" class="form-control" placeholder ="Digite aquí el apellido" [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }" />
+        <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
+            <div *ngIf="f.lastName.errors.required">Apellido es requerido</div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="estado"> <i class="fas fa-battery-half"></i>  Identificacion:</label>
+        <input type="text" formControlName="identificacion" class="form-control" placeholder ="Digite aquí la identificacion"  [ngClass]="{ 'is-invalid': submitted && f.identificacion.errors }" />
+        <div *ngIf="submitted && f.identificacion.errors" class="invalid-feedback">
+            <div *ngIf="f.identificacion.errors.required">identificacion es requerida</div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="username"> <i class="fas fa-user-plus"></i> Usuario :</label>
+        <input type="text" formControlName="username" class="form-control" placeholder ="Digite aquí el Usuario" [ngClass]="{ 'is-invalid': submitted && f.username.errors }" />
+        <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
+            <div *ngIf="f.username.errors.required">Usuario es requerido</div>
+        </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="form-group">
+        <label for="password">  <i class="fas fa-unlock-alt"></i> Contraseña :</label>
+        <input type="password" formControlName="password" class="form-control" placeholder ="Digite aquí su clave"  [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
+        <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+            <div *ngIf="f.password.errors.required">Contraseña es requerida</div>
+            <div *ngIf="f.password.errors.minlength">Contraseña tiene que tener minimo 6 caracteres</div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="email"> <i class="fas fa-envelope"></i> Correo : </label>
+        <input type="text" formControlName="email" class="form-control" placeholder ="Digite aquí el Correo"[ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+        <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+            <div *ngIf="f.email.errors.required">Correo es requerido</div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="role"> <i class="fas fa-user-tag"></i> Rol:</label>
+        <input type="text" formControlName="role" class="form-control" placeholder ="Digite aquí el Rol" [ngClass]="{ 'is-invalid': submitted && f.role.errors }" />
+        <div *ngIf="submitted && f.role.errors" class="invalid-feedback">
+            <div *ngIf="f.role.errors.required">Rol es requerido</div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="mobilephone"> <i class="fas fa-mobile-alt"></i> Celular :</label>
+        <input type="text" formControlName="mobilephone" class="form-control" placeholder ="Digite aquí el Celular" [ngClass]="{ 'is-invalid': submitted && f.mobilephone.errors }" />
+        <div *ngIf="submitted && f.mobilephone.errors" class="invalid-feedback">
+            <div *ngIf="f.mobilephone.errors.required">Celular es requerido</div>
+
+        </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+      <div class="form-group mx-sm-3">
+        <button [disabled]="loading" class="btn-guardar">
+            <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span><i class="fas fa-save"></i>
+            Registrar
+        </button>
+      </div>
+    </div>
+
+
+        <div class="col-md-6">
+
+        <button class="btn-cancelar mx-sm-3 " type="reset" ><i
+          class="fas fa-window-close"></i>Cancel</button>
+        </div>
+
+  </div>
+
+
+</form>
+</div>
+</div>
+</div><br><br><br><br><br><br>
+
+</body>

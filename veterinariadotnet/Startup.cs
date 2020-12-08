@@ -13,8 +13,7 @@ using System;
 using System.Text;
 using veterinariadotnet.Config;
 using Microsoft.IdentityModel.Tokens;
-
-
+using veterinariadotnet.Hubs;
 
 namespace veterinariadotnet
 {
@@ -83,6 +82,9 @@ namespace veterinariadotnet
                     }
                 });
             });
+
+            //SignalR
+            services.AddSignalR();
             // In production, the Angular files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
             {
@@ -127,6 +129,7 @@ namespace veterinariadotnet
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller}/{action=Index}/{id?}");
+                    endpoints.MapHub<SignalHub>("/signalHub");
             });
             app.UseSwagger();
             app.UseSwaggerUI(c =>

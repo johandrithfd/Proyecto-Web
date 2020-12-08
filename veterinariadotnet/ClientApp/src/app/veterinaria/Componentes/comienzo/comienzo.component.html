@@ -1,0 +1,27 @@
+<div class="container encabezado">
+  <div class="cabecera-formulario">
+      <p><i class="fas fa-paw"></i> My Veter</p>
+  </div>
+
+  <ngb-carousel *ngIf="imagenes.imagenesPrograma" [interval]="1200" [showNavigationArrows]="showNavigationArrows"
+      [ngClass]="direction" (slide)="sliderOn($event)">
+      <ng-template ngbSlide *ngFor="let image of imagenes.imagenesPrograma">
+          <div class="picsum-img-wrapper">
+              <a href="">
+                  <img [src]="image.src" alt="Random slide">
+              </a>
+          </div>
+          <div class="carousel-caption">
+              <p class="programa">Programa de Facturacion de Veterinarias</p>
+          </div>
+      </ng-template>
+  </ngb-carousel>
+
+  <p class="texto">Bienvenido a nuestro sistema de Facturacion de servicios Veterinarias que ayudara a facilitar las tareas
+    de su empresa veterinaria, Otra ventaja de nuestro sistema es que Trabaja desde cualquier lugar, en cualquier momento y
+    desde cualquier dispositivo(Smartphones, Tablets y PCs). Usted podrá acceder a la información completa de la veterinaria
+    en cada momento y en cada lugar que lo precise., Gracias a que este sistema esta situado en la nube en pocas palabras en
+    internet.
+
+  </p>
+</div><br><br>

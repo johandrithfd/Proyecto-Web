@@ -1,0 +1,19 @@
+<div class="container">
+  <p class="tituloContainer"><i class="fas fa-paw"></i>ESTADISTICAS DE SERVICIOS</p><br>
+<div>
+  <div>
+    <div style="display: block" *ngIf="barChartData">
+      <canvas baseChart
+        [datasets]="barChartData"
+        [labels]="barChartLabels"
+        [options]="barChartOptions"
+        [plugins]="barChartPlugins"
+        [legend]="barChartLegend"
+        [chartType]="barChartType"
+        [colors]="chartColors">
+      </canvas>
+    </div>
+
+  </div>
+</div>
+</div>

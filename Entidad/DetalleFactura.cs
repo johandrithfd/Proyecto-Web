@@ -10,37 +10,37 @@ namespace Entidad
         [Key]
         public int IdDetalleFactura {get; set;}
         [Column(TypeName = "decimal(9, 2)")]
-        public decimal ValorServicio {get; set;}
+        public double ValorServicio {get; set;}
         [Column(TypeName = "Int")]
         public int Cantidad {get; set;}
         [Column(TypeName = "decimal(5, 2)")]
-        public decimal PorcentajeIva {get; set;}
+        public double PorcentajeIva {get; set;}
         [Column(TypeName = "decimal(5, 2)")]
-        public decimal PorcentajeDescuento {get; set;}
+        public double PorcentajeDescuento {get; set;}
 
         [Display(Name = "SubTotal")]
-        public decimal SubTotal 
+        public double SubTotal 
         {
             get{
                 return ValorServicio * Cantidad;
             }
         }
         [Display(Name = "ValorIva")]
-        public decimal ValorIva 
+        public double ValorIva 
         {
             get{
                 return SubTotal * PorcentajeIva;
             }
         }
         [Display(Name = "ValorDescuento")]
-        public decimal ValorDescuento
+        public double ValorDescuento
         {
             get{
-                return SubTotal * PorcentajeDescuento;
+                return SubTotal * PorcentajeDescuento/100;
             }
         }
         [Display(Name = "Total")]
-        public decimal Total 
+        public double Total 
         {
             get{
                 return SubTotal + ValorIva - ValorDescuento;

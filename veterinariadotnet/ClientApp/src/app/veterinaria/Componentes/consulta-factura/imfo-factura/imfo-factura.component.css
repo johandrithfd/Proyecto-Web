@@ -1,0 +1,12 @@
+.cabecera-formulario {
+  background-color:rgb(1,124,104);
+  height: 44px;
+  padding: 5;
+  margin-bottom: 14px;
+}
+.cabecera-formulario h1{
+  margin-left: 10px;
+  font-size: 38px;
+  color: ivory;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}

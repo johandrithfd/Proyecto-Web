@@ -8,6 +8,9 @@ using System.Collections.Generic;
 using veterinariadotnet.Models;
 using Datos;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.SignalR;
+using veterinariadotnet.Hubs;
+using System.Threading.Tasks;
 
 namespace veterinariadotnet.Controllers
 {  
@@ -16,11 +19,13 @@ namespace veterinariadotnet.Controllers
     public class ClienteController: ControllerBase
     {
         private readonly ClienteServicio _clienteService;
+        private readonly IHubContext<SignalHub> _hubContext;
         
 
-        public ClienteController(VeterinariaContext context)
+        public ClienteController(VeterinariaContext context,IHubContext<SignalHub> hubContext)
         {
             _clienteService = new ClienteServicio(context);
+            _hubContext = hubContext;
         }
         
         [HttpGet]
@@ -40,6 +45,7 @@ namespace veterinariadotnet.Controllers
         public ActionResult<string> Delete(string identificacion)
         {
             var cliente = _clienteService.Eliminar(identificacion);
+            
             return Ok(cliente);
         }
 
@@ -59,7 +65,7 @@ namespace veterinariadotnet.Controllers
 
 
         [HttpPost]
-        public ActionResult<ClienteViewModel> Post(ClienteModel clienteimputModel)
+        public  async Task<ActionResult<ClienteViewModel>> PostAsync(ClienteModel clienteimputModel)
         {
             Cliente cliente = Mapear(clienteimputModel);
             var response = _clienteService.Guardar(cliente);
@@ -72,7 +78,10 @@ namespace veterinariadotnet.Controllers
                 };
                 return BadRequest(problemDetails);
             }
-            return Ok(response.Cliente);
+            var clienteViewModel = new ClienteViewModel(cliente);
+            await _hubContext.Clients.All.SendAsync("ClienteRegistrado",  clienteViewModel);
+            return Ok(clienteViewModel);
+            
         }
         
         private Cliente Mapear(ClienteModel clienteimputModel)

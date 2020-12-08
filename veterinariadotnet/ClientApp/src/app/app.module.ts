@@ -26,6 +26,14 @@ import { AlertModalComponent } from './@base/alert-modal/alert-modal.component';
 import { AlertModalFacturaComponent } from './veterinaria/Componentes/factura/alert-modal-factura/alert-modal-factura.component';
 import { ClienteModificarComponent } from './veterinaria/Componentes/cliente-modificar/cliente-modificar.component';
 import { ClienteEliminarComponent } from './veterinaria/Componentes/cliente-eliminar/cliente-eliminar.component';
+import { ChartsModule } from 'ng2-charts';
+import { GraficasComponent } from './veterinaria/Componentes/graficas/graficas.component';
+import { CategoriaComponent } from './veterinaria/Componentes/categoria/categoria.component';
+import { ConsultaFacturaComponent } from './veterinaria/Componentes/consulta-factura/consulta-factura.component';
+import { ImfoFacturaComponent } from './veterinaria/Componentes/consulta-factura/imfo-factura/imfo-factura.component';
+import { ComienzoComponent } from './veterinaria/Componentes/comienzo/comienzo.component';
+
+
 
 
 
@@ -49,7 +57,14 @@ import { ClienteEliminarComponent } from './veterinaria/Componentes/cliente-elim
     AlertModalFacturaComponent,
     FiltroServicioPipe,
     ClienteModificarComponent,
-    ClienteEliminarComponent
+    ClienteEliminarComponent,
+    GraficasComponent,
+    CategoriaComponent,
+    ConsultaFacturaComponent,
+    ImfoFacturaComponent,
+    ComienzoComponent,
+
+
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -57,11 +72,12 @@ import { ClienteEliminarComponent } from './veterinaria/Componentes/cliente-elim
     FormsModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    NgbModule
+    NgbModule,
+    ChartsModule
   ],
   providers: [ClienteService,{ provide: HTTP_INTERCEPTORS, useClass: JwtInterceptorService, multi: true }],
   // tslint:disable-next-line:max-line-length
-  entryComponents:[AlertModalComponent ,AlertModalFacturaComponent,ConsultaClienteComponent,ClienteEliminarComponent,ClienteModificarComponent,LoginComponent],
+  entryComponents:[ImfoFacturaComponent,AlertModalComponent ,AlertModalFacturaComponent,ConsultaClienteComponent,ClienteEliminarComponent,ClienteModificarComponent,LoginComponent,RegistroUsuarioComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
