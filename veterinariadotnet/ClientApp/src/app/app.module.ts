@@ -4,6 +4,8 @@ import { NgModule } from '@angular/core';
 import { FormsModule} from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
+import { PdfMakeWrapper } from 'pdfmake-wrapper';
+import pdfFonts from "pdfmake/build/vfs_fonts";
 
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
@@ -62,7 +64,7 @@ import { ComienzoComponent } from './veterinaria/Componentes/comienzo/comienzo.c
     CategoriaComponent,
     ConsultaFacturaComponent,
     ImfoFacturaComponent,
-    ComienzoComponent,
+    ComienzoComponent
 
 
   ],

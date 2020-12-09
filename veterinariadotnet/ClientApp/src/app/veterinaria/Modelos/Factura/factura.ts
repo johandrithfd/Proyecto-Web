@@ -3,7 +3,7 @@ import { DetalleFactura } from "../Detalle Factura/detalle-factura";
 
 export class Factura {
   facturaId :number;
-  fecha : Date;
+  fecha : Date = new Date();
   cantidad : number;
   subTotal : number;
   total : number;
