@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/7a138127-0218-45c1-9e46-9b07e02c545f/resourceGroups/appsvc_windows_centralus/providers/Microsoft.Web/sites/MyVeter",
+    "appService.deploySubpath": "veterinariadotnet\\publish"
+}

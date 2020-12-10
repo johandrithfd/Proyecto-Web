@@ -1,3 +1,4 @@
+import { SignalRServiceCliente } from './../../../services/signal-r.service';
 import { RespuestaConsulta } from './../../Modelos/Respuesta/respuesta-consulta';
 import { ClienteModificarComponent } from './../cliente-modificar/cliente-modificar.component';
 import { ClienteEliminarComponent } from './../cliente-eliminar/cliente-eliminar.component';
@@ -6,7 +7,7 @@ import {Cliente } from '../models/cliente';
 import {ClienteService} from '../../../services/serviciosRocha/cliente.service' ;
 import { CurrencyPipe } from '@angular/common';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { SignalRService } from 'src/app/services/signal-r.service';
+
 
 
 
@@ -18,14 +19,20 @@ import { SignalRService } from 'src/app/services/signal-r.service';
 export class ConsultaClienteComponent implements OnInit {
     clientes: Cliente[];
     searchText: string;
-  constructor(private clienteService: ClienteService, private modalService: NgbModal,private signalRService : SignalRService) { }
+  constructor(private clienteService: ClienteService, private modalService: NgbModal,private signalR : SignalRServiceCliente) { }
 
   ngOnInit(): void {
     this.clienteService.get().subscribe(result => { this.clientes = result; });
     /// Se suscribe al servicio de signal r y cuando se regustr una nueva persona se agregará el registro nuevo al array personas
-    this.signalRService.clienteReceived.subscribe((cliente: Cliente) => {
+    this.signalR.clienteReceived.subscribe((cliente: Cliente) => {
       this.clientes.push(cliente);
     });
+
+    this.signalR.clienteDeleted.subscribe((cliente:Cliente)=>{
+
+      var indice= this.clientes.findIndex(c=> c.identificacion==cliente.identificacion);
+       this.clientes.splice(indice,1);
+      });
 
 
   }

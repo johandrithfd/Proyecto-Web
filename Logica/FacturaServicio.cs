@@ -20,7 +20,7 @@ namespace Logica
             {
                 _context.Facturas.Add(factura);
                 _context.SaveChanges();
-                return new Respuesta<Factura>(factura,"Factura registrada con exito",false);
+                return new Respuesta<Factura>(factura, "Factura registrada con exito", false);
             }
             catch (Exception e)
             {
@@ -37,7 +37,7 @@ namespace Logica
             {
                 facturas = _context.Facturas.Include(d => d.DetallesFactura).ToList();
                 if (facturas.Count == 0)
-                { 
+                {
                     return new RespuestaConsulta<Factura>(facturas, "Oh no,no encontramos facturas", false);
                 }
                 return new RespuestaConsulta<Factura>(facturas, "Consulta de factura con  exito", false);
@@ -51,8 +51,7 @@ namespace Logica
             }
         }
 
-    }
-    
-}
-    
+     }
+        
+}    
 

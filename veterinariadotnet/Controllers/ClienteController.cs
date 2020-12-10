@@ -42,15 +42,23 @@ namespace veterinariadotnet.Controllers
         }
 
         [HttpDelete("{identificacion}")]
-        public ActionResult<string> Delete(string identificacion)
+        public async Task<ActionResult<string>> DeleteAsync(string identificacion)
         {
             var cliente = _clienteService.Eliminar(identificacion);
-            
-            return Ok(cliente);
+             var clienteViewModel = new ClienteViewModel(cliente);
+            await _hubContext.Clients.All.SendAsync("ClienteEliminado",  clienteViewModel);
+            return Ok(clienteViewModel);
+            }
+
+         [HttpGet("{totalizar}/{clientes}")]
+        public ActionResult<int> TotalizarClientes(string totalizar, string clientes)
+        {
+            var totalclientes = _clienteService.Totalizar();
+            return totalclientes;
         }
 
         [HttpPut]
-        public ActionResult<ClienteViewModel> Put(Cliente cliente)
+        public  ActionResult<ClienteViewModel> Put(Cliente cliente)
         {
             var response = _clienteService.Modificar(cliente);
             if (response.Error)

@@ -1,0 +1,14 @@
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Logica\bin\Release\netstandard2.1\Logica.deps.json
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Logica\bin\Release\netstandard2.1\Logica.dll
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Logica\bin\Release\netstandard2.1\Logica.pdb
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Logica\bin\Release\netstandard2.1\Datos.dll
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Logica\bin\Release\netstandard2.1\Entidad.dll
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Logica\bin\Release\netstandard2.1\Datos.pdb
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Logica\bin\Release\netstandard2.1\Entidad.pdb
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Logica\obj\Release\netstandard2.1\Logica.csprojAssemblyReference.cache
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Logica\obj\Release\netstandard2.1\Logica.AssemblyInfoInputs.cache
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Logica\obj\Release\netstandard2.1\Logica.AssemblyInfo.cs
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Logica\obj\Release\netstandard2.1\Logica.csproj.CoreCompileInputs.cache
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Logica\obj\Release\netstandard2.1\Logica.csproj.CopyComplete
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Logica\obj\Release\netstandard2.1\Logica.dll
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Logica\obj\Release\netstandard2.1\Logica.pdb

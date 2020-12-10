@@ -1,0 +1,9 @@
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Entidad\bin\Release\netstandard2.1\Entidad.deps.json
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Entidad\bin\Release\netstandard2.1\Entidad.dll
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Entidad\bin\Release\netstandard2.1\Entidad.pdb
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Entidad\obj\Release\netstandard2.1\Entidad.csprojAssemblyReference.cache
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Entidad\obj\Release\netstandard2.1\Entidad.AssemblyInfoInputs.cache
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Entidad\obj\Release\netstandard2.1\Entidad.AssemblyInfo.cs
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Entidad\obj\Release\netstandard2.1\Entidad.csproj.CoreCompileInputs.cache
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Entidad\obj\Release\netstandard2.1\Entidad.dll
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Entidad\obj\Release\netstandard2.1\Entidad.pdb

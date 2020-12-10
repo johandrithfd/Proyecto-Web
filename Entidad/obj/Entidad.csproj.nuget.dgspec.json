@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Documentos\\Upc\\Trabajos Web\\Proyecto-Web\\Entidad\\Entidad.csproj": {}
+    "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Entidad\\Entidad.csproj": {}
   },
   "projects": {
-    "D:\\Documentos\\Upc\\Trabajos Web\\Proyecto-Web\\Entidad\\Entidad.csproj": {
+    "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Entidad\\Entidad.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documentos\\Upc\\Trabajos Web\\Proyecto-Web\\Entidad\\Entidad.csproj",
+        "projectUniqueName": "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Entidad\\Entidad.csproj",
         "projectName": "Entidad",
-        "projectPath": "D:\\Documentos\\Upc\\Trabajos Web\\Proyecto-Web\\Entidad\\Entidad.csproj",
-        "packagesPath": "C:\\Users\\EQUIPO\\.nuget\\packages\\",
-        "outputPath": "D:\\Documentos\\Upc\\Trabajos Web\\Proyecto-Web\\Entidad\\obj\\",
+        "projectPath": "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Entidad\\Entidad.csproj",
+        "packagesPath": "C:\\Users\\ROCHETY\\.nuget\\packages\\",
+        "outputPath": "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Entidad\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\EQUIPO\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\ROCHETY\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
@@ -56,7 +56,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.404\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

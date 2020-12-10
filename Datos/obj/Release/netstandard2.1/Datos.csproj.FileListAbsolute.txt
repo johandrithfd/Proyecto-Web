@@ -1,0 +1,12 @@
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Datos\bin\Release\netstandard2.1\Datos.deps.json
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Datos\bin\Release\netstandard2.1\Datos.dll
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Datos\bin\Release\netstandard2.1\Datos.pdb
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Datos\bin\Release\netstandard2.1\Entidad.dll
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Datos\bin\Release\netstandard2.1\Entidad.pdb
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Datos\obj\Release\netstandard2.1\Datos.csprojAssemblyReference.cache
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Datos\obj\Release\netstandard2.1\Datos.AssemblyInfoInputs.cache
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Datos\obj\Release\netstandard2.1\Datos.AssemblyInfo.cs
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Datos\obj\Release\netstandard2.1\Datos.csproj.CoreCompileInputs.cache
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Datos\obj\Release\netstandard2.1\Datos.csproj.CopyComplete
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Datos\obj\Release\netstandard2.1\Datos.dll
+E:\MATERIAS U\Programacion Web\Proyecto\Proyecto-Web\Datos\obj\Release\netstandard2.1\Datos.pdb

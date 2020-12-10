@@ -26,6 +26,11 @@ namespace Logica
             return new GuardarResponseUsr(user);
         }
 
+         public int Totalizar()
+        {
+            return _context.Users.Count();
+        }
+
     }
 
     public class GuardarResponseUsr

@@ -49,6 +49,12 @@ namespace veterinariadotnet.Controllers
             
             return user;
         }
+        [HttpGet("{totalizar}/{usarios}")]
+        public ActionResult<int> TotalizarClientes(string totalizar, string usuarios)
+        {
+            var totalusuarios = _userService.Totalizar();
+            return totalusuarios;
+        }
 
 
 

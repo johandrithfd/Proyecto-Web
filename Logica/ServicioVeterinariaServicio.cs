@@ -9,6 +9,7 @@ namespace Logica
     public class ServicioVeterinariaServicio
     {
         private readonly VeterinariaContext _repositorio;
+
         public ServicioVeterinariaServicio(VeterinariaContext context)
         {
             _repositorio = context;
@@ -35,6 +36,11 @@ namespace Logica
             }
             
         }
+
+        
+       
+
+       
     }
     public class GuardarServicioRespuesta {
         public GuardarServicioRespuesta (Servicio servicio) {

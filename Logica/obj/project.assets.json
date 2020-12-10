@@ -6918,19 +6918,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\EQUIPO\\.nuget\\packages\\": {}
+    "C:\\Users\\ROCHETY\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Documentos\\Upc\\Trabajos Web\\Proyecto-Web\\Logica\\Logica.csproj",
+      "projectUniqueName": "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Logica\\Logica.csproj",
       "projectName": "Logica",
-      "projectPath": "D:\\Documentos\\Upc\\Trabajos Web\\Proyecto-Web\\Logica\\Logica.csproj",
-      "packagesPath": "C:\\Users\\EQUIPO\\.nuget\\packages\\",
-      "outputPath": "D:\\Documentos\\Upc\\Trabajos Web\\Proyecto-Web\\Logica\\obj\\",
+      "projectPath": "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Logica\\Logica.csproj",
+      "packagesPath": "C:\\Users\\ROCHETY\\.nuget\\packages\\",
+      "outputPath": "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Logica\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\EQUIPO\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\ROCHETY\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.1"
@@ -6941,11 +6941,11 @@
       "frameworks": {
         "netstandard2.1": {
           "projectReferences": {
-            "D:\\Documentos\\Upc\\Trabajos Web\\Proyecto-Web\\Datos\\Datos.csproj": {
-              "projectPath": "D:\\Documentos\\Upc\\Trabajos Web\\Proyecto-Web\\Datos\\Datos.csproj"
+            "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Datos\\Datos.csproj": {
+              "projectPath": "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Datos\\Datos.csproj"
             },
-            "D:\\Documentos\\Upc\\Trabajos Web\\Proyecto-Web\\Entidad\\Entidad.csproj": {
-              "projectPath": "D:\\Documentos\\Upc\\Trabajos Web\\Proyecto-Web\\Entidad\\Entidad.csproj"
+            "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Entidad\\Entidad.csproj": {
+              "projectPath": "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Entidad\\Entidad.csproj"
             }
           }
         }
@@ -6973,7 +6973,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.404\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

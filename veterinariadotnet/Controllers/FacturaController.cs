@@ -35,6 +35,8 @@ namespace veterinariadotnet.Controllers
             return Ok(response);
         }
         
+        
+
         [HttpGet]
         public ActionResult<RespuestaConsulta<FacturaViewModel>> Get()
         {

@@ -81,14 +81,16 @@ namespace Logica
         }
 
     
-         
-         
-
-
         public Cliente BuscarCliente (string identificacion) {
             var clientebuscado = _context.Clientes.Find(identificacion);
             return clientebuscado;
         }
+
+         public int Totalizar()
+        {
+            return _context.Clientes.Count();
+        }
+
     }
     public class GuardarClienteResponse {
         public GuardarClienteResponse (Cliente cliente) {
