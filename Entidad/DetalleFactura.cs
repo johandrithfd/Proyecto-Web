@@ -7,6 +7,19 @@ namespace Entidad
 {
     public class DetalleFactura
     {
+        public DetalleFactura(double valorServicio, int cantidad, double porcentajeIva, double porcentajeDescuento)
+        {
+            ValorServicio = valorServicio;
+            Cantidad = cantidad;
+            PorcentajeIva = porcentajeIva;
+            PorcentajeDescuento = porcentajeDescuento;
+        }
+
+        public DetalleFactura()
+        {
+
+        }
+
         [Key]
         public int IdDetalleFactura {get; set;}
         [Column(TypeName = "decimal(9, 2)")]

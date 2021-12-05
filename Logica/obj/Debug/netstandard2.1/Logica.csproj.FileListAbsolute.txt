@@ -40,3 +40,18 @@ D:\Documentos\Upc\Trabajos Web\Proyecto-Web\Logica\obj\Debug\netstandard2.1\Logi
 D:\Documentos\Upc\Trabajos Web\Proyecto-Web\Logica\obj\Debug\netstandard2.1\Logica.csproj.CopyComplete
 D:\Documentos\Upc\Trabajos Web\Proyecto-Web\Logica\obj\Debug\netstandard2.1\Logica.dll
 D:\Documentos\Upc\Trabajos Web\Proyecto-Web\Logica\obj\Debug\netstandard2.1\Logica.pdb
+D:\Documentos\Upc\Programacion\Vet\Proyecto-Web\Logica\bin\Debug\netstandard2.1\Logica.deps.json
+D:\Documentos\Upc\Programacion\Vet\Proyecto-Web\Logica\bin\Debug\netstandard2.1\Logica.dll
+D:\Documentos\Upc\Programacion\Vet\Proyecto-Web\Logica\bin\Debug\netstandard2.1\Logica.pdb
+D:\Documentos\Upc\Programacion\Vet\Proyecto-Web\Logica\bin\Debug\netstandard2.1\Datos.dll
+D:\Documentos\Upc\Programacion\Vet\Proyecto-Web\Logica\bin\Debug\netstandard2.1\Entidad.dll
+D:\Documentos\Upc\Programacion\Vet\Proyecto-Web\Logica\bin\Debug\netstandard2.1\Datos.pdb
+D:\Documentos\Upc\Programacion\Vet\Proyecto-Web\Logica\bin\Debug\netstandard2.1\Entidad.pdb
+D:\Documentos\Upc\Programacion\Vet\Proyecto-Web\Logica\obj\Debug\netstandard2.1\Logica.csproj.AssemblyReference.cache
+D:\Documentos\Upc\Programacion\Vet\Proyecto-Web\Logica\obj\Debug\netstandard2.1\Logica.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documentos\Upc\Programacion\Vet\Proyecto-Web\Logica\obj\Debug\netstandard2.1\Logica.AssemblyInfoInputs.cache
+D:\Documentos\Upc\Programacion\Vet\Proyecto-Web\Logica\obj\Debug\netstandard2.1\Logica.AssemblyInfo.cs
+D:\Documentos\Upc\Programacion\Vet\Proyecto-Web\Logica\obj\Debug\netstandard2.1\Logica.csproj.CoreCompileInputs.cache
+D:\Documentos\Upc\Programacion\Vet\Proyecto-Web\Logica\obj\Debug\netstandard2.1\Logica.csproj.CopyComplete
+D:\Documentos\Upc\Programacion\Vet\Proyecto-Web\Logica\obj\Debug\netstandard2.1\Logica.dll
+D:\Documentos\Upc\Programacion\Vet\Proyecto-Web\Logica\obj\Debug\netstandard2.1\Logica.pdb

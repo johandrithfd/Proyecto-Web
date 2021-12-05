@@ -8,6 +8,16 @@ namespace Entidad
 {
     public class Factura
     {
+        public Factura(List<DetalleFactura> detallesFactura)
+        {
+            DetallesFactura = detallesFactura;
+        }
+
+        public Factura()
+        {
+
+        }
+
         [Key]
         public int FacturaId { get; set; }
         public DateTime Fecha { get; set; }

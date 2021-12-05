@@ -1,15 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.31911.260
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "veterinariadotnet", "veterinariadotnet\veterinariadotnet.csproj", "{DAF247DD-A0B7-462C-BC63-BFF2C3E823E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "veterinariadotnet", "veterinariadotnet\veterinariadotnet.csproj", "{DAF247DD-A0B7-462C-BC63-BFF2C3E823E0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logica", "Logica\Logica.csproj", "{70C41D34-5CEC-42BF-BE05-242A426D76F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logica", "Logica\Logica.csproj", "{70C41D34-5CEC-42BF-BE05-242A426D76F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Datos", "Datos\Datos.csproj", "{A9130CA8-C69F-4562-965B-46AD97E68D85}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Datos", "Datos\Datos.csproj", "{A9130CA8-C69F-4562-965B-46AD97E68D85}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidad", "Entidad\Entidad.csproj", "{B14A8306-C9FF-4ED4-A42D-FFB4FED98AFD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entidad", "Entidad\Entidad.csproj", "{B14A8306-C9FF-4ED4-A42D-FFB4FED98AFD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entidad.Test", "Entidad.Test\Entidad.Test.csproj", "{03726D00-F001-4290-A508-591A85034639}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,9 +21,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{DAF247DD-A0B7-462C-BC63-BFF2C3E823E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -72,5 +71,23 @@ Global
 		{B14A8306-C9FF-4ED4-A42D-FFB4FED98AFD}.Release|x64.Build.0 = Release|Any CPU
 		{B14A8306-C9FF-4ED4-A42D-FFB4FED98AFD}.Release|x86.ActiveCfg = Release|Any CPU
 		{B14A8306-C9FF-4ED4-A42D-FFB4FED98AFD}.Release|x86.Build.0 = Release|Any CPU
+		{03726D00-F001-4290-A508-591A85034639}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03726D00-F001-4290-A508-591A85034639}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03726D00-F001-4290-A508-591A85034639}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{03726D00-F001-4290-A508-591A85034639}.Debug|x64.Build.0 = Debug|Any CPU
+		{03726D00-F001-4290-A508-591A85034639}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{03726D00-F001-4290-A508-591A85034639}.Debug|x86.Build.0 = Debug|Any CPU
+		{03726D00-F001-4290-A508-591A85034639}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03726D00-F001-4290-A508-591A85034639}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03726D00-F001-4290-A508-591A85034639}.Release|x64.ActiveCfg = Release|Any CPU
+		{03726D00-F001-4290-A508-591A85034639}.Release|x64.Build.0 = Release|Any CPU
+		{03726D00-F001-4290-A508-591A85034639}.Release|x86.ActiveCfg = Release|Any CPU
+		{03726D00-F001-4290-A508-591A85034639}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A1FC9950-C53F-41A6-BD4E-8D03A58DCE6B}
 	EndGlobalSection
 EndGlobal

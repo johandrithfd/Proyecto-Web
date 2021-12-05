@@ -1,32 +1,35 @@
 {
   "format": 1,
   "restore": {
-    "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Datos\\Datos.csproj": {}
+    "D:\\Documentos\\Upc\\Programacion\\Vet\\Proyecto-Web\\Datos\\Datos.csproj": {}
   },
   "projects": {
-    "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Datos\\Datos.csproj": {
+    "D:\\Documentos\\Upc\\Programacion\\Vet\\Proyecto-Web\\Datos\\Datos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Datos\\Datos.csproj",
+        "projectUniqueName": "D:\\Documentos\\Upc\\Programacion\\Vet\\Proyecto-Web\\Datos\\Datos.csproj",
         "projectName": "Datos",
-        "projectPath": "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Datos\\Datos.csproj",
-        "packagesPath": "C:\\Users\\ROCHETY\\.nuget\\packages\\",
-        "outputPath": "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Datos\\obj\\",
+        "projectPath": "D:\\Documentos\\Upc\\Programacion\\Vet\\Proyecto-Web\\Datos\\Datos.csproj",
+        "packagesPath": "C:\\Users\\EQUIPO\\.nuget\\packages\\",
+        "outputPath": "D:\\Documentos\\Upc\\Programacion\\Vet\\Proyecto-Web\\Datos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ROCHETY\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\EQUIPO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Entidad\\Entidad.csproj": {
-                "projectPath": "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Entidad\\Entidad.csproj"
+              "D:\\Documentos\\Upc\\Programacion\\Vet\\Proyecto-Web\\Entidad\\Entidad.csproj": {
+                "projectPath": "D:\\Documentos\\Upc\\Programacion\\Vet\\Proyecto-Web\\Entidad\\Entidad.csproj"
               }
             }
           }
@@ -39,6 +42,7 @@
       },
       "frameworks": {
         "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -72,30 +76,33 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Entidad\\Entidad.csproj": {
+    "D:\\Documentos\\Upc\\Programacion\\Vet\\Proyecto-Web\\Entidad\\Entidad.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Entidad\\Entidad.csproj",
+        "projectUniqueName": "D:\\Documentos\\Upc\\Programacion\\Vet\\Proyecto-Web\\Entidad\\Entidad.csproj",
         "projectName": "Entidad",
-        "projectPath": "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Entidad\\Entidad.csproj",
-        "packagesPath": "C:\\Users\\ROCHETY\\.nuget\\packages\\",
-        "outputPath": "E:\\MATERIAS U\\Programacion Web\\Proyecto\\Proyecto-Web\\Entidad\\obj\\",
+        "projectPath": "D:\\Documentos\\Upc\\Programacion\\Vet\\Proyecto-Web\\Entidad\\Entidad.csproj",
+        "packagesPath": "C:\\Users\\EQUIPO\\.nuget\\packages\\",
+        "outputPath": "D:\\Documentos\\Upc\\Programacion\\Vet\\Proyecto-Web\\Entidad\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ROCHETY\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\EQUIPO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
             "projectReferences": {}
           }
         },
@@ -107,6 +114,7 @@
       },
       "frameworks": {
         "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
           "dependencies": {
             "System.ComponentModel.Annotations": {
               "target": "Package",
@@ -128,7 +136,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

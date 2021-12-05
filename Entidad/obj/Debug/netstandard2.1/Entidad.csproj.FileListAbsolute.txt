@@ -25,3 +25,13 @@ D:\Documentos\Upc\Trabajos Web\Proyecto-Web\Entidad\obj\Debug\netstandard2.1\Ent
 D:\Documentos\Upc\Trabajos Web\Proyecto-Web\Entidad\obj\Debug\netstandard2.1\Entidad.csproj.CoreCompileInputs.cache
 D:\Documentos\Upc\Trabajos Web\Proyecto-Web\Entidad\obj\Debug\netstandard2.1\Entidad.dll
 D:\Documentos\Upc\Trabajos Web\Proyecto-Web\Entidad\obj\Debug\netstandard2.1\Entidad.pdb
+D:\Documentos\Upc\Programacion\Vet\Proyecto-Web\Entidad\bin\Debug\netstandard2.1\Entidad.deps.json
+D:\Documentos\Upc\Programacion\Vet\Proyecto-Web\Entidad\bin\Debug\netstandard2.1\Entidad.dll
+D:\Documentos\Upc\Programacion\Vet\Proyecto-Web\Entidad\bin\Debug\netstandard2.1\Entidad.pdb
+D:\Documentos\Upc\Programacion\Vet\Proyecto-Web\Entidad\obj\Debug\netstandard2.1\Entidad.csproj.AssemblyReference.cache
+D:\Documentos\Upc\Programacion\Vet\Proyecto-Web\Entidad\obj\Debug\netstandard2.1\Entidad.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documentos\Upc\Programacion\Vet\Proyecto-Web\Entidad\obj\Debug\netstandard2.1\Entidad.AssemblyInfoInputs.cache
+D:\Documentos\Upc\Programacion\Vet\Proyecto-Web\Entidad\obj\Debug\netstandard2.1\Entidad.AssemblyInfo.cs
+D:\Documentos\Upc\Programacion\Vet\Proyecto-Web\Entidad\obj\Debug\netstandard2.1\Entidad.csproj.CoreCompileInputs.cache
+D:\Documentos\Upc\Programacion\Vet\Proyecto-Web\Entidad\obj\Debug\netstandard2.1\Entidad.dll
+D:\Documentos\Upc\Programacion\Vet\Proyecto-Web\Entidad\obj\Debug\netstandard2.1\Entidad.pdb
